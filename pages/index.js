@@ -3,6 +3,7 @@ import Image from 'next/image'
 import ImageComponent from '../components/ImageComponent'
 import styles from '../styles/Home.module.css'
 import profile from '../public/images/profile.jpg'
+import Navigation from '../components/Navigation'
 
 export default function Home() {
 
@@ -16,10 +17,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Navigation />
+
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Learn <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <h4 className={styles.title}>
+          Que Je Web - Breizh Developpeur
+        </h4>
 
         <div>
           <ImageComponent {...profile}/>
