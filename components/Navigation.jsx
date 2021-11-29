@@ -1,27 +1,51 @@
-import { Nav, Navbar, Container } from 'react-bootstrap';
+import { Row, Col, Button } from 'react-bootstrap';
 import Link from 'next/link'
 import ImageComponent from './ImageComponent';
-import logo from '../assets/QJW.svg'
+import logo from '../assets/QJW.svg';
+import styles from '../styles/Home.module.css';
+import { BsFillPhoneFill } from 'react-icons/bs';
+import { GrMail } from 'react-icons/gr';
+import ReactCountryFlag from 'react-country-flag';
 
-const Navigation = () => (
-	<Navbar collapseOnSelect expand='lg' className="navbar-dark mt-1">
-		<Container>
-			<Link className="navbar-brand" passHref href="/">
-				<ImageComponent {...logo}/>
-			</Link>
-			
-			<Navbar.Toggle 
-				aria-controls="navbarTogglerDemo02" 
-				/>
+export default function Navigation() {
 
-			<Navbar.Collapse id="navbarTogglerDemo02">
-				<Nav className="m-auto">
-					<Nav.Link className="m-auto" href="/"> Tarifs </Nav.Link>
-					<Nav.Link className="m-auto" href="/"> Contact </Nav.Link>
-				</Nav>
-			</Navbar.Collapse>
-		</Container>
-	</Navbar>
-);
-
-export default Navigation;
+	return(
+		<Row className={styles.navigation}>
+			<Col md={3}>
+				<Link passhref href="/">
+					<a>
+						<ImageComponent {...logo}/>
+					</a>
+				</Link>
+			</Col>
+			<Col md={3} className={styles.link}>
+				<a href="callto:+0678866781">
+					<BsFillPhoneFill size={56} className={styles.icons}/>
+					0678866781
+				</a> 
+			</Col>
+			<Col md={3} className={styles.link}>
+				<a href="mailto:jeremy.querne@gmail.com">
+					<GrMail size={56} className={styles.icons}/>
+					email
+				</a> 
+			</Col>
+			<Col className={styles.link}>
+				<Button className={styles.custombutton}>
+					<ReactCountryFlag 
+						countryCode="GB" 
+						alt="United Kingdom flag"
+						svg
+						style={{
+							width: '1em',
+							height: '1em',
+						}}
+						/>
+					<span className={styles.textflag}>
+						English
+					</span>
+				</Button>
+			</Col>
+		</Row>
+	)
+}

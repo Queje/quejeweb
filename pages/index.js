@@ -4,6 +4,9 @@ import ImageComponent from '../components/ImageComponent'
 import styles from '../styles/Home.module.css'
 import profile from '../public/images/profile.jpg'
 import Navigation from '../components/Navigation'
+import Typical from 'react-typical'
+import { Col, Row } from 'react-bootstrap'
+import Wave from 'react-wavify'
 
 export default function Home() {
 
@@ -20,48 +23,65 @@ export default function Home() {
       <Navigation />
 
       <main className={styles.main}>
-        <h4 className={styles.title}>
-          Que Je Web - Breizh Developpeur
-        </h4>
+        <Row className={styles.jumbotron}>
+          <Col md={12} className={styles.topleftcorner}>
+            <h1 className={styles.title}>
+              <Typical
+                  steps={[
+                    'Que Je Web',
+                    4000,
+                    'Querné',
+                    2000,
+                    'Querné Jérémy',
+                    2000,
+                    'Querné Jérémy Web',
+                    4000,
+                  ]}
+                  wrapper="p"
+                  loop={Infinity}
+              />
+            </h1>
+            <h2 className={styles.subtitle}>
+              <p>Breizh Developpeur</p>
+            </h2>
+          </Col>
+        </Row>
+        <Row className={styles.jumbotron}>
+          <Col md={12} className={styles.bottomrightcorner}>
+            <Wave fill='#009FA5'
+              paused={false}
+              options={{
+                height: 30,
+                amplitude: 50,
+                speed: 0.12,
+                points: 3
+              }}
+            />
+          </Col>
+        </Row>
 
         <div>
-          <ImageComponent {...profile}/>
+          <h2 className={styles.subtitle}>About me ...</h2>
+          <Row>
+            <Col md={4}>
+              <ImageComponent {...profile}/>
+            </Col>
+            <Col md={8}>
+              <p className={styles.text}> bla bla bla about me </p>
+            </Col>
+          </Row>
         </div>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        <div>
+          <h2 className={styles.subtitle}>Services ...</h2>
+          <p className={styles.text}>Test test</p>
         </div>
+
+        <div>
+          <h2 className={styles.subtitle}>Mes Projets</h2>
+          <p className={styles.text}>test Test test</p>
+        </div>
+
       </main>
 
       <footer className={styles.footer}>
