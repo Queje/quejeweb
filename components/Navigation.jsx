@@ -19,7 +19,7 @@ export default function Navigation() {
 				</Link>
 			</Col>
 			<Col md={3} className={styles.link}>
-				<a href="callto:+0678866781">
+				<a href="tel:+0678866781">
 					<BsFillPhoneFill size={56} className={styles.icons}/>
 					0678866781
 				</a> 
