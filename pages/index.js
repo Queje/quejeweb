@@ -41,19 +41,20 @@ export default function Home() {
                   loop={Infinity}
               />
             </h1>
-            <h2 className={styles.subtitle}>
-              <p>Breizh Developpeur</p>
+            <h2 className={styles.title2}>
+              <p><i>Breizh Developpeur</i></p>
             </h2>
           </Col>
         </Row>
-        <Row className={styles.jumbotron}>
+        
+        <Row className={styles.jumbotron2}>
           <Col md={12} className={styles.bottomrightcorner}>
-            <Wave fill='#009FA5'
+            <Wave fill='#043242'
               paused={false}
               options={{
-                height: 30,
-                amplitude: 50,
-                speed: 0.12,
+                height: 25,
+                amplitude: 60,
+                speed: 0.2,
                 points: 3
               }}
             />
