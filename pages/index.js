@@ -10,11 +10,13 @@ import { BsFillPhoneFill } from 'react-icons/bs'
 import { GrMail } from 'react-icons/gr'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { useEffect } from "react"
 
 export default function Home() {
-
-  AOS.init();
-
+  useEffect(() => {
+    AOS.init()
+  })
+  
   return (
     <div className={styles.container}>
       <Head>
@@ -23,6 +25,7 @@ export default function Home() {
               content="Que Je Web, Querné Jérémy - développeur web - Morlaix - Finistère - Bretagne - France" 
         />
         <link rel="icon" href="/favicon.ico" />
+        <script>AOS.init()</script>
       </Head>
 
       <Navigation />
