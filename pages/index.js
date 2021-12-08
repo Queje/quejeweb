@@ -8,6 +8,9 @@ import { Col, Row } from 'react-bootstrap'
 import Wave from 'react-wavify'
 import { BsFillPhoneFill } from 'react-icons/bs'
 import { GrMail } from 'react-icons/gr'
+import { BsGithub } from 'react-icons/bs'
+import { BsFacebook } from 'react-icons/bs'
+import { BsTwitter } from 'react-icons/bs'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from "react"
@@ -57,12 +60,23 @@ export default function Home() {
         <Row>
           <Col className={styles.bottomrightcorner}>
             <Wave fill='#043242'
+              className={styles.wave1}
               paused={false}
               options={{
-                height: 25,
+                height: 28,
                 amplitude: 60,
                 speed: 0.2,
                 points: 3
+              }}
+            />
+            <Wave fill='#30819C'
+              className={styles.wave2}
+              paused={false}
+              options={{
+                height: 16,
+                amplitude: 32,
+                speed: 0.4,
+                points: 4
               }}
             />
           </Col>
@@ -97,17 +111,35 @@ export default function Home() {
         </div>
       </main>
       <footer className={styles.footer}>
-        <Row>
-          <Col md={6} className={styles.link}>
+        <Row className="d-flex justify-content-evenly">
+          <Col md={2} className={styles.link}>
             <a href="callto:+0678866781">
               <BsFillPhoneFill size={36} className={styles.icons}/>
               0678866781
             </a>
           </Col>
-          <Col md={6} className={styles.link}>
+          <Col md={2} className={styles.link}>
             <a href="mailto:jeremy.querne@gmail.com">
               <GrMail size={36} className={styles.icons}/>
               email
+            </a>
+          </Col>
+          <Col md={2} className={styles.link}>
+            <a href="https://github.com/Queje/Queje">
+              <BsGithub size={36} className={styles.icons}/>
+              Github
+            </a>
+          </Col>
+          <Col md={2} className={styles.link}>
+            <a href="https://fr-fr.facebook.com/">
+              <BsFacebook size={36} className={styles.icons}/>
+              Facebook
+            </a>
+          </Col>
+          <Col md={2} className={styles.link}>
+            <a href="https://twitter.com/JeremyQuerne">
+              <BsTwitter size={36} className={styles.icons}/>
+              Twitter
             </a>
           </Col>
         </Row>
