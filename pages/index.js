@@ -14,6 +14,7 @@ import { BsTwitter } from 'react-icons/bs'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from "react"
+import Hexagongrid from '../components/Hexagongrid'
 
 export default function Home() {
   useEffect(() => {
@@ -100,7 +101,7 @@ export default function Home() {
           className={styles.services}
         >
           <h2 className={styles.subtitle}>Services ...</h2>
-          <p className={styles.text}>Test test</p>
+          < Hexagongrid />
         </div>
         <div 
           data-aos="flip-down"
