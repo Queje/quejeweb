@@ -13,13 +13,18 @@ import { BsFacebook } from 'react-icons/bs'
 import { BsTwitter } from 'react-icons/bs'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import Hexagongrid from '../components/Hexagongrid'
 
 export default function Home() {
   useEffect(() => {
     AOS.init()
   })
+
+  const [isShown1, setIsShown1] = useState(false);
+  const [isShown2, setIsShown2] = useState(false);
+  const [isShown3, setIsShown3] = useState(false);
+  const [isShown4, setIsShown4] = useState(false);
   
   return (
     <div className={styles.container}>
@@ -58,7 +63,7 @@ export default function Home() {
             </h2>
           </Col>
         </Row>
-        <Row>
+        <Row className={styles.row1}>
           <Col className={styles.bottomrightcorner}>
             <Wave fill='#043242'
               className={styles.wave1}
@@ -86,30 +91,107 @@ export default function Home() {
           data-aos="flip-down"
           className={styles.aboutme}
         >
-          <h2 className={styles.subtitle}>About me ...</h2>
-          <Row>
-            <Col md={4}>
+          <h2 className={styles.subtitle}>A propos...</h2>
+          <Row className={styles.row1}>
+            <Col md={4} className={styles.imageprofile}>
               <ImageComponent {...profile}/>
             </Col>
             <Col md={8}>
-              <p className={styles.text}> bla bla bla about me </p>
+              <p className={styles.text}> Je suis Jérémy Querné, développeur web.</p> 
+              <p className={styles.text}> Mon rôle est de vous accompagnez dans vos projets de communications digitales.</p>
+              <p className={styles.text}> A votre écoute pour vous proposez les outils les plus adaptés, 
+              ensemble nous pourrons créer des sites et applications qui vous ressemblent.</p>
             </Col>
           </Row>
         </div>
-        <div 
+        <Row 
           data-aos="flip-down"
           className={styles.services}
         >
           <h2 className={styles.subtitle}>Services ...</h2>
-          < Hexagongrid />
-        </div>
-        <div 
+          <Col md={6} className="d-flex justify-content-end">
+            < Hexagongrid 
+              setIsShown1={setIsShown1} 
+              setIsShown2={setIsShown2}
+              setIsShown3={setIsShown3}
+              setIsShown4={setIsShown4}
+            />
+          </Col>
+          <Col md={6} className={styles.list}>
+            {!isShown1 && (
+              <p className={styles.textlist} > 
+                Sites vitrines 
+              </p>
+            )}
+            {isShown1 && (
+              <>
+                <p className={styles.textlisttitle1} > 
+                  Sites vitrines 
+                </p>
+                <p className={styles.show1}> A partir de 800 € !</p>
+                <p className={styles.show1sub}>en utilisant Wordpress ou wix ou un autre cms de votre choix</p>
+              </>
+			      )}
+
+            {!isShown2 && (
+              <p className={styles.textlist} > 
+                Sites customisés 
+              </p>
+            )}
+            {isShown2 && (
+              <>
+                <p className={styles.textlisttitle2} > 
+                  Sites customisés 
+                </p>
+                <p className={styles.show2}> A partir de 1000 € !</p>
+                <p className={styles.show2sub}>un frontend responsive personalisé en ReactJs ou NextJs, 
+                des créations de bases de données ou des API en Ruby on Rails.</p>
+                <p className={styles.show2sub}> Pour vos projets plus ambitieux !</p>
+              </>
+			      )}
+
+            {!isShown3 && (
+              <p className={styles.textlist} > 
+                Retouches et mises à jours
+              </p>
+            )}
+            {isShown3 && (
+              <>
+                <p className={styles.textlisttitle1} > 
+                  Retouches et mises à jours
+                </p>
+                <p className={styles.show1}> Sur Devis!</p>
+                <p className={styles.show1sub}>Un lifting pour votre site, des mises à jours?</p>
+                <p className={styles.show1sub}>Contactez moi pour en discuter.</p>
+              </>
+			      )}
+
+            {!isShown4 && (
+              <p className={styles.textlist} > 
+                Conseils réseaux sociaux et SEO
+              </p>
+            )}
+            {isShown4 && (
+              <>
+                <p className={styles.textlisttitle2} > 
+                  Conseils réseaux sociaux et SEO
+                </p>
+                <p className={styles.show2}> Sur Devis!</p>
+                <p className={styles.show2sub}>Vous souhaitez mettre en place une stratégie cohérente pour être plus visible sur les réseaux sociaux et sur le web (SEO)? </p>
+                <p className={styles.show2sub}>Contactez moi pour en discuter.</p>
+              </>
+			      )}
+          </Col>
+        </Row>
+        <Row 
           data-aos="flip-down"
           className={styles.projects}
         >
-          <h2 className={styles.subtitle}>Mes Projets</h2>
-          <p className={styles.text}>test Test test</p>
-        </div>
+          <Col md={12}>
+            <h2 className={styles.subtitle}>Mes Projets</h2>
+            <p className={styles.text}>test Test test</p>
+          </Col>
+        </Row>
       </main>
       <footer className={styles.footer}>
         <Row className="d-flex justify-content-evenly">
