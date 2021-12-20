@@ -15,6 +15,8 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect, useState } from "react"
 import Hexagongrid from '../components/Hexagongrid'
+import AnimationBanner from '../components/AnimationBanner'
+import { motion } from 'framer-motion'
 
 export default function Home() {
   useEffect(() => {
@@ -34,7 +36,6 @@ export default function Home() {
               content="Que Je Web, Querné Jérémy - développeur web - Morlaix - Finistère - Bretagne - France" 
         />
         <link rel="icon" href="/favicon.ico" />
-        <script>AOS.init()</script>
       </Head>
 
       <Navigation />
@@ -45,12 +46,18 @@ export default function Home() {
             <h1 className={styles.title}>
               <Typical
                   steps={[
+                    '...',
+                    4000,
+                    'Que',
+                    4000,
+                    'Que Je',
+                    4000,
                     'Que Je Web',
                     4000,
                     'Querné',
-                    2000,
+                    4000,
                     'Querné Jérémy',
-                    2000,
+                    4000,
                     'Querné Jérémy Web',
                     4000,
                   ]}
@@ -94,15 +101,29 @@ export default function Home() {
           <h2 className={styles.subtitle}>A propos...</h2>
           <Row className={styles.row1}>
             <Col md={4} className={styles.imageprofile}>
-              <ImageComponent {...profile}/>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1, rotate: [-2, 0, 2] }}
+                transition={{
+                  duration: 1,
+                  rotate: { yoyo: Infinity, duration: 2 },
+                }}
+                >
+                  <ImageComponent {...profile}/>
+                </motion.div>
             </Col>
             <Col md={8}>
-              <p className={styles.text}> Je suis Jérémy Querné, développeur web.</p> 
-              <p className={styles.text}> Mon rôle est de vous accompagnez dans vos projets de communications digitales.</p>
+              <p className={styles.text}> Je suis <span className={styles.neoneffect}>Jérémy Querné</span>, développeur web.</p> 
+              <p className={styles.text}> Mon rôle est de vous accompagnez dans vos projets de <span className={styles.neoneffect}>communications digitales</span>.</p>
               <p className={styles.text}> A votre écoute pour vous proposez les outils les plus adaptés, 
-              ensemble nous pourrons créer des sites et applications qui vous ressemblent.</p>
+              ensemble nous pourrons créer des sites et applications <span className={styles.neoneffect}>qui vous ressemblent</span>.</p>
             </Col>
           </Row>
+        </div>
+        <div
+          data-aos="flip-down"
+        >
+          <AnimationBanner />
         </div>
         <Row 
           data-aos="flip-down"
