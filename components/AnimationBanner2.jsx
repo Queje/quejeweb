@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 
-export default function AnimationBanner() {
+export default function AnimationBanner2() {
   const ref = useRef(null);
 
   React.useEffect(() => {
@@ -13,7 +13,7 @@ export default function AnimationBanner() {
         autoplay
         loop
         mode="normal"
-        src="https://assets2.lottiefiles.com/packages/lf20_hevuwbjw.json"
+        src="https://assets10.lottiefiles.com/packages/lf20_M9wchH.json"
         style={{ width: "600px", height: "300px" }}
     ></lottie-player>
   );

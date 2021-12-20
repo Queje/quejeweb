@@ -16,13 +16,14 @@ import 'aos/dist/aos.css'
 import { useEffect, useState } from "react"
 import Hexagongrid from '../components/Hexagongrid'
 import AnimationBanner from '../components/AnimationBanner'
+import AnimationBanner2 from '../components/AnimationBanner2'
 import { motion } from 'framer-motion'
 
 export default function Home() {
   useEffect(() => {
     AOS.init()
   })
-
+  
   const [isShown1, setIsShown1] = useState(false);
   const [isShown2, setIsShown2] = useState(false);
   const [isShown3, setIsShown3] = useState(false);
@@ -203,6 +204,11 @@ export default function Home() {
               </>
 			      )}
           </Col>
+        </Row>
+        <Row
+          data-aos="flip-down"
+        >
+          <AnimationBanner2/>     
         </Row>
         <Row 
           data-aos="flip-down"
