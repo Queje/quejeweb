@@ -17,7 +17,20 @@ import { useEffect, useState } from "react"
 import Hexagongrid from '../components/Hexagongrid'
 import AnimationBanner from '../components/AnimationBanner'
 import AnimationBanner2 from '../components/AnimationBanner2'
-import { motion } from 'framer-motion'
+import { FaHtml5} from 'react-icons/fa'
+import { FaCss3Alt } from 'react-icons/fa'
+import { FaBootstrap } from 'react-icons/fa'
+import { FaGithub } from 'react-icons/fa'
+import { FaWordpressSimple } from 'react-icons/fa'
+import { FaWix } from 'react-icons/fa'
+import { DiRuby } from 'react-icons/di'
+import { SiRubyonrails } from 'react-icons/si'
+import { SiPostgresql } from 'react-icons/si'
+import { SiJavascript } from 'react-icons/si'
+import { FaReact } from 'react-icons/fa'
+import { SiNextdotjs } from 'react-icons/si'
+import { SiHeroku } from 'react-icons/si'
+import { SiVercel } from 'react-icons/si'
 
 export default function Home() {
   useEffect(() => {
@@ -48,19 +61,15 @@ export default function Home() {
               <Typical
                   steps={[
                     '...',
-                    4000,
-                    'Que',
-                    4000,
-                    'Que Je',
-                    4000,
+                    10000,
                     'Que Je Web',
-                    4000,
-                    'Querné',
-                    4000,
-                    'Querné Jérémy',
-                    4000,
+                    10000,
                     'Querné Jérémy Web',
-                    4000,
+                    10000,
+                    'Que Je Web',
+                    10000,
+                    '...',
+                    10000,
                   ]}
                   wrapper="p"
                   loop={Infinity}
@@ -101,122 +110,127 @@ export default function Home() {
         >
           <h2 className={styles.subtitle}>A propos...</h2>
           <Row className={styles.row1}>
-            <Col md={4} className={styles.imageprofile}>
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1, rotate: [-2, 0, 2] }}
-                transition={{
-                  duration: 1,
-                  rotate: { yoyo: Infinity, duration: 2 },
-                }}
-                >
-                  <ImageComponent {...profile}/>
-                </motion.div>
+            <Col md={5} className={styles.imageprofile}>
+              <ImageComponent {...profile}/>
             </Col>
-            <Col md={8}>
+            <Col md={6}>
               <p className={styles.text}> Je suis <span className={styles.neoneffect}>Jérémy Querné</span>, développeur web.</p> 
               <p className={styles.text}> Mon rôle est de vous accompagnez dans vos projets de <span className={styles.neoneffect}>communications digitales</span>.</p>
-              <p className={styles.text}> A votre écoute pour vous proposez les outils les plus adaptés, 
-              ensemble nous pourrons créer des sites et applications <span className={styles.neoneffect}>qui vous ressemblent</span>.</p>
+              <p className={styles.text}> A votre écoute pour vous proposez les outils les plus adaptés.</p> 
+              <p className={styles.text}> Ensemble nous pourrons créer des sites et applications <span className={styles.neoneffect}>qui vous ressemblent</span> !</p>
             </Col>
           </Row>
+          <div className={styles.inlinelogo}>
+            <FaHtml5 size={60}/>
+            <FaCss3Alt size={60}/>
+            <FaBootstrap size={60} />
+            <FaGithub size={54} />
+            <FaWordpressSimple size={54} />
+            <FaWix size={60} />
+            <DiRuby size={54} />
+            <SiRubyonrails size={60} />
+            <SiPostgresql size={54} />
+            <SiJavascript size={54} />
+            <FaReact size={54} />
+            <SiNextdotjs size={54} />
+            <SiHeroku size={54} />
+            <SiVercel size={54} />
+          </div>
         </div>
         <div
           data-aos="flip-down"
         >
-          <AnimationBanner />
-        </div>
-        <Row 
-          data-aos="flip-down"
-          className={styles.services}
-        >
-          <h2 className={styles.subtitle}>Services ...</h2>
-          <Col md={6} className="d-flex justify-content-end">
-            < Hexagongrid 
-              setIsShown1={setIsShown1} 
-              setIsShown2={setIsShown2}
-              setIsShown3={setIsShown3}
-              setIsShown4={setIsShown4}
-            />
-          </Col>
-          <Col md={6} className={styles.list}>
-            {!isShown1 && (
-              <p className={styles.textlist} > 
-                Sites vitrines 
-              </p>
-            )}
-            {isShown1 && (
-              <>
-                <p className={styles.textlisttitle1} > 
+          <div className={styles.animationlogoservices}>
+            <AnimationBanner />
+          </div>
+          <Row 
+            className={styles.services}
+          >
+            <h2 className={styles.subtitle}>Services ...</h2>
+            <Col md={5} className="d-flex justify-content-end">
+              < Hexagongrid 
+                setIsShown1={setIsShown1} 
+                setIsShown2={setIsShown2}
+                setIsShown3={setIsShown3}
+                setIsShown4={setIsShown4}
+              />
+            </Col>
+            <Col md={7} className={styles.list}>
+              {!isShown1 && (
+                <p className={styles.textlist1} > 
                   Sites vitrines 
                 </p>
-                <p className={styles.show1}> A partir de 800 € !</p>
-                <p className={styles.show1sub}>en utilisant Wordpress ou wix ou un autre cms de votre choix</p>
-              </>
-			      )}
+              )}
+              {isShown1 && (
+                <>
+                  <p className={styles.textlisttitle1} > 
+                    Sites vitrines 
+                  </p>
+                  <p className={styles.show1}> A partir de 800 € !</p>
+                  <p className={styles.show1sub}>en utilisant Wordpress ou wix ou un autre cms de votre choix</p>
+                </>
+              )}
 
-            {!isShown2 && (
-              <p className={styles.textlist} > 
-                Sites customisés 
-              </p>
-            )}
-            {isShown2 && (
-              <>
-                <p className={styles.textlisttitle2} > 
+              {!isShown2 && (
+                <p className={styles.textlist2} > 
                   Sites customisés 
                 </p>
-                <p className={styles.show2}> A partir de 1000 € !</p>
-                <p className={styles.show2sub}>un frontend responsive personalisé en ReactJs ou NextJs, 
-                des créations de bases de données ou des API en Ruby on Rails.</p>
-                <p className={styles.show2sub}> Pour vos projets plus ambitieux !</p>
-              </>
-			      )}
+              )}
+              {isShown2 && (
+                <>
+                  <p className={styles.textlisttitle2} > 
+                    Sites customisés 
+                  </p>
+                  <p className={styles.show2}> A partir de 1000 € !</p>
+                  <p className={styles.show2sub}>un frontend responsive personalisé en ReactJs ou NextJs, 
+                  des créations de bases de données ou des API en Ruby on Rails.</p>
+                  <p className={styles.show2sub}> Pour vos projets plus ambitieux !</p>
+                </>
+              )}
 
-            {!isShown3 && (
-              <p className={styles.textlist} > 
-                Retouches et mises à jours
-              </p>
-            )}
-            {isShown3 && (
-              <>
-                <p className={styles.textlisttitle1} > 
+              {!isShown3 && (
+                <p className={styles.textlist3} > 
                   Retouches et mises à jours
                 </p>
-                <p className={styles.show1}> Sur Devis!</p>
-                <p className={styles.show1sub}>Un lifting pour votre site, des mises à jours?</p>
-                <p className={styles.show1sub}>Contactez moi pour en discuter.</p>
-              </>
-			      )}
+              )}
+              {isShown3 && (
+                <>
+                  <p className={styles.textlisttitle1} > 
+                    Retouches et mises à jours
+                  </p>
+                  <p className={styles.show1}> Sur Devis!</p>
+                  <p className={styles.show1sub}>Un lifting pour votre site, des mises à jours?</p>
+                  <p className={styles.show1sub}>Contactez moi pour en discuter.</p>
+                </>
+              )}
 
-            {!isShown4 && (
-              <p className={styles.textlist} > 
-                Conseils réseaux sociaux et SEO
-              </p>
-            )}
-            {isShown4 && (
-              <>
-                <p className={styles.textlisttitle2} > 
+              {!isShown4 && (
+                <p className={styles.textlist4} > 
                   Conseils réseaux sociaux et SEO
                 </p>
-                <p className={styles.show2}> Sur Devis!</p>
-                <p className={styles.show2sub}>Vous souhaitez mettre en place une stratégie cohérente pour être plus visible sur les réseaux sociaux et sur le web (SEO)? </p>
-                <p className={styles.show2sub}>Contactez moi pour en discuter.</p>
-              </>
-			      )}
-          </Col>
-        </Row>
-        <Row
-          data-aos="flip-down"
-        >
-          <AnimationBanner2/>     
-        </Row>
+              )}
+              {isShown4 && (
+                <>
+                  <p className={styles.textlisttitle2} > 
+                    Conseils réseaux sociaux et SEO
+                  </p>
+                  <p className={styles.show2}> Sur Devis!</p>
+                  <p className={styles.show2sub}>Vous souhaitez mettre en place une stratégie cohérente pour être plus visible sur les réseaux sociaux et sur le web (SEO)? </p>
+                  <p className={styles.show2sub}>Contactez moi pour en discuter.</p>
+                </>
+              )}
+            </Col>
+          </Row>
+        </div>
         <Row 
           data-aos="flip-down"
           className={styles.projects}
         >
           <Col md={12}>
+            <div className={styles.animationlogoprojects}>
+              <AnimationBanner2/>     
+            </div>
             <h2 className={styles.subtitle}>Mes Projets</h2>
-            <p className={styles.text}>test Test test</p>
           </Col>
         </Row>
       </main>

@@ -115,7 +115,7 @@
   font-size: 2.5rem;
   color: #E94E1B;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .text{
@@ -202,25 +202,39 @@
   justify-content: flex-end;
 }
 
+.profilepicture{
+  border-radius: 9rem;
+}
+
 .row1{
   max-width: 100%;
+}
+
+.inlinelogo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 4rem;
+}
+
+.animationlogoservices{
+  display: flex;
+  justify-content: center;
 }
 
 .services{
   width: 100%;
   max-width: 100%;
   height: 100vh;
+  margin-bottom: 4rem;
 }
 
 .list{
   display: grid;
   margin-top: 2rem;
-}
-
-.textlist{
   font-family: "montserrat-light";
   font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .textlisttitle1{
@@ -228,6 +242,7 @@
   font-size: 4rem;
   font-weight: bold;
   color: #E94E1B;
+  margin-top: -1.5rem;
 }
 
 .textlisttitle2{
@@ -235,6 +250,7 @@
   font-size: 4rem;
   font-weight: bold;
   color: #009FA5;
+  margin-top: -0.5rem;
 }
 
 .iconslist1{
@@ -282,7 +298,7 @@
   display:flex;
   justify-content: center;
   --s: 100px;  /* size  */
-  --m: 4px;    /* margin */
+  --m: 15px;    /* margin */
   --f: calc(1.732 * var(--s) + 4 * var(--m)  - 1px);
 }
 
@@ -313,6 +329,12 @@
   float: left;
   height: 120%; 
   shape-outside: repeating-linear-gradient(#0000 0 calc(var(--f) - 3px), #000 0 var(--f));
+}
+
+.animationlogoprojects{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .projects{
