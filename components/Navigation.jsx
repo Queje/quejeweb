@@ -11,28 +11,29 @@ export default function Navigation() {
 
 	return(
 		<Row className={styles.navigation}>
-			<Col md={3}>
+			<Col md={3} className={styles.logobox}>
 				<Link passhref href="/">
 					<a>
 						<ImageComponent {...logo}/>
 					</a>
 				</Link>
 			</Col>
-			<Col md={3} className={styles.link}>
+			<Col xs={4} md={3} className={styles.link}>
 				<a href="tel:+0678866781">
 					<BsFillPhoneFill size={56} className={styles.icons}/>
-					0678866781
+					<span className={styles.navtext}>0678866781</span>
 				</a> 
 			</Col>
-			<Col md={3} className={styles.link}>
+			<Col xs={4} md={3} className={styles.link}>
 				<a href="mailto:jeremy.querne@gmail.com">
 					<GrMail size={56} className={styles.icons}/>
-					email
+					<span className={styles.navtext}>email</span>
 				</a> 
 			</Col>
-			<Col className={styles.link}>
+			<Col xs={4} md={3} className={styles.link}>
 				<Button className={styles.custombutton}>
-					<ReactCountryFlag 
+					<ReactCountryFlag
+						className={styles.iconflag} 
 						countryCode="GB" 
 						alt="United Kingdom flag"
 						svg

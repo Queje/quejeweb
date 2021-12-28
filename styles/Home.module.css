@@ -375,7 +375,51 @@
   color: #009FA5;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+  .navigation{
+    margin-bottom: 1rem;
+  }
+
+  .navigation .logobox{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .navigation a img{
+    width: 150px!important;
+    height: 150px!important;
+  }
+
+  .navigation .custombutton{
+    width: 150px;
+    height: 50px;
+  }
+
+  .navigation .iconflag{
+    margin-top: -0.8rem;
+  }
+
+  .navigation .textflag{
+    display: none;
+  }
+
+  .navigation .navtext{
+    display: none;
+  }
+
+  .container{
+    padding: 0 0rem!important;
+  }
+
+  .jumbotron{
+    width: 100%!important;
+  }
+
+  .row1{
+    width: 100%!important;
+  }
+
   .grid {
     width: 100%;
     flex-direction: column;
