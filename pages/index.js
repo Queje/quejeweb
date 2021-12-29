@@ -31,6 +31,7 @@ import { FaReact } from 'react-icons/fa'
 import { SiNextdotjs } from 'react-icons/si'
 import { SiHeroku } from 'react-icons/si'
 import { SiVercel } from 'react-icons/si'
+import ProjectsCarousel from '../components/ProjectsCarousel'
 
 export default function Home() {
   useEffect(() => {
@@ -147,7 +148,7 @@ export default function Home() {
             className={styles.services}
           >
             <h2 className={styles.subtitle}>Services ...</h2>
-            <Col md={5} className="d-flex justify-content-end">
+            <Col xs={5} md={5} className="d-flex justify-content-end">
               < Hexagongrid 
                 setIsShown1={setIsShown1} 
                 setIsShown2={setIsShown2}
@@ -155,7 +156,7 @@ export default function Home() {
                 setIsShown4={setIsShown4}
               />
             </Col>
-            <Col md={7} className={styles.list}>
+            <Col xs={7} md={7} className={styles.list}>
               {!isShown1 && (
                 <p className={styles.textlist1} > 
                   Sites vitrines 
@@ -226,11 +227,14 @@ export default function Home() {
           data-aos="flip-down"
           className={styles.projects}
         >
-          <Col md={12}>
+          <Col xs={12} md={12}>
             <div className={styles.animationlogoprojects}>
               <AnimationBanner2/>     
             </div>
             <h2 className={styles.subtitle}>Mes Projets</h2>
+          </Col>
+          <Col xs={12} md={12}>
+            <ProjectsCarousel />
           </Col>
         </Row>
       </main>
