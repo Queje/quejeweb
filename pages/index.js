@@ -149,7 +149,11 @@ export default function Home() {
           >
             <h2 className={styles.subtitle}>Services ...</h2>
             <Col xs={5} md={5} className="d-flex justify-content-end">
-              < Hexagongrid 
+              < Hexagongrid
+                isShown1={isShown1} 
+                isShown2={isShown2} 
+                isShown3={isShown3} 
+                isShown4={isShown4} 
                 setIsShown1={setIsShown1} 
                 setIsShown2={setIsShown2}
                 setIsShown3={setIsShown3}
