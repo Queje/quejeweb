@@ -11,7 +11,6 @@ import AboutMe from '../components/AboutMe'
 import Services from '../components/Services'
 import Projects from '../components/Projects'
 import Footer from '../components/Footer'
-import NetSlider from '../components/NetSlider'
 
 
 export default function Home() {
@@ -40,7 +39,6 @@ export default function Home() {
         <Services />
         
         <Projects />
-        <NetSlider />
       </main>
       
       <Footer />
