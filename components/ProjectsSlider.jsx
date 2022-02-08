@@ -1,14 +1,19 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper';
-import Image from 'next/image';
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation } from 'swiper'
+import Image from 'next/image'
 import image1 from '../public/images/nicocoaching.webp'
 import image2 from '../public/images/bretonbreaks.webp'
 import image3 from '../public/images/laurencepoidatz.webp'
 import image4 from '../public/images/salonartcarantec.webp'
 import image5 from '../public/images/learningstuff.webp'
 import styles from '../styles/Home.module.css'
+import { useState } from "react"
 
 export default function ProjectsSlider () {
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
     
     return (
         <Swiper
