@@ -21,3 +21,23 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.modal-open{
+  padding: 0!important;
+}
+
+.modal-backdrop {
+  opacity: 0.1!important;
+}
+
+.modal-content{
+  background-color: #043242;
+}
+
+.modal-header{
+  border-bottom: none!important;
+}
+
+.modal-header button.btn-close{
+  color:#E94E1B!important
+}

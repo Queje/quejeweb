@@ -1,19 +1,26 @@
-import { Modal, Button } from "react-bootstrap"
+import { Modal } from "react-bootstrap"
 
-export default function ProjectsModal ({show, handleClose}) {
+export default function ProjectsModal ({show, handleClose, title, work, details, icon1, icon2}) {
 
     return(
-        <Modal show={show} onHide={handleClose}>
-            <Modal.Header closeButton>
-                <Modal.Title>Modal heading</Modal.Title>
+        <Modal 
+            show={show} 
+            onHide={handleClose} 
+            centered
+        >
+            <Modal.Header closeButton closeVariant="white">
+                <Modal.Title>
+                    {title}
+                </Modal.Title>
             </Modal.Header>
-            <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
+            <Modal.Body>
+                {work}
+                {details}
+            </Modal.Body>
             <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>
-                    Close
-                </Button>
+                {icon1}
+                {icon2}
             </Modal.Footer>
         </Modal>
-
     )
 }

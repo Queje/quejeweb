@@ -344,14 +344,6 @@
   margin-top: 3rem;
 }
 
-.SwipeSlider{
-  overflow: visible!important;
-}
-
-.SliderItem:hover{
-  transform: scale(1.2);
-}
-
 .footer {
   display: flex;
   padding: 2rem 0;
