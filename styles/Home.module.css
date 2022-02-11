@@ -344,6 +344,30 @@
   margin-top: 3rem;
 }
 
+.modaltitle{
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.modalimagestyle{
+  
+}
+
+.modalfooter{
+  z-index: 10;
+}
+
+.logotitle{
+  margin-left: 1rem;
+  color: #E94E1B;
+  font-size: 3rem;
+}
+
+.logoitem{
+  width: 150px!important;
+  height: 150px!important;
+}
+
 .footer {
   display: flex;
   padding: 2rem 0;
