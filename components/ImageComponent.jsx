@@ -1,13 +1,13 @@
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 
-const ImageComponent = (filesource) => (
+const ImageComponent = ({filesource, height, width , alt}) => (
   <Image
     src= { filesource } // Route of the image file
-    height={250} // Desired size with correct aspect ratio
-    width={290} // Desired size with correct aspect ratio
+    height={ height } // Desired size with correct aspect ratio
+    width={ width } // Desired size with correct aspect ratio
     className={styles.profilepicture}
-    alt= 'Jérémy Querné, developpeur web'
+    alt= { alt } 
   />
 );
 

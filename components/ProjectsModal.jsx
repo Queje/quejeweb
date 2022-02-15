@@ -14,11 +14,11 @@ export default function ProjectsModal ({project}) {
                 className={styles.SliderItem}
                 src={project.imagesource}
                 alt={project.alt} 
-                onClick={handleShow}
+                onMouseEnter={handleShow}
             />
             <Modal 
                 show={show} 
-                onHide={handleClose} 
+                onMouseLeave={handleClose} 
                 centered
                 size="lg"
             >

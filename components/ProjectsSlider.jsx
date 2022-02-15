@@ -49,7 +49,10 @@ export default function ProjectsSlider () {
                 },
                 {
                     id: 2,
+                    background: background1,
                     title: "www.bretonbreaks.com",
+                    logosource: logo1,
+                    logoalt: "logo de nicoangercoaching.fr",
                     imagesource: image2,
                     alt: "image du site https://www.bretonbreaks.com",
                     work: "Site pour la location d'une maison de vacances",
@@ -84,7 +87,10 @@ export default function ProjectsSlider () {
                 },
                 {
                     id: 3,
+                    background: background1,
                     title: "www.laurencepoidatz.com",
+                    logosource: logo1,
+                    logoalt: "logo de nicoangercoaching.fr",
                     imagesource: image3,
                     alt: "image du site https://www.laurencepoidatz.com",
                     work: "Site vitrine de l'artiste peintre Laurence Poidatz",
@@ -99,7 +105,10 @@ export default function ProjectsSlider () {
                 },
                 {
                     id: 4,
+                    background: background1,
                     title: "www.salonartcarantec.com",
+                    logosource: logo1,
+                    logoalt: "logo de nicoangercoaching.fr",
                     imagesource: image4,
                     alt: "image du site https://www.salonartcarantec.com",
                     work: "Site pour l'association du salon des arts de Carantec.",
@@ -134,7 +143,10 @@ export default function ProjectsSlider () {
                 },
                 {
                     id: 5,
+                    background: background1,
                     title: "learning-stuff",
+                    logosource: logo1,
+                    logoalt: "logo de nicoangercoaching.fr",
                     imagesource: image5,
                     alt: "image du site https://learning-stuff-thp.herokuapp.com/",
                     work: "Site démo pour de la vente et de l'apprentissage en ligne.",

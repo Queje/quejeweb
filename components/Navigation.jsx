@@ -14,7 +14,12 @@ export default function Navigation() {
 			<Col md={3} className={styles.logobox}>
 				<Link passhref href="/">
 					<a>
-						<ImageComponent {...logo}/>
+						<ImageComponent 
+						filesource={logo} 
+						height={150} 
+						width={150} 
+						alt={"logo Que Je Web, Querné Jérémy Web devéloppeur"} 
+						/>
 					</a>
 				</Link>
 			</Col>

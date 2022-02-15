@@ -27,7 +27,12 @@ export default function AboutMe() {
           <h2 className={styles.subtitle}>A propos...</h2>
           <Row className={styles.row1}>
             <Col md={5} className={styles.imageprofile}>
-              <ImageComponent {...profile}/>
+              <ImageComponent 
+                filesource={profile} 
+                height={200} 
+                width={250} 
+                alt={"Jérémy Querné, Développeur web fullstack"}
+              />
             </Col>
             <Col md={6}>
               <p className={styles.text}> Je suis <span className={styles.neoneffect}>Jérémy Querné</span>, développeur web.</p> 
