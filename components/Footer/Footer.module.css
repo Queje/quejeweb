@@ -1,0 +1,30 @@
+.footer {
+    display: flex;
+    padding: 2rem 0;
+    border-top: 1px solid #eaeaea;
+    justify-content: center;
+    align-items: center;
+}
+  
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #E94E1B;
+    font-family: "montserrat-medium";
+}
+  
+.icons{
+    margin-right: 0.5rem;
+}
+  
+.footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.footer a:hover{
+    color: #009FA5;
+}

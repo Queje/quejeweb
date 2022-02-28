@@ -1,7 +1,7 @@
-import styles from '../styles/Home.module.css'
-import AnimationBanner from '../components/AnimationBanner'
+import styles from '../Services/Services.module.css'
+import AnimationBanner from '../Services/AnimationBanner'
 import { Col, Row } from 'react-bootstrap'
-import Hexagongrid from '../components/Hexagongrid'
+import Hexagongrid from '../Services/Hexagongrid'
 import { useState } from "react"
 
 export default function Services () {
@@ -19,7 +19,7 @@ export default function Services () {
         <Row 
             className={styles.services}
         >
-            <h2 className={styles.subtitle}>Services ...</h2>
+            <h3>Services ...</h3>
             <Col xs={5} md={5} className="d-flex justify-content-end">
               < Hexagongrid
                 isShown1={isShown1} 

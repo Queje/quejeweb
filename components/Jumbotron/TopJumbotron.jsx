@@ -1,13 +1,13 @@
-import styles from '../styles/Home.module.css'
+import topjumbostyle from '../Jumbotron/TopJumbotron.module.css'
 import Typical from 'react-typical'
 import { Col, Row } from 'react-bootstrap'
 
 export default function TopJumbotron () {
 
     return(
-        <Row className={styles.jumbotron}>
-          <Col className={styles.topleftcorner}>
-            <h1 className={styles.title}>
+        <Row className={topjumbostyle.jumbotron}>
+          <Col className={topjumbostyle.topleftcorner}>
+            <h1>
               <Typical
                   steps={[
                     '...',
@@ -25,7 +25,7 @@ export default function TopJumbotron () {
                   loop={Infinity}
               />
             </h1>
-            <h2 className={styles.title2}>
+            <h2>
               <p><i>Breizh Developpeur</i></p>
             </h2>
           </Col>

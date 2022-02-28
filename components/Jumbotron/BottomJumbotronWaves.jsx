@@ -1,14 +1,14 @@
-import styles from '../styles/Home.module.css';
+import jumbostyle from '../Jumbotron/BottomJumbotronWaves.module.css'
 import { Row, Col } from 'react-bootstrap'
 import Wave from 'react-wavify'
 
 export default function BottomJumbotronWaves () {
 
     return(
-        <Row className={styles.row1}>
-          <Col className={styles.bottomrightcorner}>
+        <Row className={jumbostyle.row1}>
+          <Col className={jumbostyle.bottomrightcorner}>
             <Wave fill='#043242'
-              className={styles.wave1}
+              className={jumbostyle.wave1}
               paused={false}
               options={{
                 height: 28,
@@ -18,7 +18,7 @@ export default function BottomJumbotronWaves () {
               }}
             />
             <Wave fill='#30819C'
-              className={styles.wave2}
+              className={jumbostyle.wave2}
               paused={false}
               options={{
                 height: 16,

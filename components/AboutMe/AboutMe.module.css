@@ -1,0 +1,32 @@
+.aboutme{
+    width: 100%;
+    max-width: 100%;
+    height: 90vh;
+}
+
+.aboutrow{
+    max-width: 100%;
+}
+
+.imageprofile{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.profilepicture{
+    border-radius: 15rem;
+}
+
+.inlinelogo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 4rem;
+}
+
+@media (max-width: 800px) {
+    .aboutrow{
+        max-width: 100%!important;
+    }    
+}

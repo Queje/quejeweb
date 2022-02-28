@@ -1,7 +1,7 @@
 import { Modal, OverlayTrigger, Tooltip } from "react-bootstrap"
 import Image from 'next/image'
 import { useState } from "react"
-import styles from '../styles/Home.module.css'
+import styles from '../Projects/ProjectsModal.module.css'
 
 export default function ProjectsModal ({project}) {
     const [show, setShow] = useState(false);
@@ -53,10 +53,10 @@ export default function ProjectsModal ({project}) {
                         </span>
                     </div>
                     <div>
-                        <p>
+                        <p id="text">
                             {project.work}
                         </p>
-                        <p>
+                        <p id="text">
                             {project.details}
                         </p>
                     </div>
@@ -70,7 +70,7 @@ export default function ProjectsModal ({project}) {
                             placement="top"
                             delay={{ show: 250, hide: 400 }}
                             overlay={
-                                <Tooltip className={styles.text}>
+                                <Tooltip id="text">
                                     {icon.tooltip}
                                 </Tooltip>
                             }

@@ -1,4 +1,4 @@
-import styles from '../styles/Home.module.css'
+import styles from '../Footer/Footer.module.css'
 import { Col, Row } from 'react-bootstrap'
 import { BsFillPhoneFill } from 'react-icons/bs'
 import { GrMail } from 'react-icons/gr'

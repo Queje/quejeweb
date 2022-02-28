@@ -1,4 +1,4 @@
-import styles from '../styles/Home.module.css';
+import styles from '../Services/Hexagongrid.module.css';
 import { CgWebsite } from 'react-icons/cg';
 import { BiCustomize } from 'react-icons/bi';
 import { GiAutoRepair } from 'react-icons/gi';
@@ -13,8 +13,8 @@ export default function Hexagongrid ({
 	setIsShown2, 
 	setIsShown3, 
 	setIsShown4}) 
-	{
 
+{
 	return(
 		<section className={styles.hexagrid}>
 			<div className={styles.hexagridwrapper}>

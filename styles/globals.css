@@ -2,6 +2,44 @@
 @import 'swiper/css';
 @import 'swiper/css/navigation';
 
+@font-face{
+  font-family: "westmeath";
+  src:url("../public/fonts/Westmeath.ttf")
+}
+
+@font-face {
+  font-family: "montserrat-semibold";
+  src: url("../public/fonts/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "montserrat-medium";
+  src: url("../public/fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+  font-family: "montserrat-light";
+  src: url("../public/fonts/Montserrat-Light.ttf");
+}
+
+@keyframes neon {
+  0% {
+    text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+    0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
+    0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
+  }
+  50% {
+    text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+    0 0 5px var(--shadow-color-light), 0 0 15px var(--shadow-color-light), 0 0 25px var(--shadow-color-light),
+    0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 60px var(--shadow-color), 0 0 80px var(--shadow-color), 0 0 110px var(--shadow-color), 0 0 210px var(--shadow-color);
+  }
+  100% {
+    text-shadow: -1px -1px 1px var(--shadow-color-light), -1px 1px 1px var(--shadow-color-light), 1px -1px 1px var(--shadow-color-light), 1px 1px 1px var(--shadow-color-light),
+    0 0 3px var(--shadow-color-light), 0 0 10px var(--shadow-color-light), 0 0 20px var(--shadow-color-light),
+    0 0 30px var(--shadow-color), 0 0 40px var(--shadow-color), 0 0 50px var(--shadow-color), 0 0 70px var(--shadow-color), 0 0 100px var(--shadow-color), 0 0 200px var(--shadow-color);
+  }
+}
+
 html,
 body {
   background-color: #043242;
@@ -20,6 +58,39 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+h1 {
+  font-family: "westmeath";
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+h2 {
+  font-family: "westmeath";
+  line-height: 1.15;
+  font-size: 2rem;
+  color: #E94E1B;
+}
+
+h3 {
+  font-family: "westmeath";
+  font-size: 2.5rem;
+  color: #E94E1B;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#text {
+  font-family: "montserrat-light";
+  font-size: 1.5rem;
+}
+
+#neonlight {
+  --shadow-color: #E94E1B;
+  --shadow-color-light: white;
+  color: white;
+  animation: neon 3s infinite;
 }
 
 .modal-open{

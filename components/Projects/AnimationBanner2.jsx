@@ -14,7 +14,7 @@ export default function AnimationBanner2() {
         loop
         mode="normal"
         src="https://assets10.lottiefiles.com/packages/lf20_M9wchH.json"
-        style={{ width: "600px", height: "300px" }}
+        style={{ width: "800px", height: "300px" }}
     ></lottie-player>
   );
 }

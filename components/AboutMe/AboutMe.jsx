@@ -1,7 +1,7 @@
-import styles from '../styles/Home.module.css'
+import styles from '../AboutMe/AboutMe.module.css'
 import { Col, OverlayTrigger, Row, Tooltip } from 'react-bootstrap'
-import ImageComponent from './ImageComponent'
-import profile from '../public/images/profile.jpg'
+import Image from 'next/image'
+import profile from '../../public/images/profile.jpg'
 import { FaHtml5} from 'react-icons/fa'
 import { FaCss3Alt } from 'react-icons/fa'
 import { FaBootstrap } from 'react-icons/fa'
@@ -24,21 +24,22 @@ export default function AboutMe() {
           data-aos="flip-down"
           className={styles.aboutme}
         >
-          <h2 className={styles.subtitle}>A propos...</h2>
-          <Row className={styles.row1}>
+          <h3>A propos...</h3>
+          <Row className={styles.aboutrow}>
             <Col md={5} className={styles.imageprofile}>
-              <ImageComponent 
-                filesource={profile} 
-                height={200} 
-                width={250} 
-                alt={"Jérémy Querné, Développeur web fullstack"}
+              <Image
+                src= { profile } // Route of the image file
+                height={ 200 } // Desired size with correct aspect ratio
+                width={ 250 } // Desired size with correct aspect ratio
+                className={styles.profilepicture}
+                alt= "Jérémy Querné, Développeur web fullstack"
               />
             </Col>
             <Col md={6}>
-              <p className={styles.text}> Je suis <span className={styles.neoneffect}>Jérémy Querné</span>, développeur web.</p> 
-              <p className={styles.text}> Mon rôle est de vous accompagnez dans vos projets de <span className={styles.neoneffect}>communications digitales</span>.</p>
-              <p className={styles.text}> A votre écoute pour vous proposez les outils les plus adaptés.</p> 
-              <p className={styles.text}> Ensemble nous pourrons créer des sites et applications <span className={styles.neoneffect}>qui vous ressemblent</span> !</p>
+              <p id="text"> Je suis <span id="neonlight">Jérémy Querné</span>, développeur web.</p> 
+              <p id="text"> Mon rôle est de vous accompagnez dans vos projets de <span id="neonlight">communications digitales</span>.</p>
+              <p id="text"> A votre écoute pour vous proposez les outils les plus adaptés.</p> 
+              <p id="text"> Ensemble nous pourrons créer des sites et applications <span id="neonlight">qui vous ressemblent</span> !</p>
             </Col>
           </Row>
           <div className={styles.inlinelogo}>
@@ -46,7 +47,7 @@ export default function AboutMe() {
               placement="top"
               delay={{ show: 250, hide: 400 }}
               overlay={
-                <Tooltip className={styles.text}>
+                <Tooltip id="text">
                   html 5
                 </Tooltip>
               }
@@ -60,7 +61,7 @@ export default function AboutMe() {
               placement="top"
               delay={{ show: 250, hide: 400 }}
               overlay={
-                <Tooltip className={styles.text}>
+                <Tooltip id="text">
                   css 3
                 </Tooltip>
               }
@@ -74,7 +75,7 @@ export default function AboutMe() {
               placement="top"
               delay={{ show: 250, hide: 400 }}
               overlay={
-                <Tooltip className={styles.text}>
+                <Tooltip id="text">
                   Bootstrap
                 </Tooltip>
               }
@@ -88,7 +89,7 @@ export default function AboutMe() {
               placement="top"
               delay={{ show: 250, hide: 400 }}
               overlay={
-                <Tooltip className={styles.text}>
+                <Tooltip id="text">
                   Github
                 </Tooltip>
               }
@@ -102,7 +103,7 @@ export default function AboutMe() {
               placement="top"
               delay={{ show: 250, hide: 400 }}
               overlay={
-                <Tooltip className={styles.text}>
+                <Tooltip id="text">
                   Wordpress
                 </Tooltip>
               }
@@ -116,7 +117,7 @@ export default function AboutMe() {
               placement="top"
               delay={{ show: 250, hide: 400 }}
               overlay={
-                <Tooltip className={styles.text}>
+                <Tooltip id="text">
                   Wix
                 </Tooltip>
               }
@@ -130,7 +131,7 @@ export default function AboutMe() {
               placement="top"
               delay={{ show: 250, hide: 400 }}
               overlay={
-                <Tooltip className={styles.text}>
+                <Tooltip id="text">
                   Ruby
                 </Tooltip>
               }
@@ -144,7 +145,7 @@ export default function AboutMe() {
               placement="top"
               delay={{ show: 250, hide: 400 }}
               overlay={
-                <Tooltip className={styles.text}>
+                <Tooltip id="text">
                   Ruby on Rails
                 </Tooltip>
               }
@@ -158,7 +159,7 @@ export default function AboutMe() {
               placement="top"
               delay={{ show: 250, hide: 400 }}
               overlay={
-                <Tooltip className={styles.text}>
+                <Tooltip id="text">
                   PostgreSQL
                 </Tooltip>
               }
@@ -172,7 +173,7 @@ export default function AboutMe() {
               placement="top"
               delay={{ show: 250, hide: 400 }}
               overlay={
-                <Tooltip className={styles.text}>
+                <Tooltip id="text">
                   Javascript
                 </Tooltip>
               }
@@ -186,7 +187,7 @@ export default function AboutMe() {
               placement="top"
               delay={{ show: 250, hide: 400 }}
               overlay={
-                <Tooltip className={styles.text}>
+                <Tooltip id="text">
                   React
                 </Tooltip>
               }
@@ -200,7 +201,7 @@ export default function AboutMe() {
               placement="top"
               delay={{ show: 250, hide: 400 }}
               overlay={
-                <Tooltip className={styles.text}>
+                <Tooltip id="text">
                   NextJs
                 </Tooltip>
               }
@@ -214,7 +215,7 @@ export default function AboutMe() {
               placement="top"
               delay={{ show: 250, hide: 400 }}
               overlay={
-                <Tooltip className={styles.text}>
+                <Tooltip id="text">
                   Heroku
                 </Tooltip>
               }
@@ -228,7 +229,7 @@ export default function AboutMe() {
               placement="top"
               delay={{ show: 250, hide: 400 }}
               overlay={
-                <Tooltip className={styles.text}>
+                <Tooltip id="text">
                   Vercel
                 </Tooltip>
               }

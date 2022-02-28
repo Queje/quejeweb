@@ -1,7 +1,7 @@
-import styles from '../styles/Home.module.css'
-import AnimationBanner2 from '../components/AnimationBanner'
+import styles from '../Projects/Projects.module.css'
+import AnimationBanner2 from '../Projects/AnimationBanner2'
 import { Col, Row } from 'react-bootstrap'
-import ProjectsSlider from './ProjectsSlider'
+import ProjectsSlider from '../Projects/ProjectsSlider'
 
 export default function Services () {
 
@@ -14,7 +14,7 @@ export default function Services () {
             <div className={styles.animationlogoprojects}>
               <AnimationBanner2/>     
             </div>
-            <h2 className={styles.subtitle}>Mes Projets</h2>
+            <h3>Mes Projets ...</h3>
           </Col>
           <Col xs={12} md={12}>
             <ProjectsSlider />

@@ -4,13 +4,13 @@ import { useEffect } from "react"
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-import Navigation from '../components/Navigation'
-import TopJumbotron from '../components/TopJumbotron'
-import BottomJumbotronWaves from '../components/BottomJumbotronWaves'
-import AboutMe from '../components/AboutMe'
-import Services from '../components/Services'
-import Projects from '../components/Projects'
-import Footer from '../components/Footer'
+import Navigation from '../components/Navigation/Navigation'
+import TopJumbotron from '../components/Jumbotron/TopJumbotron'
+import BottomJumbotronWaves from '../components/Jumbotron/BottomJumbotronWaves'
+import AboutMe from '../components/AboutMe/AboutMe'
+import Services from '../components/Services/Services'
+import Projects from '../components/Projects/Projects'
+import Footer from '../components/Footer/Footer'
 
 
 export default function Home() {
