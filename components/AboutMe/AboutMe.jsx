@@ -27,6 +27,7 @@ export default function AboutMe() {
           <h3>A propos...</h3>
           <Row className={styles.aboutrow}>
             <Col md={5} className={styles.imageprofile}>
+              <div className={styles.overlay}></div>
               <Image
                 src= { profile } // Route of the image file
                 height={ 200 } // Desired size with correct aspect ratio

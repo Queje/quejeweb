@@ -6,6 +6,7 @@
 
 .aboutrow{
     max-width: 100%;
+
 }
 
 .imageprofile{
@@ -13,8 +14,16 @@
     justify-content: flex-end;
 }
 
+.overlay{
+    z-index: 1;
+    position: absolute;
+    height: 316px;
+    width: 250px;
+    background: linear-gradient(to left, rgba(4, 50, 66, 0.30), rgba(4, 50, 66, 0.30));
+}
+
 .profilepicture{
-    border-radius: 15rem;
+    z-index: 0;
 }
 
 .inlinelogo{
