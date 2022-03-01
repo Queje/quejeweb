@@ -2,6 +2,10 @@ import styles from '../AboutMe/AboutMe.module.css'
 import { Col, OverlayTrigger, Row, Tooltip } from 'react-bootstrap'
 import Image from 'next/image'
 import profile from '../../public/images/profile.jpg'
+import aboutpicture1 from '../../assets/teamwork.webp'
+import aboutpicture2 from '../../assets/screens.webp'
+import aboutpicture3 from '../../assets/webdev.webp'
+import aboutpicture4 from '../../assets/settings.webp'
 import { FaHtml5} from 'react-icons/fa'
 import { FaCss3Alt } from 'react-icons/fa'
 import { FaBootstrap } from 'react-icons/fa'
@@ -16,6 +20,7 @@ import { FaReact } from 'react-icons/fa'
 import { SiNextdotjs } from 'react-icons/si'
 import { SiHeroku } from 'react-icons/si'
 import { SiVercel } from 'react-icons/si'
+import React, { useState } from 'react';
 
 export default function AboutMe() {
 
@@ -24,25 +29,80 @@ export default function AboutMe() {
           data-aos="flip-down"
           className={styles.aboutme}
         >
-          <h3>A propos...</h3>
+          <h3 className={styles.propos}>A propos...</h3>
           <Row className={styles.aboutrow}>
-            <Col md={5} className={styles.imageprofile}>
-              <div className={styles.overlay}></div>
+            <Col md={3} xs={12} className={styles.imageprofile}>
+              <div className={styles.profileoverlay}></div>
               <Image
                 src= { profile } // Route of the image file
                 height={ 200 } // Desired size with correct aspect ratio
-                width={ 250 } // Desired size with correct aspect ratio
+                width={ 400 } // Desired size with correct aspect ratio
                 className={styles.profilepicture}
                 alt= "Jérémy Querné, Développeur web fullstack"
               />
             </Col>
-            <Col md={6}>
+            <Col md={5} xs={12}>
               <p id="text"> Je suis <span id="neonlight">Jérémy Querné</span>, développeur web.</p> 
               <p id="text"> Mon rôle est de vous accompagnez dans vos projets de <span id="neonlight">communications digitales</span>.</p>
               <p id="text"> A votre écoute pour vous proposez les outils les plus adaptés.</p> 
               <p id="text"> Ensemble nous pourrons créer des sites et applications <span id="neonlight">qui vous ressemblent</span> !</p>
             </Col>
+            <Col md={4} xs={12} className="pt-4">
+              <Row>
+                <Col md={6} xs={6}>
+                  <div className={styles.pictureoverlay}>
+                     Accompagnement & Conception
+                  </div>
+                  <Image
+                    src= { aboutpicture1 } // Route of the image file
+                    height={ 250 } // Desired size with correct aspect ratio
+                    width={ 300 } // Desired size with correct aspect ratio
+                    className={styles.aboutpicture1}
+                    alt= "picture about team work" 
+                  />
+                </Col>
+                <Col md={6} xs={6}>
+                  <div className={styles.pictureoverlay}>
+                     Design Responsive
+                  </div>
+                  <Image
+                    src= { aboutpicture2 } // Route of the image file
+                    height={ 250 } // Desired size with correct aspect ratio
+                    width={ 300 } // Desired size with correct aspect ratio
+                    className={styles.aboutpicture2}
+                    alt= "picture about different screens size to show responsive design" 
+                  />
+                </Col>
+              </Row>
+              <Row>
+                <Col md={6} xs={6}>
+                  <div className={styles.pictureoverlay}>
+                     Référencement naturel & SEO
+                  </div>
+                  <Image 
+                    src= { aboutpicture3 } // Route of the image file
+                    height={ 250 } // Desired size with correct aspect ratio
+                    width={ 300 } // Desired size with correct aspect ratio
+                    className={styles.aboutpicture3}
+                    alt= "picture about someone working on a laptop"
+                  />
+                </Col>
+                <Col md={6} xs={6}>
+                  <div className={styles.pictureoverlay}>
+                     Solutions d&apos;hébergement
+                  </div>
+                  <Image 
+                    src= { aboutpicture4 } // Route of the image file
+                    height={ 250 } // Desired size with correct aspect ratio
+                    width={ 300 } // Desired size with correct aspect ratio
+                    className={styles.aboutpicture4}
+                    alt= "picture about a settings button on a site"
+                  />
+                </Col>
+              </Row>
+            </Col>
           </Row>
+          <p id="text" className={styles.toolstitle}>mes outils...</p>
           <div className={styles.inlinelogo}>
             <OverlayTrigger
               placement="top"
