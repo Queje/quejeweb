@@ -1,0 +1,27 @@
+.card{
+    width: 100%;
+    background-color: #043242;
+    border-color: white;
+    font-family: "montserrat-light";
+    margin-bottom: 3rem;
+}
+
+.card:hover{
+    border-color: #E94E1B;   
+}
+
+.cardicon{
+    position: relative;
+}
+
+.cardnumber{
+    position: absolute;
+    left: 10px;
+    top: 2px;
+    z-index: 1;
+    font-weight: bold;
+}
+
+.cardtitletext{
+    margin-left: 1rem;
+}

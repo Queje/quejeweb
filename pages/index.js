@@ -11,6 +11,7 @@ import AboutMe from '../components/AboutMe/AboutMe'
 import Services from '../components/Services/Services'
 import Projects from '../components/Projects/Projects'
 import Footer from '../components/Footer/Footer'
+import WorkTogether from '../components/WorkTogether/WorkTogether'
 
 
 export default function Home() {
@@ -35,6 +36,8 @@ export default function Home() {
         <BottomJumbotronWaves />
 
         <AboutMe data-aos="flip-down"/>
+
+        <WorkTogether data-aos="flip-down" />
 
         <Services />
         

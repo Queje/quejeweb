@@ -20,7 +20,6 @@ import { FaReact } from 'react-icons/fa'
 import { SiNextdotjs } from 'react-icons/si'
 import { SiHeroku } from 'react-icons/si'
 import { SiVercel } from 'react-icons/si'
-import React, { useState } from 'react';
 
 export default function AboutMe() {
 
@@ -63,7 +62,7 @@ export default function AboutMe() {
                 </Col>
                 <Col md={6} xs={6}>
                   <div className={styles.pictureoverlay}>
-                     Design Responsive
+                    Sites pour toutes tailles d&apos;écrans
                   </div>
                   <Image
                     src= { aboutpicture2 } // Route of the image file
