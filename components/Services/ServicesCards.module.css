@@ -1,0 +1,28 @@
+.servicescards{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.serviceoverlay{
+    z-index: 1;
+    position: absolute;
+    height: 400px;
+    width: 600px;
+    background: linear-gradient(to top, rgba(4, 50, 66, 0.9), rgba(4, 50, 66, 0.7));
+}
+
+.servicetext{
+    z-index: 1;
+    position: absolute;
+    height: 400px;
+    width: 600px;
+    color: #009FA5;
+    font-weight: bolder;
+    font-size: 5rem;
+    margin: auto;
+}
+
+.servicepicture{
+    z-index: 0;
+}

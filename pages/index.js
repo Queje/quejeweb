@@ -39,7 +39,7 @@ export default function Home() {
 
         <WorkTogether data-aos="flip-down" />
 
-        <Services />
+        <Services data-aos="flip-down" />
         
         <Projects />
       </main>
