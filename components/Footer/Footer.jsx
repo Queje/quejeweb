@@ -5,6 +5,7 @@ import { GrMail } from 'react-icons/gr'
 import { BsGithub } from 'react-icons/bs'
 import { BsFacebook } from 'react-icons/bs'
 import { BsTwitter } from 'react-icons/bs'
+import { AiFillLinkedin } from 'react-icons/ai'
 
 export default function Footer () {
 
@@ -39,6 +40,12 @@ export default function Footer () {
                     <a href="https://twitter.com/JeremyQuerne">
                         <BsTwitter size={36} className={styles.icons}/>
                         Twitter
+                    </a>
+                </Col>
+                <Col md={2} className={styles.link}>
+                    <a href="https://www.linkedin.com/in/j%C3%A9r%C3%A9my-quern%C3%A9-01920285/">
+                        <AiFillLinkedin size={36} className={styles.icons}/>
+                        Linkedin
                     </a>
                 </Col>
             </Row>

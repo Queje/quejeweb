@@ -18,7 +18,7 @@ export default function ServicesCards({ src, textoverlay, servicetext, alttext }
             )}
             { !isShown && (
                 <div className={styles.servicetext}>
-                    { servicetext }
+                    <p className={styles.servicedescription}>{ servicetext }</p>
                 </div>
             )}
             <Image 
