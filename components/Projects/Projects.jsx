@@ -15,7 +15,9 @@ export default function Services () {
               <AnimationBanner2/>     
             </div>
             <h3>Mes Projets ...</h3>
-            <p id="text"> Quelques exemples de projets réalisés</p>
+            <div id="description">
+              <p id="text"> Quelques exemples de projets réalisés</p>
+            </div>
           </Col>
           <Col xs={12} md={12}>
             <ProjectsSlider />

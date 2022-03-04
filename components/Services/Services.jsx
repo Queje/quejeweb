@@ -36,7 +36,9 @@ export default function Services () {
           >
             Services ...
           </h3>
-          <p id="text">Les différents types de projects sur lesquels je peux vous accompagner</p>
+          <div id="description">
+            <p id="text">Les différents types de projects sur lesquels je peux vous accompagner</p>
+          </div>
           <Row md={12} xs={12}>
             <Col md={6} xs={12}>
               <ServicesCards 

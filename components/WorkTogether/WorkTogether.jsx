@@ -10,7 +10,7 @@ export default function WorkTogether() {
             className={styles.worktogether}
         >
             <h3 className={styles.worktitle}>Travaillons ensemble...</h3>
-            <Row md={12} xs={12} className={styles.workdescription}>
+            <Row md={12} xs={12} id="description">
                 <p id="text">Le premier rendez-vous est <span id="neonlight">gratuit</span> et les <span id="neonlight">devis</span> aussi.</p>
                 <p id="text">N&apos;hésitez pas à me contacter!</p>    
             </Row>
