@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Que Je Web</title>
+        <title>Que Je Web - Developpeur Web full-stack</title>
         <meta name="description" 
               content="Que Je Web, Querné Jérémy - développeur web - Morlaix - Finistère - Bretagne - France" 
         />
@@ -35,11 +35,11 @@ export default function Home() {
         <TopJumbotron />
         <BottomJumbotronWaves />
 
-        <AboutMe data-aos="flip-down"/>
+        <AboutMe />
 
-        <WorkTogether data-aos="flip-down" />
+        <WorkTogether />
 
-        <Services data-aos="flip-down" />
+        <Services />
         
         <Projects />
       </main>

@@ -22,7 +22,9 @@ import photoservice8 from '../../assets/socialmedia.webp'
 export default function Services () {
 
     return(
-    <section>
+    <section
+      data-aos="flip-down"
+    >
         <div className={styles.animationlogoservices}>
             <AnimationBanner />
         </div>
@@ -34,6 +36,7 @@ export default function Services () {
           >
             Services ...
           </h3>
+          <p id="text">Les différents types de projects sur lesquels je peux vous accompagner</p>
           <Row md={12} xs={12}>
             <Col md={6} xs={12}>
               <ServicesCards 

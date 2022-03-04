@@ -14,37 +14,37 @@ export default function Footer () {
             <Row className="d-flex justify-content-evenly">
                 <Col md={2} className={styles.link}>
                     <a href="callto:+0678866781">
-                        <BsFillPhoneFill size={36} className={styles.icons}/>
+                        <BsFillPhoneFill size={36} className={styles.icons} id="shakeanimation"/>
                         0678866781
                     </a>
                 </Col>
                 <Col md={2} className={styles.link}>
                     <a href="mailto:jeremy.querne@gmail.com">
-                        <GrMail size={36} className={styles.icons}/>
+                        <GrMail size={36} className={styles.icons} id="shakeanimation"/>
                         email
                     </a>
                 </Col>
                 <Col md={2} className={styles.link}>
                     <a href="https://github.com/Queje/Queje">
-                        <BsGithub size={36} className={styles.icons}/>
+                        <BsGithub size={36} className={styles.icons} id="shakeanimation"/>
                         Github
                     </a>
                 </Col>
                 <Col md={2} className={styles.link}>
                     <a href="https://fr-fr.facebook.com/">
-                        <BsFacebook size={36} className={styles.icons}/>
+                        <BsFacebook size={36} className={styles.icons} id="shakeanimation"/>
                         Facebook
                     </a>
                 </Col>
                 <Col md={2} className={styles.link}>
                     <a href="https://twitter.com/JeremyQuerne">
-                        <BsTwitter size={36} className={styles.icons}/>
+                        <BsTwitter size={36} className={styles.icons} id="shakeanimation"/>
                         Twitter
                     </a>
                 </Col>
                 <Col md={2} className={styles.link}>
                     <a href="https://www.linkedin.com/in/j%C3%A9r%C3%A9my-quern%C3%A9-01920285/">
-                        <AiFillLinkedin size={36} className={styles.icons}/>
+                        <AiFillLinkedin size={36} className={styles.icons} id="shakeanimation"/>
                         Linkedin
                     </a>
                 </Col>

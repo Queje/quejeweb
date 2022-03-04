@@ -25,13 +25,13 @@ export default function Navigation() {
 			</Col>
 			<Col xs={4} md={3} className={navigationstyles.link}>
 				<a href="tel:+0678866781">
-					<BsFillPhoneFill size={56} className={navigationstyles.icons}/>
+					<BsFillPhoneFill size={56} id="shakeanimation"/>
 					<span className={navigationstyles.navtext}>0678866781</span>
 				</a> 
 			</Col>
 			<Col xs={4} md={3} className={navigationstyles.link}>
 				<a href="mailto:jeremy.querne@gmail.com">
-					<GrMail size={56} className={navigationstyles.icons}/>
+					<GrMail size={56} id="shakeanimation"/>
 					<span className={navigationstyles.navtext}>email</span>
 				</a> 
 			</Col>

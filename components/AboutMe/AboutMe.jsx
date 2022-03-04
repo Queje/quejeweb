@@ -41,7 +41,7 @@ export default function AboutMe() {
               />
             </Col>
             <Col md={5} xs={12}>
-              <p id="text"> Je suis <span id="neonlight">Jérémy Querné</span>, développeur web.</p> 
+              <p id="text"> Je suis <span id="neonlight">développeur web</span> full-stack.</p> 
               <p id="text"> Mon rôle est de vous accompagnez dans vos projets de <span id="neonlight">communications digitales</span>.</p>
               <p id="text"> A votre écoute pour vous proposez les outils les plus adaptés.</p> 
               <p id="text"> Ensemble nous pourrons créer des sites et applications <span id="neonlight">qui vous ressemblent</span> !</p>
