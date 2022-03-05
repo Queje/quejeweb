@@ -13,8 +13,8 @@ export default function AnimationBanner() {
         autoplay
         loop
         mode="normal"
-        src="https://assets2.lottiefiles.com/packages/lf20_hevuwbjw.json"
-        style={{ width: "600px", height: "300px" }}
+        src="https://assets1.lottiefiles.com/packages/lf20_tjrlxjj9.json"
+        style={{ width: "600px", height: "300px", backgroundColor: "transparent" }}
     ></lottie-player>
   );
 }
