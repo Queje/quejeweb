@@ -1,10 +1,10 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination, Virtual, Lazy } from 'swiper'
-import image1 from '../../public/images/nicocoaching.webp'
-import image2 from '../../public/images/bretonbreaks.webp'
-import image3 from '../../public/images/laurencepoidatz.webp'
-import image4 from '../../public/images/salonartcarantec.webp'
-import image5 from '../../public/images/learningstuff.webp'
+import image1 from '../../assets/nicoangercoaching2gs.webp'
+import image2 from '../../assets/bretonbreaks2gs.webp'
+import image3 from '../../assets/laurencepoidatz2gs.webp'
+import image4 from '../../assets/salonartcarantec2gs.webp'
+import image5 from '../../assets/learningstuff2gs.webp'
 import logo1 from '../../public/images/nicocoachinglogo.webp'
 import background1 from '../../public/images/nicoangercoachingbg.webp'
 import styles from '../Projects/ProjectsSlider.module.css'
@@ -20,9 +20,6 @@ import { DiRuby } from 'react-icons/di'
 import { SiRubyonrails } from 'react-icons/si'
 import { SiPostgresql } from 'react-icons/si'
 import { SiHeroku } from 'react-icons/si'
-
-
-import 'swiper/css/pagination';
 
 export default function ProjectsSlider () {
 
