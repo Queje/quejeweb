@@ -19,7 +19,13 @@ export default function WorkTogether() {
                     <WorkCard 
                         number={1} 
                         title={"Rencontre"} 
-                        text={"Un 1er rendez-vous où nous discutons de votre project, des fonctionnalités que vous souhaitez. "}
+                        text={( 
+                                <>
+                                    <p>
+                                        Un 1er rendez-vous où nous discutons de votre project, en <span id="neonlight">visio</span> ou en <span id="neonlight">réel</span>, des fonctionnalités que vous souhaitez. 
+                                    </p>
+                                </>
+                            )}
                     />
                 </Col>
                 <Col md={6} xs={12} className={styles.justifycard}>

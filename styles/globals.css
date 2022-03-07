@@ -139,3 +139,11 @@ h3 {
 .modal-header button.btn-close{
   color:#E94E1B!important
 }
+
+.swiper{
+  height:22rem;
+}
+
+.swiper-pagination{
+  top: 20rem;
+}

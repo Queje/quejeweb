@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation } from 'swiper'
+import { Pagination, Virtual, Lazy } from 'swiper'
 import image1 from '../../public/images/nicocoaching.webp'
 import image2 from '../../public/images/bretonbreaks.webp'
 import image3 from '../../public/images/laurencepoidatz.webp'
@@ -20,6 +20,9 @@ import { DiRuby } from 'react-icons/di'
 import { SiRubyonrails } from 'react-icons/si'
 import { SiPostgresql } from 'react-icons/si'
 import { SiHeroku } from 'react-icons/si'
+
+
+import 'swiper/css/pagination';
 
 export default function ProjectsSlider () {
 
@@ -197,16 +200,19 @@ export default function ProjectsSlider () {
     
     return (
         <Swiper
-            spaceBetween={10}
-            slidesPerView={3}
-            modules={[Navigation]}
-            navigation={true}
+            spaceBetween={5}
+            slidesPerView={2}
+            modules={[Pagination, Virtual, Lazy]}
+            pagination={{clickable: true}}
+            virtual
+            lazy
             className={styles.MySlider}
         >
         { ProjectsList.map((project) => (
             <SwiperSlide
                 className={styles.SwipeSlider}
                 key={project.id}
+                virtualIndex={project.id}
             >
                 <ProjectsModal 
                     key={project.id}
