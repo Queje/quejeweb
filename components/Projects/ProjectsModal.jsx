@@ -1,4 +1,4 @@
-import { Modal, OverlayTrigger, Tooltip } from "react-bootstrap"
+import { Modal, OverlayTrigger, Tooltip, Row, Col } from "react-bootstrap"
 import Image from 'next/image'
 import { useState } from "react"
 import styles from '../Projects/ProjectsModal.module.css'
@@ -30,39 +30,43 @@ export default function ProjectsModal ({project}) {
                     closeVariant="white"  
                     className={styles.modalheader}
                 >   
-                    
-                    <Image
-                        src={project.background}
-                        layout="fill"
-                        quality={80}
-                        alt="cover image"
-                        className={styles.modalimagestyle}
-                    />
-                    
                 </Modal.Header>
                 <Modal.Body>
-                    <div className={styles.modaltitle}>
-                        <Image 
-                            className={styles.logoitem}
-                            src={project.logosource}
-                            alt={project.logoalt}
-                            width={100}
-                            height={100}
-                        />
-                        <span
-                            className={styles.logotitle}
-                        >
-                            {project.title}
-                        </span>
-                    </div>
-                    <div>
-                        <p id="text">
-                            {project.work}
-                        </p>
-                        <p id="text">
-                            {project.details}
-                        </p>
-                    </div>
+                    <Row>
+                        <Col md={5}>
+                            <div className={styles.modaltitle}>
+                                <Image 
+                                    className={styles.logoitem}
+                                    src={project.logosource}
+                                    alt={project.logoalt}
+                                    width={50}
+                                    height={50}
+                                />
+                                <span
+                                    className={styles.logotitle}
+                                >
+                                    {project.title}
+                                </span>
+                            </div>
+                            <div>
+                                <p id="text">
+                                    {project.work}
+                                </p>
+                                <p id="text">
+                                    {project.details}
+                                </p>
+                            </div>
+                        </Col>
+                        <Col md={7}>        
+                            <Image
+                                src={project.background}
+                                width={400}
+                                height={300}
+                                alt="cover image"
+                                className={styles.modalimagestyle}
+                            />
+                        </Col>
+                    </Row>
                 </Modal.Body>
                 <Modal.Footer
                     className={styles.modalfooter}

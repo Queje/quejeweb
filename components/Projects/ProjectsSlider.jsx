@@ -1,12 +1,11 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination, Virtual, Lazy } from 'swiper'
-import image1 from '../../assets/nicoangercoaching2gs.webp'
-import image2 from '../../assets/bretonbreaks2gs.webp'
-import image3 from '../../assets/laurencepoidatz2gs.webp'
-import image4 from '../../assets/salonartcarantec2gs.webp'
-import image5 from '../../assets/learningstuff2gs.webp'
+import image1 from '../../assets/Projects/nicoangercoaching2gs.webp'
+import image2 from '../../assets/Projects/bretonbreaks2gs.webp'
+import image3 from '../../assets/Projects/laurencepoidatz2gs.webp'
+import image4 from '../../assets/Projects/salonartcarantec2gs.webp'
+import image5 from '../../assets/Projects/learningstuff2gs.webp'
 import logo1 from '../../public/images/nicocoachinglogo.webp'
-import background1 from '../../public/images/nicoangercoachingbg.webp'
 import styles from '../Projects/ProjectsSlider.module.css'
 import ProjectsModal from '../Projects/ProjectsModal'
 import { FaCss3Alt } from 'react-icons/fa'
@@ -26,7 +25,7 @@ export default function ProjectsSlider () {
     const ProjectsList = [
                 {
                     id: 1,
-                    background: background1,
+                    background: image1,
                     title: "nicoangercoaching.fr",
                     logosource: logo1,
                     logoalt: "logo de nicoangercoaching.fr",
@@ -49,7 +48,7 @@ export default function ProjectsSlider () {
                 },
                 {
                     id: 2,
-                    background: background1,
+                    background: image2,
                     title: "www.bretonbreaks.com",
                     logosource: logo1,
                     logoalt: "logo de nicoangercoaching.fr",
@@ -87,7 +86,7 @@ export default function ProjectsSlider () {
                 },
                 {
                     id: 3,
-                    background: background1,
+                    background: image3,
                     title: "www.laurencepoidatz.com",
                     logosource: logo1,
                     logoalt: "logo de nicoangercoaching.fr",
@@ -105,7 +104,7 @@ export default function ProjectsSlider () {
                 },
                 {
                     id: 4,
-                    background: background1,
+                    background: image4,
                     title: "www.salonartcarantec.com",
                     logosource: logo1,
                     logoalt: "logo de nicoangercoaching.fr",
@@ -143,7 +142,7 @@ export default function ProjectsSlider () {
                 },
                 {
                     id: 5,
-                    background: background1,
+                    background: image5,
                     title: "learning-stuff",
                     logosource: logo1,
                     logoalt: "logo de nicoangercoaching.fr",
