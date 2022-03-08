@@ -7,24 +7,18 @@ export default function ProjectsModal ({project}) {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-    // const [ hover, setHover] = useState(false);
-    // const handleHover = () => setHover(true);
-    // const handleHoverClose = () => setHover(false);
-
+    
     return(
         <div className={styles.slideritem}>
             <Image
                 src={project.imagesource}
                 alt={project.alt} 
-                
-                // onMouseEnter={handleHover}
-                // onMouseLeave={handleHoverClose}
+                height={ 304 }
+                width={ 601 }
             />
-            {/* {hover && ( */}
-                <div id="neonlight" className={styles.slideroverlay} onClick={handleShow}>
-                    <p className={styles.slidertext}>En savoir plus</p>
-                </div>
-            {/* )} */}
+            <div id="neonlight" className={styles.slideroverlay} onClick={handleShow}>
+                <p className={styles.slidertext}>En savoir plus</p>
+            </div>
             <Modal 
                 show={show} 
                 onClick={handleClose} 
