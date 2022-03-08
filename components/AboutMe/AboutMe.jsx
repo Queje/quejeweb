@@ -46,7 +46,7 @@ export default function AboutMe() {
               <p id="text"> A votre écoute pour vous proposez les outils les plus adaptés.</p> 
               <p id="text"> Ensemble nous pourrons créer des sites et applications <span id="neonlight">qui vous ressemblent</span> !</p>
             </Col>
-            <Col md={4} xs={12} className="pt-4">
+            <Col md={4} xs={12}>
               <Row>
                 <Col md={6} xs={6}>
                   <div className={styles.pictureoverlay}>

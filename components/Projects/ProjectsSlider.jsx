@@ -5,8 +5,6 @@ import image2 from '../../assets/Projects/bretonbreaks2gs.webp'
 import image3 from '../../assets/Projects/laurencepoidatz2gs.webp'
 import image4 from '../../assets/Projects/salonartcarantec2gs.webp'
 import image5 from '../../assets/Projects/learningstuff2gs.webp'
-import logo1 from '../../public/images/nicocoachinglogo.webp'
-import styles from '../Projects/ProjectsSlider.module.css'
 import ProjectsModal from '../Projects/ProjectsModal'
 import { FaCss3Alt } from 'react-icons/fa'
 import { FaWordpressSimple } from 'react-icons/fa'
@@ -27,11 +25,10 @@ export default function ProjectsSlider () {
                     id: 1,
                     background: image1,
                     title: "nicoangercoaching.fr",
-                    logosource: logo1,
-                    logoalt: "logo de nicoangercoaching.fr",
+                    url: "https://nicoangercoaching.fr/",
                     imagesource: image1,
                     alt: "image du site https://nicoangercoaching.fr",
-                    work: "Site pour un préparateur Mentale et Coach sportif.",
+                    work: "Site pour un préparateur Mental et Coach sportif.",
                     details: "Construit sur Wordpress, ce travail contient une partie blog avec des articles et une inscription à une mailing list pour une news letter en utilisant MailChimp. Customisation d'un thème par le CSS.",
                     iconlist:[
                         {
@@ -49,9 +46,8 @@ export default function ProjectsSlider () {
                 {
                     id: 2,
                     background: image2,
-                    title: "www.bretonbreaks.com",
-                    logosource: logo1,
-                    logoalt: "logo de nicoangercoaching.fr",
+                    title: "breton breaks",
+                    url: "https://www.bretonbreaks.com",
                     imagesource: image2,
                     alt: "image du site https://www.bretonbreaks.com",
                     work: "Site pour la location d'une maison de vacances",
@@ -87,9 +83,8 @@ export default function ProjectsSlider () {
                 {
                     id: 3,
                     background: image3,
-                    title: "www.laurencepoidatz.com",
-                    logosource: logo1,
-                    logoalt: "logo de nicoangercoaching.fr",
+                    title: "laurence poidatz",
+                    url: "https://www.laurencepoidatz.com",
                     imagesource: image3,
                     alt: "image du site https://www.laurencepoidatz.com",
                     work: "Site vitrine de l'artiste peintre Laurence Poidatz",
@@ -105,9 +100,8 @@ export default function ProjectsSlider () {
                 {
                     id: 4,
                     background: image4,
-                    title: "www.salonartcarantec.com",
-                    logosource: logo1,
-                    logoalt: "logo de nicoangercoaching.fr",
+                    title: "salon des arts de Carantec",
+                    url: "https://www.salonartcarantec.com",
                     imagesource: image4,
                     alt: "image du site https://www.salonartcarantec.com",
                     work: "Site pour l'association du salon des arts de Carantec.",
@@ -144,8 +138,7 @@ export default function ProjectsSlider () {
                     id: 5,
                     background: image5,
                     title: "learning-stuff",
-                    logosource: logo1,
-                    logoalt: "logo de nicoangercoaching.fr",
+                    url: "https://learning-stuff-thp.herokuapp.com/",
                     imagesource: image5,
                     alt: "image du site https://learning-stuff-thp.herokuapp.com/",
                     work: "Site démo pour de la vente et de l'apprentissage en ligne.",
@@ -202,11 +195,9 @@ export default function ProjectsSlider () {
             pagination={{clickable: true}}
             virtual
             lazy
-            className={styles.MySlider}
         >
         { ProjectsList.map((project) => (
             <SwiperSlide
-                className={styles.SwipeSlider}
                 key={project.id}
                 virtualIndex={project.id}
             >

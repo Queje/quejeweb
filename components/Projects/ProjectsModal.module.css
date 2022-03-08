@@ -30,22 +30,63 @@
     text-align: center;
 }
 
-.modaltitle{
-    display: inline-flex;
-    vertical-align: middle;
+.modalbody{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.textcontainer{
+    width: 50%;
+    z-index: 2;
+    margin-right: 1rem;
+}
+
+.overlay{
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(to right, rgba(4, 50, 66, 0.9), rgba(4, 50, 66, 0.2));
+}
+
+.modalimagestyle{
+    z-index: 0;
 }
   
 .modalfooter{
     z-index: 10;
 }
 
-.logotitle{
-    margin-left: 1rem;
+.modaltitle{
     color: #E94E1B;
-    font-size: 3rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.centerbutton{
+    display: flex;
+    justify-content: center;
+}
+
+.modalbutton{
+    font-size: 1rem;
+    background-color: #043242;
+    border-color: #E94E1B;
+    color: #E94E1B;
 }
   
-.logoitem{
-    width: 150px!important;
-    height: 150px!important;
+.modalbutton:hover{
+    background-color: #E94E1B;
+    border-color: #E94E1B;
+    color: #043242;
+    transition: 0.5s;
+}
+
+.modallink{
+    text-decoration: none;
+}
+
+.modallink:hover {
+    text-decoration: none;
 }

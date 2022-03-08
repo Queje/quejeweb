@@ -1,4 +1,4 @@
-import { Modal, OverlayTrigger, Tooltip, Row, Col } from "react-bootstrap"
+import { Modal, OverlayTrigger, Tooltip, Button } from "react-bootstrap"
 import Image from 'next/image'
 import { useState } from "react"
 import styles from '../Projects/ProjectsModal.module.css'
@@ -16,8 +16,12 @@ export default function ProjectsModal ({project}) {
                 height={ 304 }
                 width={ 601 }
             />
-            <div id="neonlight" className={styles.slideroverlay} onClick={handleShow}>
-                <p className={styles.slidertext}>En savoir plus</p>
+            <div 
+                id="neonlight" 
+                className={styles.slideroverlay} 
+                onClick={handleShow}
+            >
+                <p id="text" className={styles.slidertext}>En savoir plus</p>
             </div>
             <Modal 
                 show={show} 
@@ -32,32 +36,32 @@ export default function ProjectsModal ({project}) {
                 >   
                 </Modal.Header>
                 <Modal.Body>
-                    <Row>
-                        <Col md={5}>
-                            <div className={styles.modaltitle}>
-                                <Image 
-                                    className={styles.logoitem}
-                                    src={project.logosource}
-                                    alt={project.logoalt}
-                                    width={50}
-                                    height={50}
-                                />
-                                <span
-                                    className={styles.logotitle}
+                    <div className={styles.modalbody}>
+                        <div className={styles.textcontainer}>
+                            <p className={styles.modaltitle}>
+                                {project.title}
+                            </p>
+                            <p id="textmodal">
+                                {project.work}
+                            </p>
+                            <p id="textmodal">
+                                {project.details}
+                            </p>
+                            <div className={styles.centerbutton}>
+                                <a 
+                                    href={project.url}
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className={styles.modallink}
                                 >
-                                    {project.title}
-                                </span>
+                                    <Button className={styles.modalbutton}>
+                                        Visiter
+                                    </Button>
+                                </a>
                             </div>
-                            <div>
-                                <p id="text">
-                                    {project.work}
-                                </p>
-                                <p id="text">
-                                    {project.details}
-                                </p>
-                            </div>
-                        </Col>
-                        <Col md={7}>        
+                        </div>
+                        <div>
+                            <div className={styles.overlay}></div>
                             <Image
                                 src={project.background}
                                 width={400}
@@ -65,8 +69,8 @@ export default function ProjectsModal ({project}) {
                                 alt="cover image"
                                 className={styles.modalimagestyle}
                             />
-                        </Col>
-                    </Row>
+                        </div>
+                    </div>
                 </Modal.Body>
                 <Modal.Footer
                     className={styles.modalfooter}

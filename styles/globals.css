@@ -104,6 +104,12 @@ h3 {
   font-size: 1.5rem;
 }
 
+#textmodal {
+  font-family: "montserrat-light";
+  font-size: 1rem;
+  text-align: justify;
+}
+
 #neonlight {
   --shadow-color: #E94E1B;
   --shadow-color-light: white;
