@@ -28,3 +28,12 @@
 .footer a:hover{
     color: #009FA5;
 }
+
+@media (max-width: 800px){
+    .link{
+        display: flex;
+        justify-content: left;
+        margin-left: 5rem;
+        margin-bottom: 1rem;
+    }
+}

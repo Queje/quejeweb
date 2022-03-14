@@ -12,38 +12,38 @@ export default function Footer () {
     return(
         <footer className={styles.footer}>
             <Row className="d-flex justify-content-evenly">
-                <Col md={2} className={styles.link}>
+                <Col md={2} xs={12} className={styles.link}>
                     <a href="callto:+0678866781">
                         <BsFillPhoneFill size={36} className={styles.icons} id="shakeanimation"/>
                         0678866781
                     </a>
                 </Col>
-                <Col md={2} className={styles.link}>
+                <Col md={2} xs={12} className={styles.link}>
                     <a href="mailto:jeremy.querne@gmail.com">
                         <GrMail size={36} className={styles.icons} id="shakeanimation"/>
                         email
                     </a>
                 </Col>
-                <Col md={2} className={styles.link}>
-                    <a href="https://github.com/Queje/Queje">
+                <Col md={2} xs={12} className={styles.link}>
+                    <a href="https://github.com/Queje/Queje" target="_blank" rel="noopener noreferrer" >
                         <BsGithub size={36} className={styles.icons} id="shakeanimation"/>
                         Github
                     </a>
                 </Col>
-                <Col md={2} className={styles.link}>
-                    <a href="https://fr-fr.facebook.com/">
+                <Col md={2} xs={12} className={styles.link}>
+                    <a href="https://fr-fr.facebook.com/" target="_blank" rel="noopener noreferrer">
                         <BsFacebook size={36} className={styles.icons} id="shakeanimation"/>
                         Facebook
                     </a>
                 </Col>
-                <Col md={2} className={styles.link}>
-                    <a href="https://twitter.com/JeremyQuerne">
+                <Col md={2} xs={12} className={styles.link}>
+                    <a href="https://twitter.com/JeremyQuerne" target="_blank" rel="noopener noreferrer">
                         <BsTwitter size={36} className={styles.icons} id="shakeanimation"/>
                         Twitter
                     </a>
                 </Col>
-                <Col md={2} className={styles.link}>
-                    <a href="https://www.linkedin.com/in/j%C3%A9r%C3%A9my-quern%C3%A9-01920285/">
+                <Col md={2} xs={12} className={styles.link}>
+                    <a href="https://www.linkedin.com/in/j%C3%A9r%C3%A9my-quern%C3%A9-01920285/" target="_blank" rel="noopener noreferrer">
                         <AiFillLinkedin size={36} className={styles.icons} id="shakeanimation"/>
                         Linkedin
                     </a>

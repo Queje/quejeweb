@@ -5,7 +5,7 @@
 }
 
 .propos {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .aboutrow{
@@ -21,8 +21,19 @@
     z-index: 1;
     position: absolute;
     height: 352px;
-    width: 284px;
+    width: 325px;
     background: linear-gradient(to right, rgba(4, 50, 66, 0.9), transparent);
+}
+
+.profiletext{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.profilewrapper{
+    width: 100%;
+    height: 425px;
+    display: block;
 }
 
 .profilepicture{
@@ -30,7 +41,6 @@
 }
 
 .toolstitle{
-    margin-top: 5rem;
     margin-left: 1.4rem;
     font-weight: bold;
 }
@@ -39,7 +49,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+}
+
+.logowrapper{
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .pictureoverlay{
@@ -47,8 +61,8 @@
     font-size: 1rem;
     z-index: 1;
     position: absolute;
-    width: 181.2px;
-    height: 151.2px;
+    width: 181.33px;
+    height: 151.1px;
     background: linear-gradient(to top, rgba(4, 50, 66, 0.90), transparent);
     text-align: center;
     padding-top: 6rem;
@@ -68,6 +82,35 @@
 
 @media (max-width: 800px) {
     .aboutrow{
+        margin-left: 1rem;
+        margin-right: 1rem;
         max-width: 100%!important;
     }    
+
+    .profileoverlay{
+        width: 319px;
+        height: 339px;
+    }
+
+    .profilewrapper{
+        height: 339px;
+        margin-bottom: 1rem;
+    }
+
+    .inlinelogo{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .pictureoverlay{
+        width: 147.5px;
+        height: 123px;
+        font-size: 0.8rem;
+        padding-top: 5rem;
+    }
+
+    .toolstitle{
+        font-size: 1.2rem!important;
+        margin-top: 1rem;
+    }
 }

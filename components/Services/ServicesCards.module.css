@@ -35,3 +35,19 @@
 .servicepicture{
     z-index: 0;
 }
+
+@media (max-width: 800px) {
+    .serviceoverlay{
+        width: 375px;
+        height: 250px;
+    }
+
+    .servicetext{
+        width: 375px;
+        height: 250px;
+    }
+
+    .servicedescription{
+        font-size: 2rem;
+    }
+}

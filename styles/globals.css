@@ -153,3 +153,33 @@ h3 {
 .swiper-pagination{
   top: 20rem;
 }
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 2rem;
+  }
+  
+  #text {
+    font-size: 1rem;
+  }
+
+  #description{
+    margin-bottom: 2rem;
+  }
+
+  .swiper{
+    height: 15rem;
+  }
+
+  .swiper-pagination{
+    top: 12rem;
+  }
+}

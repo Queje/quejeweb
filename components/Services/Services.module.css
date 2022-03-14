@@ -26,5 +26,15 @@
 @media (max-width: 800px) {
     .services{
         max-width: 100vw!important;
+        margin: auto;
+    }
+
+    .servicestitle{
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .show1{
+        font-size: 1.5rem;
     }
 }

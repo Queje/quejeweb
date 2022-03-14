@@ -30,23 +30,26 @@ export default function AboutMe() {
         >
           <h3 className={styles.propos}>A propos...</h3>
           <Row className={styles.aboutrow}>
-            <Col md={3} xs={12} className={styles.imageprofile}>
+            <Col lg={3} xs={12} className={styles.imageprofile}>
               <div className={styles.profileoverlay}></div>
-              <Image
-                src= { profile } // Route of the image file
-                height={ 200 } // Desired size with correct aspect ratio
-                width={ 400 } // Desired size with correct aspect ratio
-                className={styles.profilepicture}
-                alt= "Jérémy Querné, Développeur web fullstack"
-              />
+              <div className={styles.profilewrapper}>
+                <Image
+                  src= { profile } // Route of the image file
+                  layout="responsive"
+                  height={ 425 } // Desired size with correct aspect ratio
+                  width={ 400 } // Desired size with correct aspect ratio
+                  className={styles.profilepicture}
+                  alt= "Jérémy Querné, Développeur web fullstack"
+                />
+              </div>
             </Col>
-            <Col md={5} xs={12}>
+            <Col lg={5} xs={12} className={styles.profiletext}>
               <p id="text"> Je suis <span id="neonlight">développeur web</span> full-stack.</p> 
               <p id="text"> Mon rôle est de vous accompagnez dans vos projets de <span id="neonlight">communications digitales</span>.</p>
               <p id="text"> A votre écoute pour vous proposez les outils les plus adaptés.</p> 
               <p id="text"> Ensemble nous pourrons créer des sites et applications <span id="neonlight">qui vous ressemblent</span> !</p>
             </Col>
-            <Col md={4} xs={12}>
+            <Col lg={4} xs={12}>
               <Row>
                 <Col md={6} xs={6}>
                   <div className={styles.pictureoverlay}>
@@ -102,203 +105,207 @@ export default function AboutMe() {
             </Col>
           </Row>
           <p id="text" className={styles.toolstitle}>mes outils...</p>
-          <div className={styles.inlinelogo}>
-            <OverlayTrigger
-              placement="top"
-              delay={{ show: 250, hide: 400 }}
-              overlay={
-                <Tooltip id="text">
-                  html 5
-                </Tooltip>
-              }
-            >
-              <span>
-                <FaHtml5 size={60}/>
-              </span>
-            </OverlayTrigger>
-            
-            <OverlayTrigger
-              placement="top"
-              delay={{ show: 250, hide: 400 }}
-              overlay={
-                <Tooltip id="text">
-                  css 3
-                </Tooltip>
-              }
-            >
-              <span>
-                <FaCss3Alt size={60}/>
-              </span>
-            </OverlayTrigger>
+          <Row className={styles.inlinelogo}>
+            <Col lg={4} xs={12} className={styles.logowrapper}>
+              <OverlayTrigger
+                placement="top"
+                delay={{ show: 250, hide: 400 }}
+                overlay={
+                  <Tooltip id="text">
+                    html 5
+                  </Tooltip>
+                }
+              >
+                <span>
+                  <FaHtml5 size={60}/>
+                </span>
+              </OverlayTrigger>
+              
+              <OverlayTrigger
+                placement="top"
+                delay={{ show: 250, hide: 400 }}
+                overlay={
+                  <Tooltip id="text">
+                    css 3
+                  </Tooltip>
+                }
+              >
+                <span>
+                  <FaCss3Alt size={60}/>
+                </span>
+              </OverlayTrigger>
 
-            <OverlayTrigger
-              placement="top"
-              delay={{ show: 250, hide: 400 }}
-              overlay={
-                <Tooltip id="text">
-                  Bootstrap
-                </Tooltip>
-              }
-            >
-              <span>
-                <FaBootstrap size={60} />
-              </span>
-            </OverlayTrigger>
+              <OverlayTrigger
+                placement="top"
+                delay={{ show: 250, hide: 400 }}
+                overlay={
+                  <Tooltip id="text">
+                    Bootstrap
+                  </Tooltip>
+                }
+              >
+                <span>
+                  <FaBootstrap size={60} />
+                </span>
+              </OverlayTrigger>
 
-            <OverlayTrigger
-              placement="top"
-              delay={{ show: 250, hide: 400 }}
-              overlay={
-                <Tooltip id="text">
-                  Github
-                </Tooltip>
-              }
-            >
-              <span>
-                <FaGithub size={54} />
-              </span>
-            </OverlayTrigger>
-            
-            <OverlayTrigger
-              placement="top"
-              delay={{ show: 250, hide: 400 }}
-              overlay={
-                <Tooltip id="text">
-                  Wordpress
-                </Tooltip>
-              }
-            >
-              <span>
-                <FaWordpressSimple size={54} />
-              </span>
-            </OverlayTrigger>
+              <OverlayTrigger
+                placement="top"
+                delay={{ show: 250, hide: 400 }}
+                overlay={
+                  <Tooltip id="text">
+                    Github
+                  </Tooltip>
+                }
+              >
+                <span>
+                  <FaGithub size={54} />
+                </span>
+              </OverlayTrigger>
 
-            <OverlayTrigger
-              placement="top"
-              delay={{ show: 250, hide: 400 }}
-              overlay={
-                <Tooltip id="text">
-                  Wix
-                </Tooltip>
-              }
-            >
-              <span>
-                <FaWix size={60} />
-              </span>
-            </OverlayTrigger>
+              <OverlayTrigger
+                placement="top"
+                delay={{ show: 250, hide: 400 }}
+                overlay={
+                  <Tooltip id="text">
+                    Wordpress
+                  </Tooltip>
+                }
+              >
+                <span>
+                  <FaWordpressSimple size={54} />
+                </span>
+              </OverlayTrigger>
+            </Col>
+            <Col lg={4} xs={12} className={styles.logowrapper}>
+              <OverlayTrigger
+                placement="top"
+                delay={{ show: 250, hide: 400 }}
+                overlay={
+                  <Tooltip id="text">
+                    Wix
+                  </Tooltip>
+                }
+              >
+                <span>
+                  <FaWix size={60} />
+                </span>
+              </OverlayTrigger>
 
-            <OverlayTrigger
-              placement="top"
-              delay={{ show: 250, hide: 400 }}
-              overlay={
-                <Tooltip id="text">
-                  Ruby
-                </Tooltip>
-              }
-            >
-              <span>
-                <DiRuby size={54} />
-              </span>
-            </OverlayTrigger>
+              <OverlayTrigger
+                placement="top"
+                delay={{ show: 250, hide: 400 }}
+                overlay={
+                  <Tooltip id="text">
+                    Ruby
+                  </Tooltip>
+                }
+              >
+                <span>
+                  <DiRuby size={54} />
+                </span>
+              </OverlayTrigger>
 
-            <OverlayTrigger
-              placement="top"
-              delay={{ show: 250, hide: 400 }}
-              overlay={
-                <Tooltip id="text">
-                  Ruby on Rails
-                </Tooltip>
-              }
-            >
-              <span>
-                <SiRubyonrails size={60} />
-              </span>
-            </OverlayTrigger>  
-            
-            <OverlayTrigger
-              placement="top"
-              delay={{ show: 250, hide: 400 }}
-              overlay={
-                <Tooltip id="text">
-                  PostgreSQL
-                </Tooltip>
-              }
-            >
-              <span>
-                <SiPostgresql size={54} />
-              </span>
-            </OverlayTrigger>
+              <OverlayTrigger
+                placement="top"
+                delay={{ show: 250, hide: 400 }}
+                overlay={
+                  <Tooltip id="text">
+                    Ruby on Rails
+                  </Tooltip>
+                }
+              >
+                <span>
+                  <SiRubyonrails size={60} />
+                </span>
+              </OverlayTrigger>  
+              
+              <OverlayTrigger
+                placement="top"
+                delay={{ show: 250, hide: 400 }}
+                overlay={
+                  <Tooltip id="text">
+                    PostgreSQL
+                  </Tooltip>
+                }
+              >
+                <span>
+                  <SiPostgresql size={54} />
+                </span>
+              </OverlayTrigger>
+            </Col>
+            <Col lg={4} xs={12} className={styles.logowrapper}>
+              <OverlayTrigger
+                placement="top"
+                delay={{ show: 250, hide: 400 }}
+                overlay={
+                  <Tooltip id="text">
+                    Javascript
+                  </Tooltip>
+                }
+              >
+                <span>
+                  <SiJavascript size={54} />
+                </span>
+              </OverlayTrigger>
 
-            <OverlayTrigger
-              placement="top"
-              delay={{ show: 250, hide: 400 }}
-              overlay={
-                <Tooltip id="text">
-                  Javascript
-                </Tooltip>
-              }
-            >
-              <span>
-                <SiJavascript size={54} />
-              </span>
-            </OverlayTrigger>
+              <OverlayTrigger
+                placement="top"
+                delay={{ show: 250, hide: 400 }}
+                overlay={
+                  <Tooltip id="text">
+                    React
+                  </Tooltip>
+                }
+              >
+                <span>
+                  <FaReact size={54} />
+                </span>
+              </OverlayTrigger>
 
-            <OverlayTrigger
-              placement="top"
-              delay={{ show: 250, hide: 400 }}
-              overlay={
-                <Tooltip id="text">
-                  React
-                </Tooltip>
-              }
-            >
-              <span>
-                <FaReact size={54} />
-              </span>
-            </OverlayTrigger>
+              <OverlayTrigger
+                placement="top"
+                delay={{ show: 250, hide: 400 }}
+                overlay={
+                  <Tooltip id="text">
+                    NextJs
+                  </Tooltip>
+                }
+              >
+                <span>
+                  <SiNextdotjs size={54} />
+                </span>
+              </OverlayTrigger>
 
-            <OverlayTrigger
-              placement="top"
-              delay={{ show: 250, hide: 400 }}
-              overlay={
-                <Tooltip id="text">
-                  NextJs
-                </Tooltip>
-              }
-            >
-              <span>
-                <SiNextdotjs size={54} />
-              </span>
-            </OverlayTrigger>
-
-            <OverlayTrigger
-              placement="top"
-              delay={{ show: 250, hide: 400 }}
-              overlay={
-                <Tooltip id="text">
-                  Heroku
-                </Tooltip>
-              }
-            >
-              <span>
-                <SiHeroku size={54} />
-              </span>
-            </OverlayTrigger>  
-            
-            <OverlayTrigger
-              placement="top"
-              delay={{ show: 250, hide: 400 }}
-              overlay={
-                <Tooltip id="text">
-                  Vercel
-                </Tooltip>
-              }
-            >
-              <span>
-                <SiVercel size={54} />
-              </span>
-            </OverlayTrigger>
-          </div>
+              <OverlayTrigger
+                placement="top"
+                delay={{ show: 250, hide: 400 }}
+                overlay={
+                  <Tooltip id="text">
+                    Heroku
+                  </Tooltip>
+                }
+              >
+                <span>
+                  <SiHeroku size={54} />
+                </span>
+              </OverlayTrigger>  
+              
+              <OverlayTrigger
+                placement="top"
+                delay={{ show: 250, hide: 400 }}
+                overlay={
+                  <Tooltip id="text">
+                    Vercel
+                  </Tooltip>
+                }
+              >
+                <span>
+                  <SiVercel size={54} />
+                </span>
+              </OverlayTrigger>
+            </Col>
+          </Row>
         </div>
     )
 }
