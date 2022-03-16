@@ -4,22 +4,26 @@
 
 @font-face{
   font-family: "westmeath";
-  src:url("../public/fonts/Westmeath.ttf")
+  src:url("../public/fonts/Westmeath.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "montserrat-semibold";
   src: url("../public/fonts/Montserrat-SemiBold.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "montserrat-medium";
   src: url("../public/fonts/Montserrat-Medium.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "montserrat-light";
   src: url("../public/fonts/Montserrat-Light.ttf");
+  font-display: swap;
 }
 
 @keyframes neon {
