@@ -35,8 +35,8 @@ export default function Home() {
 
       <Navigation />
 
+      <TopJumbotron />
       <main className={styles.main}>
-        <TopJumbotron />
 
         <AboutMe />
 

@@ -1,17 +1,14 @@
-.container {
-  padding: 0 2rem;
-}
-
 .main {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   max-width: 100%!important;
+  padding: 0 2rem;
 }
 
 @media (max-width: 800px) {
-  .container{
+  .main{
     padding: 0 0rem!important;
   }
 }

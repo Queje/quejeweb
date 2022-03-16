@@ -1,4 +1,8 @@
- .topleftcorner{
+.jumbotron{
+    width: 100%;
+}
+
+.topleftcorner{
     display: flex;
     flex-direction: column;
     text-align: center;
