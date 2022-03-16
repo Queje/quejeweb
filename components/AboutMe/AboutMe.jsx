@@ -1,28 +1,29 @@
 import styles from '../AboutMe/AboutMe.module.css'
 import { Col, OverlayTrigger, Row, Tooltip } from 'react-bootstrap'
 import Image from 'next/image'
+import dynamic from 'next/dynamic'
 import profile from '../../assets/AboutMe/profile2gs.webp'
 import aboutpicture1 from '../../assets/AboutMe/teamwork2gs.webp'
 import aboutpicture2 from '../../assets/AboutMe/screens2gs.webp'
 import aboutpicture3 from '../../assets/AboutMe/webdev2gs.webp'
 import aboutpicture4 from '../../assets/AboutMe/settings2gs.webp'
-import { FaHtml5} from 'react-icons/fa'
-import { FaCss3Alt } from 'react-icons/fa'
-import { FaBootstrap } from 'react-icons/fa'
-import { FaGithub } from 'react-icons/fa'
-import { FaWordpressSimple } from 'react-icons/fa'
-import { FaWix } from 'react-icons/fa'
+import { FaHtml5, 
+        FaCss3Alt, 
+        FaBootstrap, 
+        FaGithub, 
+        FaWordpressSimple, 
+        FaWix, 
+        FaReact } from 'react-icons/fa/'
 import { DiRuby } from 'react-icons/di'
-import { SiRubyonrails } from 'react-icons/si'
-import { SiPostgresql } from 'react-icons/si'
-import { SiJavascript } from 'react-icons/si'
-import { FaReact } from 'react-icons/fa'
-import { SiNextdotjs } from 'react-icons/si'
-import { SiHeroku } from 'react-icons/si'
-import { SiVercel } from 'react-icons/si'
+import { SiRubyonrails, 
+        SiPostgresql, 
+        SiJavascript, 
+        SiNextdotjs, 
+        SiHeroku, 
+        SiVercel } from 'react-icons/si'
 
 export default function AboutMe() {
-
+    
     return(
         <div 
           data-aos="flip-down"
