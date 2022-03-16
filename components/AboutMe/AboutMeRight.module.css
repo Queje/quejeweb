@@ -1,0 +1,45 @@
+.pictureoverlay{
+    font-family: "montserrat-light";
+    font-size: 1rem;
+    z-index: 1;
+    position: absolute;
+    width: 181.33px;
+    height: 151.1px;
+    background: linear-gradient(to top, rgba(4, 50, 66, 0.90), transparent);
+    text-align: center;
+    padding-top: 6rem;
+    padding-right: 1rem;
+    pointer-events: none;
+}
+
+.aboutpicture1, .aboutpicture2, .aboutpicture3, .aboutpicture4{
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    z-index: 0;
+}
+
+.aboutpicture1:hover, .aboutpicture2:hover, .aboutpicture3:hover, .aboutpicture4:hover{
+    transform: scale(1.2);
+}
+
+.aboutmebox{
+    height:  151.1px;
+    width: 181.33px;
+    display: block;
+}
+
+@media (max-width: 800px) {
+
+    .pictureoverlay{
+        width: 147.5px;
+        height: 123px;
+        font-size: 0.8rem;
+        padding-top: 5rem;
+    }
+
+    .aboutmebox{
+        width: auto;
+        height: auto;
+        margin-bottom: 0.2rem;
+    }
+}

@@ -1,0 +1,17 @@
+.inlinelogo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logowrapper{
+    display: flex;
+    justify-content: space-evenly;   
+}
+
+@media (max-width: 800px) {
+    .inlinelogo{
+        display: flex;
+        justify-content: flex-start;
+    }
+}
