@@ -81,6 +81,12 @@
     transform: scale(1.2);
 }
 
+.aboutmebox{
+    height:  151.1px;
+    width: 181.33px;
+    display: block;
+}
+
 @media (max-width: 800px) {
     .aboutrow{
         margin-left: 1rem;
@@ -113,5 +119,11 @@
     .toolstitle{
         font-size: 1.2rem!important;
         margin-top: 1rem;
+    }
+
+    .aboutmebox{
+        width: auto;
+        height: auto;
+        margin-bottom: 0.2rem;
     }
 }

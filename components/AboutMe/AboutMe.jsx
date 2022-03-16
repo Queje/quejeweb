@@ -56,25 +56,31 @@ export default function AboutMe() {
                   <div className={styles.pictureoverlay}>
                      Accompagnement & Conception
                   </div>
-                  <Image
-                    src= { aboutpicture1 } // Route of the image file
-                    height={ 250 } // Desired size with correct aspect ratio
-                    width={ 300 } // Desired size with correct aspect ratio
-                    className={styles.aboutpicture1}
-                    alt= "picture about team work" 
-                  />
+                  <div className={styles.aboutmebox}>
+                    <Image
+                      src= { aboutpicture1 } // Route of the image file
+                      height={ 250 } // Desired size with correct aspect ratio
+                      width={ 300 } // Desired size with correct aspect ratio
+                      className={styles.aboutpicture1}
+                      alt= "picture about team work" 
+                      layout="responsive"
+                    />
+                  </div>
                 </Col>
                 <Col md={6} xs={6}>
                   <div className={styles.pictureoverlay}>
                     Sites pour toutes tailles d&apos;écrans
                   </div>
-                  <Image
-                    src= { aboutpicture2 } // Route of the image file
-                    height={ 250 } // Desired size with correct aspect ratio
-                    width={ 300 } // Desired size with correct aspect ratio
-                    className={styles.aboutpicture2}
-                    alt= "picture about different screens size to show responsive design" 
-                  />
+                  <div className={styles.aboutmebox}>
+                    <Image
+                      src= { aboutpicture2 } // Route of the image file
+                      height={ 250 } // Desired size with correct aspect ratio
+                      width={ 300 } // Desired size with correct aspect ratio
+                      className={styles.aboutpicture2}
+                      alt= "picture about different screens size to show responsive design" 
+                      layout="responsive"
+                    />
+                  </div>
                 </Col>
               </Row>
               <Row>
@@ -82,25 +88,31 @@ export default function AboutMe() {
                   <div className={styles.pictureoverlay}>
                      Référencement naturel & SEO
                   </div>
-                  <Image 
-                    src= { aboutpicture3 } // Route of the image file
-                    height={ 250 } // Desired size with correct aspect ratio
-                    width={ 300 } // Desired size with correct aspect ratio
-                    className={styles.aboutpicture3}
-                    alt= "picture about someone working on a laptop"
-                  />
+                  <div className={styles.aboutmebox}>
+                    <Image 
+                      src= { aboutpicture3 } // Route of the image file
+                      height={ 250 } // Desired size with correct aspect ratio
+                      width={ 300 } // Desired size with correct aspect ratio
+                      className={styles.aboutpicture3}
+                      alt= "picture about someone working on a laptop"
+                      layout="responsive"
+                    />
+                  </div>
                 </Col>
                 <Col md={6} xs={6}>
                   <div className={styles.pictureoverlay}>
                      Solutions d&apos;hébergement
                   </div>
-                  <Image 
-                    src= { aboutpicture4 } // Route of the image file
-                    height={ 250 } // Desired size with correct aspect ratio
-                    width={ 300 } // Desired size with correct aspect ratio
-                    className={styles.aboutpicture4}
-                    alt= "picture about a settings button on a site"
-                  />
+                  <div className={styles.aboutmebox}>
+                    <Image 
+                      src= { aboutpicture4 } // Route of the image file
+                      height={ 250 } // Desired size with correct aspect ratio
+                      width={ 300 } // Desired size with correct aspect ratio
+                      className={styles.aboutpicture4}
+                      alt= "picture about a settings button on a site"
+                      layout="responsive"
+                    />
+                  </div>
                 </Col>
               </Row>
             </Col>
