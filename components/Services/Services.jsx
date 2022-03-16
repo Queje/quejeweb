@@ -1,5 +1,5 @@
 import styles from '../Services/Services.module.css'
-import AnimationBanner from '../Services/AnimationBanner'
+// import AnimationBanner from '../Services/AnimationBanner'
 import { Col, Row } from 'react-bootstrap'
 import { CgWebsite } from 'react-icons/cg'
 import { BiCustomize } from 'react-icons/bi'
@@ -25,9 +25,9 @@ export default function Services () {
     <section
       data-aos="flip-down"
     >
-        <div className={styles.animationlogoservices}>
+        {/* <div className={styles.animationlogoservices}>
             <AnimationBanner />
-        </div>
+        </div> */}
         <div
           className={styles.services}
         >

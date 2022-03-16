@@ -1,5 +1,5 @@
 import styles from '../Projects/Projects.module.css'
-import AnimationBanner2 from '../Projects/AnimationBanner2'
+// import AnimationBanner2 from '../Projects/AnimationBanner2'
 import { Col, Row } from 'react-bootstrap'
 import ProjectsSlider from '../Projects/ProjectsSlider'
 
@@ -11,9 +11,9 @@ export default function Services () {
           className={styles.projects}
         >
           <Col xs={12} md={12}>
-            <div className={styles.animationlogoprojects}>
+            {/* <div className={styles.animationlogoprojects}>
               <AnimationBanner2/>     
-            </div>
+            </div> */}
             <h3>Mes Projets ...</h3>
             <div id="description">
               <p id="text"> Quelques exemples de projets réalisés</p>
