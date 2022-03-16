@@ -1,23 +1,11 @@
-.jumbotron{
-    width: 90vw;
-    height: 60vh;
-    max-width: 100%;
-}
-  
-.topleftcorner{
+ .topleftcorner{
     display: flex;
     flex-direction: column;
-    justify-content: last baseline;
     text-align: center;
     padding-top: 3rem;
-    background: rgb(4,50,66);
     background: linear-gradient(90deg, rgba(4,50,66,1) 0%, rgba(0,159,165,1) 100%); 
-    z-index: 0;
 }
 
-@media (max-width: 800px) {
-    .jumbotron{
-        width: 100%!important;
-        height: 60vh;
-    }
+.topleftcorner svg{
+    margin-bottom: -1rem;
 }

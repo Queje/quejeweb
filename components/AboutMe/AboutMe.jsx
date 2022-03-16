@@ -177,7 +177,7 @@ export default function AboutMe() {
                 </span>
               </OverlayTrigger>
             </Col>
-            <Col lg={4} xs={12} className={styles.logowrapper}>
+            <Col lg={4} xs={12} id="middlelogowrapper" className={styles.logowrapper}>
               <OverlayTrigger
                 placement="top"
                 delay={{ show: 250, hide: 400 }}

@@ -14,7 +14,6 @@ export default function Home() {
   })
 
   const TopJumbotron = dynamic(() => import('../components/Jumbotron/TopJumbotron'))
-  const BottomJumbotronWaves = dynamic(() => import('../components/Jumbotron/BottomJumbotronWaves'))
   const AboutMe = dynamic(() => import('../components/AboutMe/AboutMe'))
   const WorkTogether = dynamic(() => import('../components/WorkTogether/WorkTogether'))
   const Services = dynamic(() => import('../components/Services/Services'),
@@ -38,7 +37,6 @@ export default function Home() {
 
       <main className={styles.main}>
         <TopJumbotron />
-        <BottomJumbotronWaves />
 
         <AboutMe />
 

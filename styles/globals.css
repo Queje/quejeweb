@@ -126,6 +126,11 @@ h3 {
   margin-bottom: 4rem;
 }
 
+#middlelogowrapper{
+  margin-left: -2rem;
+  margin-right: -2rem;
+}
+
 .modal-open{
   padding: 0!important;
 }
@@ -173,6 +178,11 @@ h3 {
 
   #description{
     margin-bottom: 2rem;
+  }
+
+  #middlelogowrapper{
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .swiper{
