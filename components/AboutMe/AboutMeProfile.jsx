@@ -17,6 +17,7 @@ export default function AboutMeProfile() {
                         width={ 400 } // Desired size with correct aspect ratio
                         className={styles.profilepicture}
                         alt= "Jérémy Querné, Développeur web fullstack"
+                        placeholder="blur"
                     />
                 </div>
             </Col>
