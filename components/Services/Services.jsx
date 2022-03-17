@@ -16,6 +16,7 @@ export default function Services () {
   return(
     <section
       data-aos="flip-down"
+      ref={ observe }
     >
         {/* <div className={styles.animationlogoservices}>
             <AnimationBanner />
@@ -31,7 +32,7 @@ export default function Services () {
           <div id="description">
             <p id="text">Les différents types de projects sur lesquels je peux vous accompagner</p>
           </div>
-          <div ref={ observe }>
+          <div>
             { inView && 
               <ServicesList />
             }

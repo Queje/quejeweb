@@ -19,6 +19,7 @@ export default function Services () {
         <Row 
           data-aos="flip-down"
           className={styles.projects}
+          ref={observe}
         >
           <Col xs={12} md={12}>
             {/* <div className={styles.animationlogoprojects}>
@@ -29,7 +30,7 @@ export default function Services () {
               <p id="text"> Quelques exemples de projets réalisés</p>
             </div>
           </Col>
-          <Col xs={12} md={12} ref={observe}>
+          <Col xs={12} md={12}>
             { inView && 
               <ProjectsSlider />
             }
