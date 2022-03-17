@@ -1,0 +1,17 @@
+.show1{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #E94E1B;
+}
+
+.iconslist{
+    color: #E94E1B;
+    margin-right: 1rem;
+}
+
+@media (max-width: 800px) {
+
+    .show1{
+        font-size: 1.5rem;
+    }
+}

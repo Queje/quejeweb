@@ -7,11 +7,19 @@ import 'aos/dist/aos.css'
 
 import Navigation from '../components/Navigation/Navigation'
 import Footer from '../components/Footer/Footer'
+import useInView from "react-cool-inview";
 
 export default function Home() {
+  
   useEffect(() => {
     AOS.init()
   })
+
+  const { observe, inView } = useInView({
+    onEnter: ({ unobserve }) => {
+      unobserve();
+    },
+  });
 
   const TopJumbotron = dynamic(() => import('../components/Jumbotron/TopJumbotron'))
   const AboutMe = dynamic(() => import('../components/AboutMe/AboutMe'))
@@ -36,15 +44,19 @@ export default function Home() {
       <Navigation />
 
       <TopJumbotron />
-      <main className={styles.main}>
-
-        <AboutMe />
-
-        <WorkTogether />
-
-        <Services />
+      
+      <main className={styles.main} ref={ observe }>
+        { inView && 
+          <>
+            <AboutMe /> 
         
-        <Projects />
+            <WorkTogether />
+        
+            <Services />
+          
+            <Projects />
+          </>
+        }
       </main>
       
       <Footer />

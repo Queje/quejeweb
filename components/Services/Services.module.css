@@ -13,17 +13,6 @@
     margin-bottom: 4rem;
 }
 
-.show1{
-    font-size: 3rem;
-    font-weight: bold;
-    color: #E94E1B;
-}
-
-.iconslist{
-    color: #E94E1B;
-    margin-right: 1rem;
-}
-
 @media (max-width: 800px) {
     .services{
         max-width: 100vw!important;
@@ -33,9 +22,5 @@
     .servicestitle{
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
-    }
-
-    .show1{
-        font-size: 1.5rem;
     }
 }
