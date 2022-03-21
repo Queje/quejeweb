@@ -17,7 +17,7 @@ export default function ProjectsModal ({project}) {
                 width={ 601 }
             />
             <div 
-                id="neonlight" 
+                id="neontext" 
                 className={styles.slideroverlay} 
                 onClick={handleShow}
             >

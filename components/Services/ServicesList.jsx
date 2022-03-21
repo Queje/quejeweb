@@ -32,7 +32,7 @@ export default function ServicesList() {
                             <CgWebsite size={48} className={styles.iconslist}/>
                             Sites vitrines
                             </p>
-                            <p id="text">A partir de <span id="neonlight">800 €</span></p>
+                            <p id="text">A partir de <span id="neontext">800 €</span></p>
                             <p id="text">un front-end simple en utilisant Wordpress ou Wix.</p>
                         </>
                         )}
@@ -49,7 +49,7 @@ export default function ServicesList() {
                             <BiCustomize size={48} className={styles.iconslist}/>
                             Sites custom
                             </p>
-                            <p id="text">A partir de <span id="neonlight">1000 €</span></p>
+                            <p id="text">A partir de <span id="neontext">1000 €</span></p>
                             <p id="text">Un front-end responsive personalisé en ReactJs ou NextJs</p>
                             <p id="text">Pour vos projets sur mesure !</p>
                         </>
@@ -69,7 +69,7 @@ export default function ServicesList() {
                             <FaCashRegister size={48} className={styles.iconslist}/>
                             Sites Boutiques
                             </p>
-                            <p id="text">A partir de <span id="neonlight">2000 €</span></p>
+                            <p id="text">A partir de <span id="neontext">2000 €</span></p>
                             <p id="text">Un front sur mesure, des pages administrations, un back-end pour gérer vos données.</p>
                             <p id="text">Des moyens de payements en ligne sécurisé.</p>
                             <p id="text">Pour développer votre activité en ligne !</p>
@@ -88,7 +88,7 @@ export default function ServicesList() {
                             <AiOutlineDatabase size={48} className={styles.iconslist}/>
                             Bases de données
                             </p>
-                            <p id="text">A partir de <span id="neonlight">1000 €</span></p>
+                            <p id="text">A partir de <span id="neontext">1000 €</span></p>
                             <p id="text">Un back-end personalisé en ligne avec strapi ou sur mesure avec Ruby on Rails et PostgreSQL.</p>
                             <p id="text">Pour créer des API et bases de données pour gérér et accéder à vos données en toute sécurité.</p>
                         </>
@@ -109,7 +109,7 @@ export default function ServicesList() {
                             Applications
                             </p>
                             <p id="text">
-                            <span id="neonlight">
+                            <span id="neontext">
                                 Sur devis
                             </span>
                             </p>
@@ -130,7 +130,7 @@ export default function ServicesList() {
                             Retouches & Maintenance
                             </p>
                             <p id="text">
-                            <span id="neonlight">
+                            <span id="neontext">
                                 Sur devis
                             </span>
                             </p>
@@ -154,7 +154,7 @@ export default function ServicesList() {
                             SEO & référencement
                             </p>
                             <p id="text">
-                            <span id="neonlight">
+                            <span id="neontext">
                                 Sur devis
                             </span>
                             </p>
@@ -175,7 +175,7 @@ export default function ServicesList() {
                             Aide & Réseaux Sociaux
                             </p>
                             <p id="text">
-                            <span id="neonlight">
+                            <span id="neontext">
                                 Sur devis
                             </span>
                             </p>

@@ -14,7 +14,7 @@ export default function TopJumbotron () {
           }
           { isMobile &&
             <>
-              <span>Que</span>rné <span>Je</span>remy <span>Web</span>
+              <span id="neontext">Que</span>rné <span id="neontext">Je</span>remy <span id="neontext">Web</span>
             </>
           }
         </h1>
