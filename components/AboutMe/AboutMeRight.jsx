@@ -1,10 +1,10 @@
 import styles from '../AboutMe/AboutMeRight.module.css'
 import { Col, Row} from 'react-bootstrap'
 import Image from 'next/image'
-import aboutpicture1 from '../../assets/AboutMe/teamwork2gs.webp'
-import aboutpicture2 from '../../assets/AboutMe/screens2gs.webp'
-import aboutpicture3 from '../../assets/AboutMe/webdev2gs.webp'
-import aboutpicture4 from '../../assets/AboutMe/settings2gs.webp'
+import aboutpicture1 from '../../assets/AboutMe/teamwork3.webp'
+import aboutpicture2 from '../../assets/AboutMe/screens3.webp'
+import aboutpicture3 from '../../assets/AboutMe/webdev3.webp'
+import aboutpicture4 from '../../assets/AboutMe/settings3.webp'
 
 export default function AboutMeRight() {
 
