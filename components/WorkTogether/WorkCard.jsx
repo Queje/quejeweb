@@ -14,11 +14,11 @@ export default function WorkCard ({ number, title, text}) {
             {isShown && (
                 <Card.Body>
                     <Card.Title>
-                        <span id="neonlight" className={styles.cardicon}>
+                        <span id="neontext" className={styles.cardicon}>
                             <BsCircle size={32}/>
                             <span className={styles.cardnumber}>{ number }</span>
                         </span>
-                        <span id="neonlight" className={styles.cardtitletext}>
+                        <span id="neontext" className={styles.cardtitletext}>
                             { title }
                         </span>
                     </Card.Title>

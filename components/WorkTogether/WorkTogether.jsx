@@ -11,7 +11,7 @@ export default function WorkTogether() {
         >
             <h3 className={styles.worktitle}>Travaillons ensemble...</h3>
             <Row md={12} xs={12} id="description">
-                <p id="text">Le premier rendez-vous est <span id="neonlight">gratuit</span> et les <span id="neonlight">devis</span> aussi.</p>
+                <p id="text">Le premier rendez-vous est <span id="neontext">gratuit</span> et les <span id="neontext">devis</span> aussi.</p>
                 <p id="text">N&apos;hésitez pas à me contacter!</p>    
             </Row>
             <Row md={12} xs={12} >
@@ -22,7 +22,7 @@ export default function WorkTogether() {
                         text={( 
                                 <>
                                     <p>
-                                        Un 1er rendez-vous où nous discutons de votre project, en <span id="neonlight">visio</span> ou en <span id="neonlight">réel</span>, des fonctionnalités que vous souhaitez. 
+                                        Un 1er rendez-vous où nous discutons de votre project, en <span id="neontext">visio</span> ou en <span id="neontext">réel</span>, des fonctionnalités que vous souhaitez. 
                                     </p>
                                 </>
                             )}

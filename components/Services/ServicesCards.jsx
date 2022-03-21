@@ -21,13 +21,16 @@ export default function ServicesCards({ src, textoverlay, servicetext, alttext }
                     <p className={styles.servicedescription}>{ servicetext }</p>
                 </div>
             )}
-            <Image 
-                src= { src } // Route of the image file
-                height={ 400 } // Desired size with correct aspect ratio
-                width={ 600 } // Desired size with correct aspect ratio
-                className={styles.servicepicture}
-                alt= { alttext }
-            />
+            <div className={styles.box}>
+                <Image 
+                    src= { src } // Route of the image file
+                    height={ 400 } // Desired size with correct aspect ratio
+                    width={ 600 } // Desired size with correct aspect ratio
+                    className={styles.servicepicture}
+                    alt= { alttext }
+                    layout="responsive"
+                />
+            </div>
         </div>
     )
 }
