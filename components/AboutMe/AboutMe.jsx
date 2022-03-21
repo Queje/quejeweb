@@ -2,6 +2,7 @@ import styles from '../AboutMe/AboutMe.module.css'
 import { Col, Row} from 'react-bootstrap'
 import dynamic from 'next/dynamic'
 import useInView from "react-cool-inview";
+import { isMobile } from 'react-device-detect';
 
 export default function AboutMe() {
 
@@ -25,8 +26,9 @@ export default function AboutMe() {
           <>
             <h3 className={styles.propos}>A propos...</h3>
             <Row className={styles.aboutrow}>
-
-              <AboutMeProfile />
+              { !isMobile && 
+                <AboutMeProfile />
+              }
 
               <Col lg={5} xs={12} className={styles.profiletext}>
                 <p id="text"> Je suis <span id="neonlight">développeur web</span> full-stack.</p> 
@@ -39,8 +41,9 @@ export default function AboutMe() {
 
             </Row>
             <p id="text" className={styles.toolstitle}>mes outils...</p>
-            
-            <AboutMeLogo />
+            { !isMobile && 
+              <AboutMeLogo />
+            }
             </>}
         </div>
     )
