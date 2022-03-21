@@ -1,5 +1,4 @@
 import styles from '../Services/Services.module.css'
-// import AnimationBanner from '../Services/AnimationBanner'
 import dynamic from 'next/dynamic'
 import useInView from "react-cool-inview";
 
@@ -18,9 +17,6 @@ export default function Services () {
       data-aos="flip-down"
       ref={ observe }
     >
-        {/* <div className={styles.animationlogoservices}>
-            <AnimationBanner />
-        </div> */}
         <div
           className={styles.services}
         >

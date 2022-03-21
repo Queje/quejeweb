@@ -107,6 +107,10 @@ h3 {
       0 0 92px #E94E1B;
 }
 
+#colortext {
+  color:#E94E1B;
+}
+
 #shakeanimation:hover {
   animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
 }

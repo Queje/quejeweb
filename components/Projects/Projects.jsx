@@ -1,5 +1,4 @@
 import styles from '../Projects/Projects.module.css'
-// import AnimationBanner2 from '../Projects/AnimationBanner2'
 import { Col, Row } from 'react-bootstrap'
 
 import dynamic from 'next/dynamic'
@@ -22,9 +21,6 @@ export default function Services () {
           ref={observe}
         >
           <Col xs={12} md={12}>
-            {/* <div className={styles.animationlogoprojects}>
-              <AnimationBanner2/>     
-            </div> */}
             <h3>Mes Projets ...</h3>
             <div id="description">
               <p id="text"> Quelques exemples de projets réalisés</p>
