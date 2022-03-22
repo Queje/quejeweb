@@ -1,0 +1,21 @@
+{
+    "test": "Français",
+    "countryCode": "FR",
+
+    "aboutmetitle": "About me...",
+    "aboutmetext1a": "I am a ",
+    "aboutmetext1b": "fullstack ",
+    "aboutmetext1neon": "web developper",
+    "aboutmetext1c": ".",
+    "aboutmetext2a": "My job is to support you in your ",
+    "aboutmetext2b": "digital communication ",
+    "aboutmetext2c": "projects.",
+    "aboutmetext3": "At your service to suggest you solutions adapted to your needs.",
+    "aboutmetext4a": "Together we will create web sites and applications that ",
+    "aboutmetext4b": "fit your style ",
+    "tools": "my tools...",
+    "aboutmephoto1": "Support & Creation",
+    "aboutmephoto2": "For all screen sizes",    
+    "aboutmephoto3": "SEO",    
+    "aboutmephoto4": "Hosting solutions"
+}

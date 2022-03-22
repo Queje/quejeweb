@@ -3,8 +3,13 @@ import { Col, Row} from 'react-bootstrap'
 import dynamic from 'next/dynamic'
 import useInView from "react-cool-inview";
 import { isMobile } from 'react-device-detect';
+import { useTranslation } from 'next-i18next';
+import { useRouter } from 'next/router'
 
 export default function AboutMe() {
+
+  const router = useRouter()
+  const { t } = useTranslation('common');
 
   const { observe, inView } = useInView({
     onEnter: ({ unobserve }) => {
@@ -24,17 +29,23 @@ export default function AboutMe() {
         >
           { inView && 
           <>
-            <h3 className={styles.propos}>A propos...</h3>
+            <h3 className={styles.propos}>{t('aboutmetitle')}</h3>
             <Row className={styles.aboutrow}>
               { !isMobile && 
                 <AboutMeProfile />
               }
 
               <Col lg={5} xs={12} className={styles.profiletext}>
-                <p id="text"> Je suis <span id="neontext">développeur web</span> full-stack.</p> 
-                <p id="text"> Mon rôle est de vous accompagnez dans vos projets de <span id="neontext">communications digitales</span>.</p>
-                <p id="text"> A votre écoute pour vous proposez les outils les plus adaptés.</p> 
-                <p id="text"> Ensemble nous pourrons créer des sites et applications <span id="neontext">qui vous ressemblent</span> !</p>
+                {
+                  router.locale === 'fr' ? (
+                    <p id="text"> {t('aboutmetext1a')} <span id="neontext">{t('aboutmetext1neon')}</span> {t('aboutmetext1b')} {t('aboutmetext1c')}</p>
+                  ) : (
+                    <p id="text"> {t('aboutmetext1a')} {t('aboutmetext1b')} <span id="neontext">{t('aboutmetext1neon')}</span> {t('aboutmetext1c')}</p>
+                  )
+                }
+                <p id="text"> {t('aboutmetext2a')}<span id="neontext">{t('aboutmetext2b')}</span>{t('aboutmetext2c')}</p> 
+                <p id="text"> {t('aboutmetext3')} </p> 
+                <p id="text"> {t('aboutmetext4a')} <span id="neontext">{t('aboutmetext4b')}</span> !</p>
               </Col>
 
               <AboutMeRight />
@@ -42,7 +53,7 @@ export default function AboutMe() {
             </Row>
             { !isMobile &&
               <> 
-                <p id="text" className={styles.toolstitle}>mes outils...</p>
+                <p id="text" className={styles.toolstitle}>{t('tools')}</p>
                 <AboutMeLogo />
               </>
             }

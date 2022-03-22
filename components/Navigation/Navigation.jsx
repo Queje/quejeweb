@@ -1,5 +1,7 @@
 import { Row, Col, Button } from 'react-bootstrap'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
+import { useTranslation } from 'next-i18next'
 import Image from 'next/image'
 import logo from '../../assets/QJW.svg'
 import navigationstyles from '../Navigation/Navigation.module.css'
@@ -7,12 +9,15 @@ import { BsFillPhoneFill } from 'react-icons/bs'
 import { GrMail } from 'react-icons/gr'
 import ReactCountryFlag from 'react-country-flag'
 
-export default function Navigation() {
+export default function Navigation( ) {
+
+	const router = useRouter()
+	const { t } = useTranslation('common')
 
 	return(
 		<Row className={navigationstyles.navigation}>
 			<Col md={3} className={navigationstyles.logobox}>
-				<Link passhref href="/">
+				<Link passHref href="/">
 					<a>
 						<Image
 							src= { logo } // Route of the image file
@@ -36,21 +41,27 @@ export default function Navigation() {
 				</a> 
 			</Col>
 			<Col xs={4} md={3} className={navigationstyles.link}>
-				<Button className={navigationstyles.custombutton}>
-					<ReactCountryFlag
-						className={navigationstyles.iconflag} 
-						countryCode="GB" 
-						alt="United Kingdom flag"
-						svg
-						style={{
-							width: '1em',
-							height: '1em',
-						}}
-						/>
-					<span className={navigationstyles.textflag}>
-						English
-					</span>
-				</Button>
+				<Link
+					passHref
+					href="/"
+					locale={router.locale === 'fr' ? 'en' : 'fr'}
+				>
+					<Button className={navigationstyles.custombutton}>
+						<ReactCountryFlag
+							className={navigationstyles.iconflag} 
+							countryCode={t('countryCode')}
+							alt="flags"
+							svg
+							style={{
+								width: '1em',
+								height: '1em',
+							}}
+							/>
+						<span className={navigationstyles.textflag}>
+							{t('test')}
+						</span>
+					</Button>	
+				</Link>
 			</Col>
 		</Row>
 	)

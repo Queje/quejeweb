@@ -6,10 +6,12 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 import Navigation from '../components/Navigation/Navigation'
+import TopJumbotron from '../components/Jumbotron/TopJumbotron'
 import Footer from '../components/Footer/Footer'
 import useInView from "react-cool-inview";
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
-export default function Home() {
+function Home() {
   
   useEffect(() => {
     AOS.init()
@@ -21,7 +23,6 @@ export default function Home() {
     },
   });
 
-  const TopJumbotron = dynamic(() => import('../components/Jumbotron/TopJumbotron'))
   const AboutMe = dynamic(() => import('../components/AboutMe/AboutMe'))
   const WorkTogether = dynamic(() => import('../components/WorkTogether/WorkTogether'))
   const Services = dynamic(() => import('../components/Services/Services'),
@@ -64,3 +65,17 @@ export default function Home() {
     </div>
   )
 }
+
+export async function getServerSideProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['common'])),
+      // Will be passed to the page component as props
+    },
+  };
+}
+
+export default Home
+
+
+
