@@ -1,0 +1,21 @@
+{
+    "test": "English",
+    "countryCode": "GB",
+
+    "aboutmetitle": "A propos...",
+    "aboutmetext1a": "Je suis ",
+    "aboutmetext1neon": "développeur web ",
+    "aboutmetext1b": "fullstack",
+    "aboutmetext1c": ".",
+    "aboutmetext2a": "Mon rôle est de vous accompagnez dans vos projets de ",
+    "aboutmetext2b": "communications digitales",
+    "aboutmetext2c": ".",
+    "aboutmetext3": "A votre écoute pour vous proposez les outils les plus adaptés.",
+    "aboutmetext4a": "Ensemble nous pourrons créer des sites et applications ",
+    "aboutmetext4b": "qui vous ressemblent ",
+    "tools": "mes outils...",
+    "aboutmephoto1": "Accompagnement & Conception",
+    "aboutmephoto2": "Sites pour toutes tailles d'écrans",    
+    "aboutmephoto3": "Référencement naturel & SEO",    
+    "aboutmephoto4": "Solutions d'hébergement"
+}

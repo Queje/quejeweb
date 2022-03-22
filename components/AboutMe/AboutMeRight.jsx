@@ -5,15 +5,18 @@ import aboutpicture1 from '../../assets/AboutMe/teamwork3.webp'
 import aboutpicture2 from '../../assets/AboutMe/screens3.webp'
 import aboutpicture3 from '../../assets/AboutMe/webdev3.webp'
 import aboutpicture4 from '../../assets/AboutMe/settings3.webp'
+import { useTranslation } from 'next-i18next';
 
 export default function AboutMeRight() {
+
+    const { t } = useTranslation('common');
 
     return(
         <Col lg={4} xs={12}>
             <Row>
                 <Col md={6} xs={6}>
                     <div className={styles.pictureoverlay}>
-                        Accompagnement & Conception
+                        {t('aboutmephoto1')}
                     </div>
                     <div className={styles.aboutmebox}>
                         <Image
@@ -28,7 +31,7 @@ export default function AboutMeRight() {
                 </Col>
                 <Col md={6} xs={6}>
                     <div className={styles.pictureoverlay}>
-                        Sites pour toutes tailles d&apos;écrans
+                        {t('aboutmephoto2')}
                     </div>
                     <div className={styles.aboutmebox}>
                         <Image
@@ -45,7 +48,7 @@ export default function AboutMeRight() {
                 <Row>
                 <Col md={6} xs={6}>
                     <div className={styles.pictureoverlay}>
-                        Référencement naturel & SEO
+                        {t('aboutmephoto3')}
                     </div>
                     <div className={styles.aboutmebox}>
                         <Image 
@@ -60,7 +63,7 @@ export default function AboutMeRight() {
                 </Col>
                 <Col md={6} xs={6}>
                     <div className={styles.pictureoverlay}>
-                        Solutions d&apos;hébergement
+                        {t('aboutmephoto4')}
                     </div>
                     <div className={styles.aboutmebox}>
                         <Image 
