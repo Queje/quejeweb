@@ -10,6 +10,14 @@
     border-color: #E94E1B;   
 }
 
+.cardmobile{
+    width: 100%;
+    background-color: #043242;
+    border-color: #E94E1B;   
+    font-family: "montserrat-light";
+    margin-bottom: 3rem;
+}
+
 .cardicon{
     position: relative;
 }
