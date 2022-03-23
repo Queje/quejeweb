@@ -1,28 +1,41 @@
 import styles from '../WorkTogether/WorkTogether.module.css'
 import { Row, Col } from 'react-bootstrap'
 import WorkCard from './WorkCard';
+import { useTranslation } from 'next-i18next';
 
 export default function WorkTogether() {
+
+    const { t } = useTranslation('common');
 
     return(
         <section 
             data-aos="flip-down" 
             className={styles.worktogether}
         >
-            <h3 className={styles.worktitle}>Travaillons ensemble...</h3>
+            <h3 className={styles.worktitle}>{t('worktogethertitle')}</h3>
             <Row md={12} xs={12} id="description">
-                <p id="text">Le premier rendez-vous est <span id="neontext">gratuit</span> et les <span id="neontext">devis</span> aussi.</p>
-                <p id="text">N&apos;hésitez pas à me contacter!</p>    
+                <p id="text">
+                    {t('workdescription1')}
+                        <span id="neontext">{t('workdescription2')}</span>
+                    {t('workdescription3')}
+                        <span id="neontext">{t('workdescription4')}</span>
+                    {t('workdescription5')}
+                </p>
+                <p id="text">{t('workdescription6')}</p>    
             </Row>
             <Row md={12} xs={12} >
                 <Col md={6} xs={12} className={styles.justifycard}>
                     <WorkCard 
                         number={1} 
-                        title={"Rencontre"} 
+                        title={t('workcardtext1a')} 
                         text={( 
                                 <>
                                     <p>
-                                        Un 1er rendez-vous où nous discutons de votre project, en <span id="neontext">visio</span> ou en <span id="neontext">réel</span>, des fonctionnalités que vous souhaitez. 
+                                        {t('workcardtext1b')}
+                                            <span id="neontext">{t('workcardtext1c')}</span>
+                                        {t('workcardtext1d')}
+                                            <span id="neontext">{t('workcardtext1e')}</span>
+                                        {t('workcardtext1f')} 
                                     </p>
                                 </>
                             )}
@@ -31,8 +44,8 @@ export default function WorkTogether() {
                 <Col md={6} xs={12} className={styles.justifycard}>
                     <WorkCard 
                         number={2} 
-                        title={"Préparation"} 
-                        text={"Traduire vos besoins en solutions concrètes, en cohérences avec vos besoins et les validez avec vous."} 
+                        title={t('workcardtext2a')} 
+                        text={t('workcardtext2b')} 
                     />
                 </Col>
             </Row>
@@ -40,18 +53,18 @@ export default function WorkTogether() {
                 <Col md={6} xs={12} className={styles.justifycard}>
                     <WorkCard 
                         number={3} 
-                        title={"Développement"} 
-                        text={"Mise en oeuvre du projet et création du site selon vos envies."} 
+                        title={t('workcardtext3a')} 
+                        text={t('workcardtext3b')}
                     />
                 </Col>
                 <Col md={6} xs={12} className={styles.justifycard}>
                     <WorkCard 
                         number={4} 
-                        title={"Livraison"} 
+                        title={t('workcardtext4a')} 
                         text={(
                                 <>
-                                    <p className={styles.importanttext}>Le site est à vous!</p> 
-                                    <small>je reste disponible pour la maintenance et les mises à jours...</small>
+                                    <p className={styles.importanttext}>{t('workcardtext4b')}</p> 
+                                    <small>{t('workcardtext4c')}</small>
                                 </>
                             )}
                     />
