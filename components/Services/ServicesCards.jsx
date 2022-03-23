@@ -1,15 +1,22 @@
 import styles from '../Services/ServicesCards.module.css'
 import Image from 'next/image'
 import { useState } from "react"
+import { isMobile } from 'react-device-detect'
 
 export default function ServicesCards({ src, textoverlay, servicetext, alttext }) {
     const [isShown, setIsShown] = useState(false);
 
+    function handleClick (e) {
+        e.preventDefault();
+        isShown ? setIsShown(false) : setIsShown(true)
+    }
+
     return(
         <div 
             className={styles.servicescards}
-            onMouseEnter={() => setIsShown(true)}
-            onMouseLeave={() => setIsShown(false)}
+            onMouseLeave={!isMobile && (() => setIsShown(false))}
+            onMouseEnter={!isMobile && (() => setIsShown(true))}
+            onClick={isMobile && handleClick}
         >
             { isShown && (
                 <div className={styles.serviceoverlay}>

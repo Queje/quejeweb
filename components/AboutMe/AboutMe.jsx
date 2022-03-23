@@ -1,9 +1,9 @@
 import styles from '../AboutMe/AboutMe.module.css'
 import { Col, Row} from 'react-bootstrap'
 import dynamic from 'next/dynamic'
-import useInView from "react-cool-inview";
-import { isMobile } from 'react-device-detect';
-import { useTranslation } from 'next-i18next';
+import useInView from "react-cool-inview"
+import { isMobile } from 'react-device-detect'
+import { useTranslation } from 'next-i18next'
 import { useRouter } from 'next/router'
 
 export default function AboutMe() {

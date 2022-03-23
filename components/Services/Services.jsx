@@ -1,8 +1,11 @@
 import styles from '../Services/Services.module.css'
 import dynamic from 'next/dynamic'
-import useInView from "react-cool-inview";
+import useInView from "react-cool-inview"
+import { useTranslation } from 'next-i18next'
 
 export default function Services () {
+
+  const { t } = useTranslation('common');
   
   const { observe, inView } = useInView({
     onEnter: ({ unobserve }) => {
@@ -23,10 +26,12 @@ export default function Services () {
           <h3 
             className={styles.servicestitle}
           >
-            Services ...
+            {t('servicestitle')}
           </h3>
           <div id="description">
-            <p id="text">Les différents types de projects sur lesquels je peux vous accompagner</p>
+            <p id="text">
+              {t('servicesdescription')}
+            </p>
           </div>
           <div>
             { inView && 
