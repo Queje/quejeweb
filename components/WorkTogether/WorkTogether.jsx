@@ -27,7 +27,7 @@ export default function WorkTogether() {
                 <Col md={6} xs={12} className={styles.justifycard}>
                     <WorkCard 
                         number={1} 
-                        title={t('workcardtext1a')} 
+                        title={t('workcardtext1a')}  
                         text={( 
                                 <>
                                     <p>

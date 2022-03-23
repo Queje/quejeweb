@@ -1,48 +1,29 @@
-import styles from '../WorkTogether/WorkCard.module.css'
-import { Card } from 'react-bootstrap'
-import { BsCircle } from 'react-icons/bs'
-import { useState } from 'react';
+import { isMobile } from 'react-device-detect';
+import dynamic from 'next/dynamic'
 
-export default function WorkCard ({ number, title, text}) {
-    const [isShown, setIsShown] = useState(false);
+export default function WorkCard ({ number, title, text }) {
 
+    const WorkCardDesktop = dynamic(() => import('./WorkCardDesktop'))
+    const WorkCardMobile = dynamic(() => import('./WorkCardMobile'))
+        
     return(
-        <Card className={styles.card}
-            onMouseEnter={() => setIsShown(true)}
-            onMouseLeave={() => setIsShown(false)}
-        >
-            {isShown && (
-                <Card.Body>
-                    <Card.Title>
-                        <span id="neontext" className={styles.cardicon}>
-                            <BsCircle size={32}/>
-                            <span className={styles.cardnumber}>{ number }</span>
-                        </span>
-                        <span id="neontext" className={styles.cardtitletext}>
-                            { title }
-                        </span>
-                    </Card.Title>
-                    <Card.Text>
-                        { text }
-                    </Card.Text>
-                </Card.Body>
-            )}
-            {!isShown && (
-                <Card.Body>
-                    <Card.Title>
-                        <span className={styles.cardicon}>
-                            <BsCircle size={32}/>
-                            <span className={styles.cardnumber}>{ number }</span>
-                        </span>
-                        <span className={styles.cardtitletext}>
-                            { title }
-                        </span>
-                    </Card.Title>
-                    <Card.Text>
-                        { text }
-                    </Card.Text>
-                </Card.Body>
-            )}
-        </Card>
+        <>
+        {
+            !isMobile && 
+                <WorkCardDesktop 
+                    number={number} 
+                    title={title} 
+                    text={text}
+                />
+        }
+        {
+            isMobile && 
+                <WorkCardMobile 
+                    number={number} 
+                    title={title} 
+                    text={text}
+                />
+        }
+    </>
     )
 }

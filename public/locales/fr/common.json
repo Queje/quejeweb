@@ -41,6 +41,52 @@
     "workcardtext3b": "C'est là que je code et je créé votre site selon vos envies.",
 
     "workcardtext4a": "Livraison",
-    "workcardtext4b": "Le site est à vous!",
-    "workcardtext4c": "je reste disponible pour la maintenance et les mises à jours. Restons en contact!"
+    "workcardtext4b": "Le site est à vous !",
+    "workcardtext4c": "je reste disponible pour la maintenance et les mises à jours. Restons en contact!",
+
+    "servicestitle": "Services ...",
+    "servicesdescription": "Les différents types de projects sur lesquels je peux vous accompagner.",
+
+    "card1title": "Sites vitrines",
+    "card1text1": "A partir de ",
+    "card1text2": "800 €",
+    "card1text3": "un front-end simple en utilisant des CMS comme Wordpress ou Wix.",
+
+    "card2title": "Sites custom",
+    "card2text1": "A partir de ",
+    "card2text2": "1000 €",
+    "card2text3": "Pour un front-end responsive personalisé en ReactJs ou NextJs",
+    "card2text4": "Pour vos projets sur mesure !",
+
+    "card3title": "Sites Boutiques",
+    "card3text1": "A partir de ",
+    "card3text2": "2000 €",
+    "card3text3": "Un front sur mesure, des pages administrations, un back-end pour gérer vos données.",
+    "card3text4": "Des moyens de payements en ligne sécurisé.",
+    "card3text5": "Pour développer votre activité en ligne !",
+
+    "card4title": "Bases de données",
+    "card4text1": "A partir de ",
+    "card4text2": "1000 €",
+    "card4text3": "Un back-end personalisé en ligne avec strapi ou sur mesure avec nodejs, mongoDB, Ruby on Rails et PostgreSQL.",
+    "card4text4": "Pour créer des API et bases de données pour gérér et accéder à vos données en toute sécurité.",
+
+    "card5title": "Applications",
+    "card5text1": "Sur devis",
+    "card5text2": "Avec React Native, pour developper des applications pour IOS et Android.",
+
+    "card6title": "Retouches & Maintenance",
+    "card6text1": "Sur devis",
+    "card6text2": "Mises à jours? Site trop lent? Manque de temps?",
+    "card6text3": "Pour vous aider à maintenir et améliorer votre communication en ligne!",
+
+    "card7title": "SEO & référencement",
+    "card7text1": "Sur devis",
+    "card7text2": "Améliorer votre référencement naturel pour être mieux visible par les moteurs de recherche!",
+
+    "card8title": "Aide & Réseaux Sociaux",
+    "card8text1": "Sur devis",
+    "card8text2": "Besoin d'aide pour gérer votre communication sur les réseaux sociaux?",
+    "card8text3": "Vous voulez être accompagner en informatique?",
+    "card8text4": "Contactez moi!"
 }

@@ -17,23 +17,27 @@ import photoservice6 from '../../assets/Service/repair2gs.webp'
 import photoservice7 from '../../assets/Service/seo2gs.webp'
 import photoservice8 from '../../assets/Service/socialmedia2gs.webp'
 import ServicesCards from './ServicesCards'
+import { useTranslation } from 'next-i18next'
 
 export default function ServicesList() {
+    
+    const { t } = useTranslation('common');
+
     return(
         <>
             <Row md={12} xs={12}>
                 <Col md={6} xs={12}>
                     <ServicesCards 
                         src={photoservice1} 
-                        servicetext={"Sites vitrines"}
+                        servicetext={t('card1title')}
                         textoverlay= {(
                         <>
                             <p className={styles.show1}>
-                            <CgWebsite size={48} className={styles.iconslist}/>
-                            Sites vitrines
+                                <CgWebsite size={48} className={styles.iconslist}/>
+                                {t('card1title')}
                             </p>
-                            <p id="text">A partir de <span id="neontext">800 €</span></p>
-                            <p id="text">un front-end simple en utilisant Wordpress ou Wix.</p>
+                            <p id="text">{t('card1text1')}<span id="neontext">{t('card1text2')}</span></p>
+                            <p id="text">{t('card1text3')}</p>
                         </>
                         )}
                         alttext={"laptop showing a website"} 
@@ -42,16 +46,16 @@ export default function ServicesList() {
                 <Col md={6} xs={12}>
                     <ServicesCards 
                         src={photoservice2} 
-                        servicetext={"Sites custom"}
+                        servicetext={t('card2title')}
                         textoverlay= {(
                         <>
                             <p className={styles.show1}>
-                            <BiCustomize size={48} className={styles.iconslist}/>
-                            Sites custom
+                                <BiCustomize size={48} className={styles.iconslist}/>
+                                {t('card2title')}
                             </p>
-                            <p id="text">A partir de <span id="neontext">1000 €</span></p>
-                            <p id="text">Un front-end responsive personalisé en ReactJs ou NextJs</p>
-                            <p id="text">Pour vos projets sur mesure !</p>
+                            <p id="text">{t('card2text1')}<span id="neontext">{t('card2text2')}</span></p>
+                            <p id="text">{t('card2text3')}</p>
+                            <p id="text">{t('card2text4')}</p>
                         </>
                         )}
                         alttext={"laptop showing a website"} 
@@ -62,17 +66,17 @@ export default function ServicesList() {
                 <Col md={6} xs={12}>
                     <ServicesCards 
                         src={photoservice3} 
-                        servicetext={"Sites boutiques"}
+                        servicetext={t('card3title')}
                         textoverlay= {(
                         <>
                             <p className={styles.show1}>
-                            <FaCashRegister size={48} className={styles.iconslist}/>
-                            Sites Boutiques
+                                <FaCashRegister size={48} className={styles.iconslist}/>
+                                {t('card3title')}
                             </p>
-                            <p id="text">A partir de <span id="neontext">2000 €</span></p>
-                            <p id="text">Un front sur mesure, des pages administrations, un back-end pour gérer vos données.</p>
-                            <p id="text">Des moyens de payements en ligne sécurisé.</p>
-                            <p id="text">Pour développer votre activité en ligne !</p>
+                            <p id="text">{t('card3text1')}<span id="neontext">{t('card3text2')}</span></p>
+                            <p id="text">{t('card3text3')}</p>
+                            <p id="text">{t('card3text4')}</p>
+                            <p id="text">{t('card3text5')}</p>
                         </>
                         )}
                         alttext={"sales & business"} 
@@ -81,16 +85,16 @@ export default function ServicesList() {
                 <Col md={6} xs={12}>
                     <ServicesCards 
                         src={photoservice4} 
-                        servicetext={"Bases de données"}
+                        servicetext={t('card4title')}
                         textoverlay= {(
                         <>
                             <p className={styles.show1}>
-                            <AiOutlineDatabase size={48} className={styles.iconslist}/>
-                            Bases de données
+                                <AiOutlineDatabase size={48} className={styles.iconslist}/>
+                                {t('card4title')}
                             </p>
-                            <p id="text">A partir de <span id="neontext">1000 €</span></p>
-                            <p id="text">Un back-end personalisé en ligne avec strapi ou sur mesure avec Ruby on Rails et PostgreSQL.</p>
-                            <p id="text">Pour créer des API et bases de données pour gérér et accéder à vos données en toute sécurité.</p>
+                            <p id="text">{t('card4text1')}<span id="neontext">{t('card4text2')}</span></p>
+                            <p id="text">{t('card4text3')}</p>
+                            <p id="text">{t('card4text4')}</p>
                         </>
                         )}
                         alttext={"writing code"} 
@@ -101,19 +105,19 @@ export default function ServicesList() {
                 <Col md={6} xs={12}>
                     <ServicesCards 
                         src={photoservice5} 
-                        servicetext={"Applications"}
+                        servicetext={t('card5title')}
                         textoverlay= {(
                         <>
                             <p className={styles.show1}>
-                            <BsPhone size={48} className={styles.iconslist}/>
-                            Applications
+                                <BsPhone size={48} className={styles.iconslist}/>
+                                {t('card5title')}
                             </p>
                             <p id="text">
-                            <span id="neontext">
-                                Sur devis
-                            </span>
+                                <span id="neontext">
+                                    {t('card5text1')}
+                                </span>
                             </p>
-                            <p id="text">Avec ReactNative, pour developper des applications pour IOS et Android</p>
+                            <p id="text">{t('card5text2')}</p>
                         </>
                         )}
                         alttext={"phone"} 
@@ -122,20 +126,20 @@ export default function ServicesList() {
                 <Col md={6} xs={12}>
                     <ServicesCards 
                         src={photoservice6} 
-                        servicetext={"Retouches & Maintenance"}
+                        servicetext={t('card6title')}
                         textoverlay= {(
                         <>
                             <p className={styles.show1}>
-                            <GiAutoRepair size={48} className={styles.iconslist}/>
-                            Retouches & Maintenance
+                                <GiAutoRepair size={48} className={styles.iconslist}/>
+                                {t('card6title')}
                             </p>
                             <p id="text">
-                            <span id="neontext">
-                                Sur devis
-                            </span>
+                                <span id="neontext">
+                                    {t('card6text1')}
+                                </span>
                             </p>
-                            <p id="text">Mises à jours? site trop lent? manque de temps?</p>
-                            <p id="text">Pour vous aider à maintenir et améliorer votre communication en ligne!</p>
+                            <p id="text">{t('card6text2')}</p>
+                            <p id="text">{t('card6text3')}</p>
                         </>
                         )}
                         alttext={"tools to repair"} 
@@ -146,19 +150,19 @@ export default function ServicesList() {
                 <Col md={6} xs={12}>
                     <ServicesCards 
                         src={photoservice7} 
-                        servicetext={"SEO & référencement"}
+                        servicetext={t('card7title')}
                         textoverlay= {(
                         <>
                             <p className={styles.show1}>
-                            <FiSearch size={48} className={styles.iconslist}/>
-                            SEO & référencement
+                                <FiSearch size={48} className={styles.iconslist}/>
+                                {t('card7title')}
                             </p>
                             <p id="text">
-                            <span id="neontext">
-                                Sur devis
-                            </span>
+                                <span id="neontext">
+                                    {t('card7text1')}
+                                </span>
                             </p>
-                            <p id="text">Améliorer votre référencement naturel pour être mieux visible par les moteurs de recherche!</p>
+                            <p id="text">{t('card7text2')}</p>
                         </>
                         )}
                         alttext={"seo"} 
@@ -167,21 +171,21 @@ export default function ServicesList() {
                 <Col md={6} xs={12}>
                     <ServicesCards 
                         src={photoservice8} 
-                        servicetext={"Aide & Réseaux Sociaux"}
+                        servicetext={t('card8title')}
                         textoverlay= {(
                         <>
                             <p className={styles.show1}>
-                            <BsShare size={48} className={styles.iconslist}/>
-                            Aide & Réseaux Sociaux
+                                <BsShare size={48} className={styles.iconslist}/>
+                                {t('card8title')}
                             </p>
                             <p id="text">
                             <span id="neontext">
-                                Sur devis
+                                {t('card8text1')}
                             </span>
                             </p>
-                            <p id="text">Besoin d&apos;aide pour gérer vos réseaux sociaux?  </p>
-                            <p id="text">Vous voulez être accompagner en informatique?</p>
-                            <p id="text">Contactez moi!</p>
+                            <p id="text">{t('card8text2')}</p>
+                            <p id="text">{t('card8text3')}</p>
+                            <p id="text">{t('card8text4')}</p>
                         </>
                         )}
                         alttext={"social media"} 
