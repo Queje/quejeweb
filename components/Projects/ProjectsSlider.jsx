@@ -17,8 +17,11 @@ import { DiRuby } from 'react-icons/di'
 import { SiRubyonrails } from 'react-icons/si'
 import { SiPostgresql } from 'react-icons/si'
 import { SiHeroku } from 'react-icons/si'
+import { useTranslation } from 'next-i18next'
 
 export default function ProjectsSlider () {
+
+    const { t } = useTranslation('common');
 
     const ProjectsList = [
                 {
@@ -28,8 +31,8 @@ export default function ProjectsSlider () {
                     url: "https://nicoangercoaching.fr/",
                     imagesource: image1,
                     alt: "image du site https://nicoangercoaching.fr",
-                    work: "Site pour un préparateur Mental et Coach sportif.",
-                    details: "Construit sur Wordpress, ce travail contient une partie blog avec des articles et une inscription à une mailing list pour une news letter en utilisant MailChimp. Customisation d'un thème par le CSS.",
+                    work: `${t('project1work')}`,
+                    details: `${t('project1details')}`,
                     iconlist:[
                         {
                             id: 1,
@@ -46,12 +49,12 @@ export default function ProjectsSlider () {
                 {
                     id: 2,
                     background: image2,
-                    title: "breton breaks",
+                    title: "Breton Breaks",
                     url: "https://www.bretonbreaks.com",
                     imagesource: image2,
                     alt: "image du site https://www.bretonbreaks.com",
-                    work: "Site pour la location d'une maison de vacances",
-                    details: "Site vitrine en frontend réalisé avec Reactjs et Bootstrap, hébergé par Vercel. Site responsive (adapté pour les mobiles) fait en css customisé. Module de traduction français et anglais (i18next).",
+                    work: `${t('project2work')}`,
+                    details: `${t('project2details')}`,
                     iconlist:[
                         {
                             id: 1,
@@ -83,12 +86,12 @@ export default function ProjectsSlider () {
                 {
                     id: 3,
                     background: image3,
-                    title: "laurence poidatz",
+                    title: "Laurence Poidatz",
                     url: "https://www.laurencepoidatz.com",
                     imagesource: image3,
                     alt: "image du site https://www.laurencepoidatz.com",
-                    work: "Site vitrine de l'artiste peintre Laurence Poidatz",
-                    details: "Site vitrine retouché sur wix.com, et retravaillé pour être responsive.",
+                    work: `${t('project3work')}`,
+                    details: `${t('project3details')}`,
                     iconlist:[
                         {
                             id: 1,
@@ -100,12 +103,12 @@ export default function ProjectsSlider () {
                 {
                     id: 4,
                     background: image4,
-                    title: "salon des arts de Carantec",
+                    title: "Salon des arts de Carantec",
                     url: "https://www.salonartcarantec.com",
                     imagesource: image4,
                     alt: "image du site https://www.salonartcarantec.com",
-                    work: "Site pour l'association du salon des arts de Carantec.",
-                    details: "Site vitrine en frontend réalisé avec Reactjs et Bootstrap, hébergé par Vercel. Site responsive (adapté pour les mobiles) fait en css customisé. Creation de formulaire imprimable en pdf sans sauvegarde des données (react-to-print). Module de traduction français et anglais (i18next). Customisation par CSS pour rendre le site responsive.",
+                    work: `${t('project4work')}`,
+                    details: `${t('project4details')}`,
                     iconlist:[
                         {
                             id: 1,
@@ -137,12 +140,12 @@ export default function ProjectsSlider () {
                 {
                     id: 5,
                     background: image5,
-                    title: "learning-stuff",
+                    title: "Learning-stuff",
                     url: "https://learning-stuff-thp.herokuapp.com/",
                     imagesource: image5,
                     alt: "image du site https://learning-stuff-thp.herokuapp.com/",
-                    work: "Site démo pour de la vente et de l'apprentissage en ligne.",
-                    details: "Site e-commerce avec le frontend réalisé avec Reactjs et Bootstrap, le backend est une api réalisé en Ruby On Rails et une base de données en postgreSQL. Ce Site est hébergé sur Heroku. Site responsive (adapté pour les mobiles) fait en css customisé. Système authentifaction avec Devise, partie administrateur avec gestion des utilisateurs. 2 types d'utilisateurs, les étudiants et les professeurs. Achats des leçons avec Stripe.",
+                    work: `${t('project5work')}`,
+                    details: `${t('project5details')}`,
                     iconlist:[
                         {
                             id: 1,

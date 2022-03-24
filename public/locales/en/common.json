@@ -2,7 +2,7 @@
     "test": "Français",
     "countryCode": "FR",
 
-    "aboutmetitle": "About me...",
+    "aboutmetitle": "About me ...",
     "aboutmetext1a": "I am a ",
     "aboutmetext1b": "fullstack ",
     "aboutmetext1neon": "web developper",
@@ -13,13 +13,13 @@
     "aboutmetext3": "At your service to suggest you solutions adapted to your needs.",
     "aboutmetext4a": "Together we will create websites and applications that ",
     "aboutmetext4b": "fit your style ",
-    "tools": "my tools...",
+    "tools": "my tools ...",
     "aboutmephoto1": "Support & Creation",
     "aboutmephoto2": "For all screen sizes",    
     "aboutmephoto3": "SEO",    
     "aboutmephoto4": "Hosting solutions",
 
-    "worktogethertitle": "Let's Work Together...",
+    "worktogethertitle": "Let's Work Together ...",
     "workdescription1": "The first meeting is ",
     "workdescription2": "free",
     "workdescription3": ", so are the ",
@@ -88,5 +88,26 @@
     "card8text1": "On quote",
     "card8text2": "Need help to manage your communication with social media?",
     "card8text3": "Do you want help with your computer?",
-    "card8text4": "Contact me!"
+    "card8text4": "Contact me!",
+
+    "projecttitle": "My Projets ...",
+    "projectdescription": "Few examples of projects I've work on.",
+
+    "projectoverlay": "Learn more ...",
+    "projectbutton": "Visit",
+
+    "project1work": "Website for a mental and sport coach.",
+    "project1details": "Build with Wordpress, this work has a blog and a subscription on a mailing list for a news letter using MailChimp. The Theme was customized with CSS.",
+
+    "project2work": "Website for a holiday house renting activity.",
+    "project2details": "Showcase, front-end created with Reactjs and Bootstrap, hosted on Vercel. Responsive website realised with custom CSS. French and english translation with i18next.",
+
+    "project3work": "Website for the artist Laurence Poidatz",
+    "project3details": "Showcase website updated on wix.com, and reworked to be responsive.",
+
+    "project4work": "Website for the art organization: le salon des arts de Carantec.",
+    "project4details": "Showcase website with front-end created with Reactjs and Bootstrap, hosted on Vercel. Responsive website with custom CSS. A printable pdf form was created without saving data using react-to-print. French and english translation i18next.",
+
+    "project5work": "Demo for a e-learning website with online payments.",
+    "project5details": "Website with front-end in Reactjs and Bootstrap, back-end with an api created with Ruby On Rails and a database in postgreSQL. Website hosted on Heroku. Responsive website in Bootstrap and custom CSS. Authentication with Devise and user management. 3 different users, students, teachers and administrators. Online payments with Stripe."
 }

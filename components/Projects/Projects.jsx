@@ -1,10 +1,12 @@
 import styles from '../Projects/Projects.module.css'
 import { Col, Row } from 'react-bootstrap'
-
 import dynamic from 'next/dynamic'
-import useInView from "react-cool-inview";
+import useInView from "react-cool-inview"
+import { useTranslation } from 'next-i18next'
 
 export default function Services () {
+
+  const { t } = useTranslation('common');
   
   const { observe, inView } = useInView({
     onEnter: ({ unobserve }) => {
@@ -21,9 +23,9 @@ export default function Services () {
           ref={observe}
         >
           <Col xs={12} md={12}>
-            <h3>Mes Projets ...</h3>
+            <h3>{t('projecttitle')}</h3>
             <div id="description">
-              <p id="text"> Quelques exemples de projets réalisés</p>
+              <p id="text">{t('projectdescription')}</p>
             </div>
           </Col>
           <Col xs={12} md={12}>

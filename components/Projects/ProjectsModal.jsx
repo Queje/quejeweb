@@ -2,11 +2,13 @@ import { Modal, OverlayTrigger, Tooltip, Button } from "react-bootstrap"
 import Image from 'next/image'
 import { useState } from "react"
 import styles from '../Projects/ProjectsModal.module.css'
+import { useTranslation } from 'next-i18next'
 
 export default function ProjectsModal ({project}) {
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    const { t } = useTranslation('common');
     
     return(
         <div className={styles.slideritem}>
@@ -21,7 +23,7 @@ export default function ProjectsModal ({project}) {
                 className={styles.slideroverlay} 
                 onClick={handleShow}
             >
-                <p id="text" className={styles.slidertext}>En savoir plus</p>
+                <p id="text" className={styles.slidertext}>{t('projectoverlay')}</p>
             </div>
             <Modal 
                 show={show} 
@@ -55,7 +57,7 @@ export default function ProjectsModal ({project}) {
                                     className={styles.modallink}
                                 >
                                     <Button className={styles.modalbutton}>
-                                        Visiter
+                                        {t('projectbutton')}
                                     </Button>
                                 </a>
                             </div>
