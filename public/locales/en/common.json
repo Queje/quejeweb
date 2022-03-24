@@ -45,7 +45,7 @@
     "workcardtext4c": "I'll remain available for updates and maintenance. Let's keep in touch!",
 
     "servicestitle": "Services ...",
-    "servicesdescription": "Different exemples of projects that I can help you build.",
+    "servicesdescription": "Different examples of projects that I can help you build.",
 
     "card1title": "Showcases Websites",
     "card1text1": "Starting at ",
@@ -55,13 +55,13 @@
     "card2title": "Custom Websites",
     "card2text1": "Starting at ",
     "card2text2": "1000 €",
-    "card2text3": "For a responsive personalized front-end in ReactJs or NextJs",
+    "card2text3": "For a responsive personalized front-end in ReactJs or NextJs.",
     "card2text4": "Custom made projects !",
 
     "card3title": "E-Shops",
     "card3text1": "Starting at ",
     "card3text2": "2000 €",
-    "card3text3": "Custom made front-end, admin pages, a back-end to sort your data.",
+    "card3text3": "Custom made front-end, admin pages, a back-end to sort your data. ",
     "card3text4": "Secure online payements with Stripe.",
     "card3text5": "To boost your business on the web !",
 
@@ -69,7 +69,7 @@
     "card4text1": "Starting at ",
     "card4text2": "1000 €",
     "card4text3": "A personalized back-end online with Strapi or custom made with nodejs, mongoDB or Ruby on Rails and PostgreSQL.",
-    "card4text4": "To create API and database to securaly handle informations.",
+    "card4text4": "API and database to securaly handle informations.",
 
     "card5title": "Applications",
     "card5text1": "On quote",
@@ -77,8 +77,8 @@
 
     "card6title": "Rework & Maintenance",
     "card6text1": "On quote",
-    "card6text2": "Updates? too slow? not enough time?",
-    "card6text3": "To help you with your already existing website and improve your communication !",
+    "card6text2": "Updates? too slow?",
+    "card6text3": "Improve your digital communication !",
 
     "card7title": "SEO",
     "card7text1": "On quote",
@@ -88,7 +88,6 @@
     "card8text1": "On quote",
     "card8text2": "Need help to manage your communication with social media?",
     "card8text3": "Do you want help with your computer?",
-    "card8text4": "Contact me!",
 
     "projecttitle": "My Projets ...",
     "projectdescription": "Few examples of projects I've work on.",
