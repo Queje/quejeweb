@@ -74,8 +74,7 @@ export default function ServicesList() {
                                 {t('card3title')}
                             </p>
                             <p id="text">{t('card3text1')}<span id="neontext">{t('card3text2')}</span></p>
-                            <p id="text">{t('card3text3')}</p>
-                            <p id="text">{t('card3text4')}</p>
+                            <p id="text">{t('card3text3')}{t('card3text4')}</p>
                             <p id="text">{t('card3text5')}</p>
                         </>
                         )}
@@ -185,7 +184,6 @@ export default function ServicesList() {
                             </p>
                             <p id="text">{t('card8text2')}</p>
                             <p id="text">{t('card8text3')}</p>
-                            <p id="text">{t('card8text4')}</p>
                         </>
                         )}
                         alttext={"social media"} 

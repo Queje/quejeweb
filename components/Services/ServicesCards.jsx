@@ -11,12 +11,16 @@ export default function ServicesCards({ src, textoverlay, servicetext, alttext }
         isShown ? setIsShown(false) : setIsShown(true)
     }
 
+    function notOnMobile(e) {
+        e.preventDefault();
+    }
+
     return(
         <div 
             className={styles.servicescards}
-            onMouseLeave={!isMobile && (() => setIsShown(false))}
-            onMouseEnter={!isMobile && (() => setIsShown(true))}
-            onClick={isMobile && handleClick}
+            onMouseLeave={!isMobile ? (() => setIsShown(false)) : notOnMobile }
+            onMouseEnter={!isMobile ? (() => setIsShown(true)) : notOnMobile }
+            onClick={isMobile ? handleClick : notOnMobile }
         >
             { isShown && (
                 <div className={styles.serviceoverlay}>

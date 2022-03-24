@@ -55,13 +55,13 @@
     "card2title": "Sites custom",
     "card2text1": "A partir de ",
     "card2text2": "1000 €",
-    "card2text3": "Pour un front-end responsive personalisé en ReactJs ou NextJs",
+    "card2text3": "Pour un front-end responsive personalisé en ReactJs ou NextJs.",
     "card2text4": "Pour vos projets sur mesure !",
 
     "card3title": "Sites Boutiques",
     "card3text1": "A partir de ",
     "card3text2": "2000 €",
-    "card3text3": "Un front sur mesure, des pages administrations, un back-end pour gérer vos données.",
+    "card3text3": "Un front-end sur mesure, des pages admin, un back-end pour gérer vos données. ",
     "card3text4": "Des moyens de payements en ligne sécurisé.",
     "card3text5": "Pour développer votre activité en ligne !",
 
@@ -69,7 +69,7 @@
     "card4text1": "A partir de ",
     "card4text2": "1000 €",
     "card4text3": "Un back-end personalisé en ligne avec strapi ou sur mesure avec nodejs, mongoDB, Ruby on Rails et PostgreSQL.",
-    "card4text4": "Pour créer des API et bases de données pour gérér et accéder à vos données en toute sécurité.",
+    "card4text4": "Des API et bases de données en toute sécurité.",
 
     "card5title": "Applications",
     "card5text1": "Sur devis",
@@ -77,18 +77,17 @@
 
     "card6title": "Retouches & Maintenance",
     "card6text1": "Sur devis",
-    "card6text2": "Mises à jours? Site trop lent? Manque de temps?",
-    "card6text3": "Pour vous aider à maintenir et améliorer votre communication en ligne!",
+    "card6text2": "Mises à jours? Site trop lent?",
+    "card6text3": "Améliorer votre communication en ligne!",
 
     "card7title": "SEO & référencement",
     "card7text1": "Sur devis",
     "card7text2": "Améliorer votre référencement naturel pour être mieux visible par les moteurs de recherche!",
 
-    "card8title": "Aide & Réseaux Sociaux",
+    "card8title": "Aide & Réseaux",
     "card8text1": "Sur devis",
     "card8text2": "Besoin d'aide pour gérer votre communication sur les réseaux sociaux?",
     "card8text3": "Vous voulez être accompagner en informatique?",
-    "card8text4": "Contactez moi!",
 
     "projecttitle": "Mes Projets ...",
     "projectdescription": "Quelques exemples de projets réalisés.",
@@ -100,14 +99,14 @@
     "project1details": "Construit sur Wordpress, ce travail contient une partie blog avec des articles et une inscription à une mailing list pour une news letter en utilisant MailChimp. Customisation d'un thème par le CSS.",
 
     "project2work": "Site pour la location d'une maison de vacances.",
-    "project2details": "Site vitrine en frontend réalisé avec Reactjs et Bootstrap, hébergé par Vercel. Site responsive (adapté pour les mobiles) fait en CSS customisé. Module de traduction français et anglais (i18next).",
+    "project2details": "Site vitrine en front-end réalisé avec Reactjs et Bootstrap, hébergé par Vercel. Site responsive (adapté pour les mobiles) fait en CSS customisé. Module de traduction français et anglais (i18next).",
 
     "project3work": "Site vitrine de l'artiste peintre Laurence Poidatz",
     "project3details": "Site vitrine retouché sur wix.com, et retravaillé pour être responsive.",
 
     "project4work": "Site pour l'association du salon des arts de Carantec.",
-    "project4details": "Site vitrine en frontend réalisé avec Reactjs et Bootstrap, hébergé par Vercel. Site responsive (adapté pour les mobiles) fait en CSS customisé. Creation de formulaire imprimable en pdf sans sauvegarde des données (react-to-print). Module de traduction français et anglais (i18next).",
+    "project4details": "Site vitrine en front-end réalisé avec Reactjs et Bootstrap, hébergé par Vercel. Site responsive (adapté pour les mobiles) fait en CSS customisé. Creation de formulaire imprimable en pdf sans sauvegarde des données (react-to-print). Module de traduction français et anglais (i18next).",
 
     "project5work": "Site démo pour de la vente et de l'apprentissage en ligne.",
-    "project5details": "Site e-commerce avec le frontend réalisé avec Reactjs et Bootstrap, le backend est une api réalisé en Ruby On Rails et une base de données en postgreSQL. Ce Site est hébergé sur Heroku. Site responsive (adapté pour les mobiles) fait avec Bootstrap et du css customisé. Système authentifaction avec Devise, partie administrateur avec gestion des utilisateurs. 3 types d'utilisateurs, les étudiants, les professeurs, les administrateurs. Achats des leçons avec Stripe."
+    "project5details": "Site e-commerce avec le front-end réalisé avec Reactjs et Bootstrap, le back-end est une api réalisé en Ruby On Rails et une base de données en postgreSQL. Ce Site est hébergé sur Heroku. Site responsive (adapté pour les mobiles) fait avec Bootstrap et du css customisé. Système authentifaction avec Devise, partie administrateur avec gestion des utilisateurs. 3 types d'utilisateurs, les étudiants, les professeurs, les administrateurs. Achats des leçons avec Stripe."
 }

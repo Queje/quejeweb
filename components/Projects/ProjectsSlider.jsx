@@ -17,6 +17,7 @@ import { DiRuby } from 'react-icons/di'
 import { SiRubyonrails } from 'react-icons/si'
 import { SiPostgresql } from 'react-icons/si'
 import { SiHeroku } from 'react-icons/si'
+import { FaMailchimp } from 'react-icons/fa'
 import { useTranslation } from 'next-i18next'
 
 export default function ProjectsSlider () {
@@ -42,7 +43,12 @@ export default function ProjectsSlider () {
                         {
                             id: 2,
                             tooltip: "css 3",
-                            name: FaCss3Alt
+                            name: FaCss3Alt,
+                        },
+                        {
+                            id: 3,
+                            tooltip: "Mailchimp",
+                            name: FaMailchimp,
                         }
                     ]
                 },
