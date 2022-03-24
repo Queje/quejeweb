@@ -12,6 +12,26 @@
     pointer-events: none;
 }
 
+.aboutmegrid{
+    display: grid;
+    grid-template-areas: "overlay";
+}
+
+.aboutmegrid > span {
+    grid-area: overlay;
+}
+
+.aboutmegrid > div {
+    grid-area: overlay;
+    font-family: "montserrat-light";
+    font-size: 1rem;
+    z-index: 1;
+    background: linear-gradient(to top, rgba(4, 50, 66, 0.90), transparent);
+    text-align: center;
+    pointer-events: none;
+    padding-top: 55%;
+}
+
 .aboutpicture1, .aboutpicture2, .aboutpicture3, .aboutpicture4{
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
@@ -35,6 +55,10 @@
         height: 123px;
         font-size: 0.8rem;
         padding-top: 5rem;
+    }
+
+    .aboutmegrid > div{
+        font-size: 0.8rem;
     }
 
     .aboutmebox{
