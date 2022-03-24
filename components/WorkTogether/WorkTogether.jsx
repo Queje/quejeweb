@@ -9,7 +9,6 @@ export default function WorkTogether() {
 
     return(
         <section 
-            data-aos="flip-down" 
             className={styles.worktogether}
         >
             <h3 className={styles.worktitle}>{t('worktogethertitle')}</h3>

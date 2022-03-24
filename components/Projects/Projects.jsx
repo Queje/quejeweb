@@ -18,7 +18,6 @@ export default function Services () {
 
     return (
         <Row 
-          data-aos="flip-down"
           className={styles.projects}
           ref={observe}
         >
