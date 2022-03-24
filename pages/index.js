@@ -10,11 +10,12 @@ import TopJumbotron from '../components/Jumbotron/TopJumbotron'
 import Footer from '../components/Footer/Footer'
 import useInView from "react-cool-inview";
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { isMobile } from 'react-device-detect'
 
 function Home() {
   
   useEffect(() => {
-    AOS.init()
+    !isMobile && AOS.init()
   })
 
   const { observe, inView } = useInView({
