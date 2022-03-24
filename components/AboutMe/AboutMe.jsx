@@ -23,7 +23,6 @@ export default function AboutMe() {
     
     return(
         <div 
-          data-aos="flip-down"
           className={styles.aboutme}
           ref={observe}
         >

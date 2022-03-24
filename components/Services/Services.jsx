@@ -17,7 +17,6 @@ export default function Services () {
 
   return(
     <section
-      data-aos="flip-down"
       ref={ observe }
     >
         <div
