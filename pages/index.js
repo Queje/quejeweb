@@ -1,22 +1,21 @@
 import styles from '../styles/Home.module.css'
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
-import { useEffect } from "react"
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+// import { useEffect } from "react"
+// import AOS from 'aos'
+// import 'aos/dist/aos.css'
 
 import Navigation from '../components/Navigation/Navigation'
 import TopJumbotron from '../components/Jumbotron/TopJumbotron'
 import Footer from '../components/Footer/Footer'
 import useInView from "react-cool-inview";
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { isMobile } from 'react-device-detect'
 
 function Home() {
   
-  useEffect(() => {
-    !isMobile && AOS.init()
-  })
+  // useEffect(() => {
+  //   AOS.init()
+  // })
 
   const { observe, inView } = useInView({
     onEnter: ({ unobserve }) => {
