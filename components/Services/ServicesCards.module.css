@@ -6,29 +6,30 @@
 }
 
 .box{
-    display: block;
+    display: grid;
+    grid-template-areas: "overlay";
     width: 600px;
-    height: 400px;
+    height: 418px;
 }
 
-.serviceoverlay{
+.box > span {
+    grid-area: overlay;
+}
+
+.box > div {
+    grid-area: overlay;
     z-index: 1;
-    position: absolute;
-    height: 400px;
-    width: 600px;
-    background: linear-gradient(to top, rgba(4, 50, 66, 0.9), rgba(4, 50, 66, 0.7));
+    background: linear-gradient(to top, rgba(4, 50, 66, 0.95), rgba(4, 50, 66, 0.25));
+    text-align: center;
+    padding-top: 60%;
+}
+
+.box > div:hover {
+    grid-area: overlay;
     padding-left: 1rem;
     padding-top: 1rem;
-}
-
-.servicetext{
-    z-index: 1;
-    position: absolute;
-    height: 400px;
-    width: 600px;
-    text-align: center;
-    background: linear-gradient(to top, rgba(4, 50, 66, 0.9), transparent);
-    display: grid;
+    background: linear-gradient(to top, rgba(4, 50, 66, 0.95), rgba(4, 50, 66, 0.75));
+    text-align: left;
 }
 
 .servicedescription{
@@ -43,20 +44,6 @@
 }
 
 @media (max-width: 800px) {
-    .serviceoverlay{
-        width: 375px;
-        height: 250px;
-        padding-left: 1.5rem;
-    }
-
-    .box{
-        height: auto;
-    }
-
-    .servicetext{
-        width: 375px;
-        height: 250px;
-    }
 
     .servicedescription{
         font-size: 2rem;

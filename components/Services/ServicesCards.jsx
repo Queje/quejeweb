@@ -22,16 +22,6 @@ export default function ServicesCards({ src, textoverlay, servicetext, alttext }
             onMouseEnter={!isMobile ? (() => setIsShown(true)) : notOnMobile }
             onClick={isMobile ? handleClick : notOnMobile }
         >
-            { isShown && (
-                <div className={styles.serviceoverlay}>
-                    { textoverlay }   
-                </div>
-            )}
-            { !isShown && (
-                <div className={styles.servicetext}>
-                    <p className={styles.servicedescription}>{ servicetext }</p>
-                </div>
-            )}
             <div className={styles.box}>
                 <Image 
                     src= { src } // Route of the image file
@@ -41,6 +31,16 @@ export default function ServicesCards({ src, textoverlay, servicetext, alttext }
                     alt= { alttext }
                     layout="responsive"
                 />
+                { isShown && (
+                    <div >
+                        { textoverlay }   
+                    </div>
+                )}
+                { !isShown && (
+                    <div >
+                        <p className={styles.servicedescription}>{ servicetext }</p>
+                    </div>
+                )}
             </div>
         </div>
     )
