@@ -2,7 +2,7 @@
     "test": "English",
     "countryCode": "GB",
 
-    "aboutmetitle": "A propos...",
+    "aboutmetitle": "A propos ...",
     "aboutmetext1a": "Je suis ",
     "aboutmetext1neon": "développeur web ",
     "aboutmetext1b": "fullstack",
@@ -13,13 +13,13 @@
     "aboutmetext3": "A votre écoute pour vous proposez les outils les plus adaptés.",
     "aboutmetext4a": "Ensemble nous pourrons créer des sites et applications ",
     "aboutmetext4b": "qui vous ressemblent ",
-    "tools": "mes outils...",
+    "tools": "mes outils ...",
     "aboutmephoto1": "Accompagnement & Conception",
     "aboutmephoto2": "Sites pour toutes tailles d'écrans",    
     "aboutmephoto3": "Référencement naturel & SEO",    
     "aboutmephoto4": "Solutions d'hébergement",
 
-    "worktogethertitle": "Travaillons ensemble...",
+    "worktogethertitle": "Travaillons ensemble ...",
     "workdescription1": "Le premier rendez-vous est ",
     "workdescription2": "gratuit ",
     "workdescription3": "et les ",
@@ -88,5 +88,26 @@
     "card8text1": "Sur devis",
     "card8text2": "Besoin d'aide pour gérer votre communication sur les réseaux sociaux?",
     "card8text3": "Vous voulez être accompagner en informatique?",
-    "card8text4": "Contactez moi!"
+    "card8text4": "Contactez moi!",
+
+    "projecttitle": "Mes Projets ...",
+    "projectdescription": "Quelques exemples de projets réalisés.",
+
+    "projectoverlay": "En savoir plus ...",
+    "projectbutton": "Visiter",
+
+    "project1work": "Site pour un préparateur mental et coach sportif.",
+    "project1details": "Construit sur Wordpress, ce travail contient une partie blog avec des articles et une inscription à une mailing list pour une news letter en utilisant MailChimp. Customisation d'un thème par le CSS.",
+
+    "project2work": "Site pour la location d'une maison de vacances.",
+    "project2details": "Site vitrine en frontend réalisé avec Reactjs et Bootstrap, hébergé par Vercel. Site responsive (adapté pour les mobiles) fait en CSS customisé. Module de traduction français et anglais (i18next).",
+
+    "project3work": "Site vitrine de l'artiste peintre Laurence Poidatz",
+    "project3details": "Site vitrine retouché sur wix.com, et retravaillé pour être responsive.",
+
+    "project4work": "Site pour l'association du salon des arts de Carantec.",
+    "project4details": "Site vitrine en frontend réalisé avec Reactjs et Bootstrap, hébergé par Vercel. Site responsive (adapté pour les mobiles) fait en CSS customisé. Creation de formulaire imprimable en pdf sans sauvegarde des données (react-to-print). Module de traduction français et anglais (i18next).",
+
+    "project5work": "Site démo pour de la vente et de l'apprentissage en ligne.",
+    "project5details": "Site e-commerce avec le frontend réalisé avec Reactjs et Bootstrap, le backend est une api réalisé en Ruby On Rails et une base de données en postgreSQL. Ce Site est hébergé sur Heroku. Site responsive (adapté pour les mobiles) fait avec Bootstrap et du css customisé. Système authentifaction avec Devise, partie administrateur avec gestion des utilisateurs. 3 types d'utilisateurs, les étudiants, les professeurs, les administrateurs. Achats des leçons avec Stripe."
 }
