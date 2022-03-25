@@ -9,7 +9,8 @@
     display: grid;
     grid-template-areas: "overlay";
     width: 600px;
-    height: 418px;
+    height: 400px;
+    overflow: hidden;
 }
 
 .box > span {
@@ -21,7 +22,7 @@
     z-index: 1;
     background: linear-gradient(to top, rgba(4, 50, 66, 0.95), rgba(4, 50, 66, 0.25));
     text-align: center;
-    padding-top: 60%;
+    padding-top: 50%;
 }
 
 .box > div:hover {

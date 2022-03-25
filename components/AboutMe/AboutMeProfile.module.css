@@ -1,21 +1,33 @@
 .imageprofile{
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 1rem;
 }
 
-.profileoverlay{
+.profilewrapper{
+    display: grid;
+    grid-template-areas: "overlay";
+    height: 300px;
+    width: 300px;  
+}
+
+.profilewrapper > span {
+    grid-area: overlay;
+}
+
+.profilewrapper > div {
+    grid-area: overlay;
+    z-index: 1;
+    background: linear-gradient(to right, rgba(4, 50, 66, 0.9), transparent);
+}
+
+/* .profileoverlay{
     z-index: 1;
     position: absolute;
     height: 352px;
     width: 325px;
     background: linear-gradient(to right, rgba(4, 50, 66, 0.9), transparent);
-}
-
-.profilewrapper{
-    width: 100%;
-    height: 425px;
-    display: block;
-}
+} */
 
 .profilepicture{
     z-index: 0;
@@ -23,13 +35,4 @@
 
 @media (max-width: 800px) {
 
-    .profileoverlay{
-        width: 319px;
-        height: 339px;
-    }
-
-    .profilewrapper{
-        height: 339px;
-        margin-bottom: 1rem;
-    }
 }

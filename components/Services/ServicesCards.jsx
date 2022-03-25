@@ -11,16 +11,15 @@ export default function ServicesCards({ src, textoverlay, servicetext, alttext }
         isShown ? setIsShown(false) : setIsShown(true)
     }
 
-    function notOnMobile(e) {
+    function notMobile(e) {
         e.preventDefault();
     }
 
     return(
         <div 
             className={styles.servicescards}
-            onMouseLeave={!isMobile ? (() => setIsShown(false)) : notOnMobile }
-            onMouseEnter={!isMobile ? (() => setIsShown(true)) : notOnMobile }
-            onClick={isMobile ? handleClick : notOnMobile }
+            onMouseLeave={!isMobile ? (() => setIsShown(false)) : notMobile }
+            onMouseEnter={!isMobile ? (() => setIsShown(true)) : notMobile }
         >
             <div className={styles.box}>
                 <Image 
@@ -31,16 +30,26 @@ export default function ServicesCards({ src, textoverlay, servicetext, alttext }
                     alt= { alttext }
                     layout="responsive"
                 />
-                { isShown && (
-                    <div >
-                        { textoverlay }   
-                    </div>
-                )}
-                { !isShown && (
-                    <div >
-                        <p className={styles.servicedescription}>{ servicetext }</p>
-                    </div>
-                )}
+                {
+                    !isMobile &&
+                         isShown ? (
+                            <div>
+                                { textoverlay }   
+                            </div>
+                        ) :
+                        (
+                            <div>
+                                <p className={styles.servicedescription}>{ servicetext }</p>
+                            </div>
+                        )
+                }
+                {
+                    isMobile && (
+                        <div >
+                            { textoverlay }   
+                        </div>
+                    )
+                }
             </div>
         </div>
     )
