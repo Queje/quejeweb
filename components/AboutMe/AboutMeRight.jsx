@@ -15,10 +15,7 @@ export default function AboutMeRight() {
         <Col lg={4} xs={12}>
             <Row>
                 <Col md={6} xs={6}>
-                    <div className={styles.pictureoverlay}>
-                        {t('aboutmephoto1')}
-                    </div>
-                    <div className={styles.aboutmebox}>
+                    <div className={styles.aboutmegrid}>
                         <Image
                             src= { aboutpicture1 } // Route of the image file
                             height={ 250 } // Desired size with correct aspect ratio
@@ -27,13 +24,13 @@ export default function AboutMeRight() {
                             alt= "picture about team work" 
                             layout="responsive"
                         />
+                        <div>
+                            {t('aboutmephoto1')}
+                        </div>
                     </div>
                 </Col>
-                <Col md={6} xs={6}>
-                    <div className={styles.pictureoverlay}>
-                        {t('aboutmephoto2')}
-                    </div>
-                    <div className={styles.aboutmebox}>
+                <Col md={6} xs={6}> 
+                    <div className={styles.aboutmegrid}>
                         <Image
                             src= { aboutpicture2 } // Route of the image file
                             height={ 250 } // Desired size with correct aspect ratio
@@ -42,15 +39,15 @@ export default function AboutMeRight() {
                             alt= "picture about different screens size to show responsive design" 
                             layout="responsive"
                         />
+                        <div>
+                            {t('aboutmephoto2')}
+                        </div>
                     </div>
                 </Col>
                 </Row>
                 <Row>
                 <Col md={6} xs={6}>
-                    <div className={styles.pictureoverlay}>
-                        {t('aboutmephoto3')}
-                    </div>
-                    <div className={styles.aboutmebox}>
+                    <div className={styles.aboutmegrid}>
                         <Image 
                             src= { aboutpicture3 } // Route of the image file
                             height={ 250 } // Desired size with correct aspect ratio
@@ -59,13 +56,13 @@ export default function AboutMeRight() {
                             alt= "picture about someone working on a laptop"
                             layout="responsive"
                         />
+                        <div>
+                            {t('aboutmephoto3')}
+                        </div>
                     </div>
                 </Col>
                 <Col md={6} xs={6}>
-                    <div className={styles.pictureoverlay}>
-                        {t('aboutmephoto4')}
-                    </div>
-                    <div className={styles.aboutmebox}>
+                    <div className={styles.aboutmegrid}>
                         <Image 
                             src= { aboutpicture4 } // Route of the image file
                             height={ 250 } // Desired size with correct aspect ratio
@@ -74,6 +71,9 @@ export default function AboutMeRight() {
                             alt= "picture about a settings button on a site"
                             layout="responsive"
                         />
+                        <div>
+                            {t('aboutmephoto4')}
+                        </div>
                     </div>
                 </Col>
             </Row>

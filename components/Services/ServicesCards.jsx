@@ -8,30 +8,15 @@ export default function ServicesCards({ src, textoverlay, servicetext, alttext }
 
     function handleClick (e) {
         e.preventDefault();
-        isShown ? setIsShown(false) : setIsShown(true)
-    }
-
-    function notOnMobile(e) {
-        e.preventDefault();
+        !isMobile && isShown ? setIsShown(false) : setIsShown(true)
     }
 
     return(
         <div 
             className={styles.servicescards}
-            onMouseLeave={!isMobile ? (() => setIsShown(false)) : notOnMobile }
-            onMouseEnter={!isMobile ? (() => setIsShown(true)) : notOnMobile }
-            onClick={isMobile ? handleClick : notOnMobile }
+            onMouseLeave={handleClick}
+            onMouseEnter={handleClick}
         >
-            { isShown && (
-                <div className={styles.serviceoverlay}>
-                    { textoverlay }   
-                </div>
-            )}
-            { !isShown && (
-                <div className={styles.servicetext}>
-                    <p className={styles.servicedescription}>{ servicetext }</p>
-                </div>
-            )}
             <div className={styles.box}>
                 <Image 
                     src= { src } // Route of the image file
@@ -41,6 +26,26 @@ export default function ServicesCards({ src, textoverlay, servicetext, alttext }
                     alt= { alttext }
                     layout="responsive"
                 />
+                {
+                    !isMobile &&
+                         isShown ? (
+                            <div>
+                                { textoverlay }   
+                            </div>
+                        ) :
+                        (
+                            <div>
+                                <p className={styles.servicedescription}>{ servicetext }</p>
+                            </div>
+                        )
+                }
+                {
+                    isMobile && (
+                        <div >
+                            { textoverlay }   
+                        </div>
+                    )
+                }
             </div>
         </div>
     )

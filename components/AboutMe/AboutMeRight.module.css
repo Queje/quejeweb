@@ -1,15 +1,21 @@
-.pictureoverlay{
+.aboutmegrid{
+    display: grid;
+    grid-template-areas: "overlay";
+}
+
+.aboutmegrid > span {
+    grid-area: overlay;
+}
+
+.aboutmegrid > div {
+    grid-area: overlay;
     font-family: "montserrat-light";
     font-size: 1rem;
     z-index: 1;
-    position: absolute;
-    width: 181.33px;
-    height: 151.1px;
     background: linear-gradient(to top, rgba(4, 50, 66, 0.90), transparent);
     text-align: center;
-    padding-top: 6rem;
-    padding-right: 1rem;
     pointer-events: none;
+    padding-top: 55%;
 }
 
 .aboutpicture1, .aboutpicture2, .aboutpicture3, .aboutpicture4{
@@ -22,25 +28,10 @@
     transform: scale(1.2);
 }
 
-.aboutmebox{
-    height:  151.1px;
-    width: 181.33px;
-    display: block;
-}
-
 @media (max-width: 800px) {
 
-    .pictureoverlay{
-        width: 147.5px;
-        height: 123px;
+    .aboutmegrid > div{
         font-size: 0.8rem;
-        padding-top: 5rem;
-    }
-
-    .aboutmebox{
-        width: auto;
-        height: auto;
-        margin-bottom: 0.2rem;
     }
 
     .aboutpicture1:hover, .aboutpicture2:hover, .aboutpicture3:hover, .aboutpicture4:hover{
