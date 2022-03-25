@@ -8,18 +8,14 @@ export default function ServicesCards({ src, textoverlay, servicetext, alttext }
 
     function handleClick (e) {
         e.preventDefault();
-        isShown ? setIsShown(false) : setIsShown(true)
-    }
-
-    function notMobile(e) {
-        e.preventDefault();
+        !isMobile && isShown ? setIsShown(false) : setIsShown(true)
     }
 
     return(
         <div 
             className={styles.servicescards}
-            onMouseLeave={!isMobile ? (() => setIsShown(false)) : notMobile }
-            onMouseEnter={!isMobile ? (() => setIsShown(true)) : notMobile }
+            onMouseLeave={handleClick}
+            onMouseEnter={handleClick}
         >
             <div className={styles.box}>
                 <Image 

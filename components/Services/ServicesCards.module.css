@@ -47,6 +47,24 @@
 @media (max-width: 800px) {
 
     .servicedescription{
-        font-size: 2rem;
+        display: none;
+    }
+
+    .box > div {
+        z-index: 1;
+        grid-area: overlay;
+        padding-left: 1rem;
+        padding-top: 35%;
+        background: linear-gradient(to top, rgba(4, 50, 66, 0.85), rgba(4, 50, 66, 0.20));
+        text-align: left;
+    }
+
+    .box > div:hover {
+        z-index: 1;
+        grid-area: overlay;
+        padding-left: 1rem;
+        padding-top: 35%;
+        background: linear-gradient(to top, rgba(4, 50, 66, 0.85), rgba(4, 50, 66, 0.20));
+        text-align: left;
     }
 }
