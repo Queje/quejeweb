@@ -25,8 +25,8 @@ export default function ServicesList() {
 
     return(
         <>
-            <Row md={12} xs={12}>
-                <Col md={6} xs={12}>
+            <Row md={12} sm={12} xs={12}>
+                <Col md={6} sm={12} xs={12}>
                     <ServicesCards 
                         src={photoservice1} 
                         servicetext={t('card1title')}
@@ -43,7 +43,7 @@ export default function ServicesList() {
                         alttext={"laptop showing a website"} 
                     />
                 </Col>
-                <Col md={6} xs={12}>
+                <Col md={6} sm={12} xs={12}>
                     <ServicesCards 
                         src={photoservice2} 
                         servicetext={t('card2title')}

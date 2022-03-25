@@ -21,14 +21,6 @@
     background: linear-gradient(to right, rgba(4, 50, 66, 0.9), transparent);
 }
 
-/* .profileoverlay{
-    z-index: 1;
-    position: absolute;
-    height: 352px;
-    width: 325px;
-    background: linear-gradient(to right, rgba(4, 50, 66, 0.9), transparent);
-} */
-
 .profilepicture{
     z-index: 0;
 }
