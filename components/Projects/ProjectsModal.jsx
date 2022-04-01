@@ -62,15 +62,16 @@ export default function ProjectsModal ({project}) {
                                 </a>
                             </div>
                         </div>
-                        <div>
-                            <div className={styles.overlay}></div>
+                        <div className={styles.modalwrapper}>
                             <Image
                                 src={project.background}
+                                layout="responsive"
                                 width={400}
                                 height={300}
                                 alt="cover image"
                                 className={styles.modalimagestyle}
                             />
+                            <div className={styles.modaloverlay}></div>
                         </div>
                     </div>
                 </Modal.Body>

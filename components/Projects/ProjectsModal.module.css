@@ -33,21 +33,30 @@
 .modalbody{
     display: flex;
     flex-direction: row;
-    width: 100%;
 }
 
 .textcontainer{
     width: 50%;
     z-index: 2;
+    margin-left: 1rem;
     margin-right: 1rem;
 }
 
-.overlay{
+.modalwrapper{
+    display: grid;
+    grid-template-areas: "overlay";
+    height: 300px;
+    width: 400px; 
+}
+
+.modalwrapper > span {
+    grid-area: overlay;
+}
+
+.modalwrapper > div {
+    grid-area: overlay;
     z-index: 1;
-    position: absolute;
-    height: 100%;
-    width: 50%;
-    background: linear-gradient(to right, rgba(4, 50, 66, 0.9), rgba(4, 50, 66, 0.2));
+    background: linear-gradient(to top, rgba(4, 50, 66, 0.85), rgba(4, 50, 66, 0.15));
 }
 
 .modalimagestyle{
@@ -93,16 +102,16 @@
 
 @media (max-width: 800px){
     .modalbody{
-        flex-direction: column;
+        display: grid;
+        justify-content: center;
+        overflow: hidden;
     }
 
     .textcontainer{
-        width: 100%;
-    }
-
-    .overlay{
-        width: 100%;
-        height: 234.75px;
+        max-width: 80vw!important;
+        width: 100vw!important;
+        margin-left: 3rem;
+        margin-right: 3rem;
     }
 
     .centerbutton{
