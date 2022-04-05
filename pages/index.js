@@ -41,6 +41,8 @@ function Home() {
         {/* Open Graph */}
         <meta property="og:url" content="https://www.quejeweb.com" key="ogurl" />
         <meta property="og:image" content="https://www.quejeweb.com/_next/static/media/QJW.955ed5ae.svg" key="ogimage" />
+        <meta property="og:image:width" content="200" key="ogimgwidth"/>
+        <meta property="og:image:height" content="200" key="ogimgheight"/>
         <meta property="og:site_name" content="Que Je Web" key="ogsitename" />
         <meta property="og:title" content="Que Je Web - Developpeur Web full-stack" key="ogtitle" />
         <meta property="og:description" content="Pour réaliser vos sites et applications sur mesures" key="ogdesc" />
