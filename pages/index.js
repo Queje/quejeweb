@@ -4,8 +4,9 @@ import dynamic from 'next/dynamic'
 import Navigation from '../components/Navigation/Navigation'
 import TopJumbotron from '../components/Jumbotron/TopJumbotron'
 import Footer from '../components/Footer/Footer'
-import useInView from "react-cool-inview";
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import useInView from "react-cool-inview"
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import logo from '../assets/QJW.svg'
 
 function Home() {
 
@@ -32,6 +33,18 @@ function Home() {
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link rel="icon" href="/favicon.ico" />
+        
+        {/* Twitter */}
+        <meta property="twitter:card" content="Que Je Web - Developpeur Web full-stack" key="twcard"/>
+        <meta property="twitter:image" content={ logo } key="twimage"/>
+        <meta property="twitter:site" content="@JeremyQuerne" key="twsite"/>
+
+        {/* Open Graph */}
+        <meta property="og:url" content="https://www.quejeweb.com" key="ogurl" />
+        <meta property="og:image" content={ logo } key="ogimage" />
+        <meta property="og:site_name" content="Que Je Web" key="ogsitename" />
+        <meta property="og:title" content="Que Je Web - Developpeur Web full-stack" key="ogtitle" />
+        <meta property="og:description" content="Pour réaliser vos sites et applications sur mesures" key="ogdesc" />
       </Head>
 
       <Navigation />
