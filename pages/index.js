@@ -38,8 +38,12 @@ function Home() {
         <meta property="twitter:image" content="https://www.quejeweb.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FQJW.6fb44b60.webp&w=256&q=75" key="twimage"/>
         <meta property="twitter:site" content="@JeremyQuerne" key="twsite"/>
 
+        {/* Facebook */}
+        <meta property="fb:app_id" content="1006082923661685" key="fbappid" />
+
         {/* Open Graph */}
         <meta property="og:url" content="https://www.quejeweb.com" key="ogurl" />
+        <meta property="og:type" content="website" key="ogtype" />
         <meta property="og:image" content="https://www.quejeweb.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FQJW.6fb44b60.webp&w=256&q=75" key="ogimage" />
         <meta property="og:image:width" content="200" key="ogimgwidth"/>
         <meta property="og:image:height" content="200" key="ogimgheight"/>
