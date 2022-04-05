@@ -29,13 +29,11 @@ export default function WorkTogether() {
                         title={t('workcardtext1a')}  
                         text={( 
                                 <>
-                                    <p>
-                                        {t('workcardtext1b')}
-                                            <span id="neontext">{t('workcardtext1c')}</span>
-                                        {t('workcardtext1d')}
-                                            <span id="neontext">{t('workcardtext1e')}</span>
-                                        {t('workcardtext1f')} 
-                                    </p>
+                                    {t('workcardtext1b')}
+                                        <span id="neontext">{t('workcardtext1c')}</span>
+                                    {t('workcardtext1d')}
+                                        <span id="neontext">{t('workcardtext1e')}</span>
+                                    {t('workcardtext1f')}   
                                 </>
                             )}
                     />
@@ -62,7 +60,7 @@ export default function WorkTogether() {
                         title={t('workcardtext4a')} 
                         text={(
                                 <>
-                                    <p className={styles.importanttext}>{t('workcardtext4b')}</p> 
+                                    <span className={styles.importanttext}>{t('workcardtext4b')}</span> 
                                     <small>{t('workcardtext4c')}</small>
                                 </>
                             )}
