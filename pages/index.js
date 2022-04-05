@@ -35,12 +35,12 @@ function Home() {
         
         {/* Twitter */}
         <meta property="twitter:card" content="Que Je Web - Developpeur Web full-stack" key="twcard"/>
-        <meta property="twitter:image" content="https://www.quejeweb.com/_next/static/media/QJW.955ed5ae.svg" key="twimage"/>
+        <meta property="twitter:image" content="https://www.quejeweb.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FQJW.6fb44b60.webp&w=256&q=75" key="twimage"/>
         <meta property="twitter:site" content="@JeremyQuerne" key="twsite"/>
 
         {/* Open Graph */}
         <meta property="og:url" content="https://www.quejeweb.com" key="ogurl" />
-        <meta property="og:image" content="https://www.quejeweb.com/_next/static/media/QJW.955ed5ae.svg" key="ogimage" />
+        <meta property="og:image" content="https://www.quejeweb.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FQJW.6fb44b60.webp&w=256&q=75" key="ogimage" />
         <meta property="og:image:width" content="200" key="ogimgwidth"/>
         <meta property="og:image:height" content="200" key="ogimgheight"/>
         <meta property="og:site_name" content="Que Je Web" key="ogsitename" />
