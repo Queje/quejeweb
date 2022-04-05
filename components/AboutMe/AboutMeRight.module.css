@@ -38,3 +38,9 @@
         transform: none!important;
     }
 }
+
+@media screen and (min-width: 992px) and (max-width: 1081px){
+    .aboutmerow{
+        width: 200%;
+    }
+}
