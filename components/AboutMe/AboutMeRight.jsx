@@ -13,8 +13,8 @@ export default function AboutMeRight() {
 
     return(
         <Col lg={4} xs={12}>
-            <Row>
-                <Col md={6} xs={6}>
+            <Row className={styles.aboutmerow}>
+                <Col md={6} xs={6} className={styles.aboutmecol}>
                     <div className={styles.aboutmegrid}>
                         <Image
                             src= { aboutpicture1 } // Route of the image file
@@ -29,7 +29,7 @@ export default function AboutMeRight() {
                         </div>
                     </div>
                 </Col>
-                <Col md={6} xs={6}> 
+                <Col md={6} xs={6} className={styles.aboutmecol}> 
                     <div className={styles.aboutmegrid}>
                         <Image
                             src= { aboutpicture2 } // Route of the image file
@@ -44,9 +44,9 @@ export default function AboutMeRight() {
                         </div>
                     </div>
                 </Col>
-                </Row>
-                <Row>
-                <Col md={6} xs={6}>
+            </Row>
+            <Row className={styles.aboutmerow}>
+                <Col md={6} xs={6} className={styles.aboutmecol}>
                     <div className={styles.aboutmegrid}>
                         <Image 
                             src= { aboutpicture3 } // Route of the image file
@@ -61,7 +61,7 @@ export default function AboutMeRight() {
                         </div>
                     </div>
                 </Col>
-                <Col md={6} xs={6}>
+                <Col md={6} xs={6} className={styles.aboutmecol}>
                     <div className={styles.aboutmegrid}>
                         <Image 
                             src= { aboutpicture4 } // Route of the image file
