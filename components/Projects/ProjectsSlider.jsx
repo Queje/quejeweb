@@ -201,10 +201,15 @@ export default function ProjectsSlider () {
             spaceBetween={5}
             slidesPerView={1}
             breakpoints={{
-                640: {
+                767: {
                   slidesPerView: 2,
                   spaceBetween: 5,
-                }}}
+                },
+                1400:{
+                    slidesPerView: 3,
+                    spaceBetween: 5,
+                }
+            }}
             modules={[Pagination, Virtual, Lazy]}
             pagination={{clickable: true}}
             virtual
