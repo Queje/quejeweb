@@ -7,8 +7,7 @@
 .profilewrapper{
     display: grid;
     grid-template-areas: "overlay";
-    height: 300px;
-    width: 300px;  
+    width: 100%;
 }
 
 .profilewrapper > span {
@@ -23,8 +22,4 @@
 
 .profilepicture{
     z-index: 0;
-}
-
-@media (max-width: 800px) {
-
 }
