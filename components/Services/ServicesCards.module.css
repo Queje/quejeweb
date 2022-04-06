@@ -1,6 +1,6 @@
 .servicescards{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100%;
     margin-bottom: 2rem;
 }
@@ -44,7 +44,7 @@
     z-index: 0;
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 767px) {
 
     .servicedescription{
         display: none;

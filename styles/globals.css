@@ -146,11 +146,7 @@ h3 {
 }
 
 .swiper{
-  height:22rem;
-}
-
-.swiper-pagination{
-  top: 20rem;
+  height:auto;
 }
 
 @media (max-width: 800px) {

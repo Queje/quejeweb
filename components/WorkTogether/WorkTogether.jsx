@@ -61,6 +61,7 @@ export default function WorkTogether() {
                         text={(
                                 <>
                                     <span className={styles.importanttext}>{t('workcardtext4b')}</span> 
+                                    <br/>
                                     <small>{t('workcardtext4c')}</small>
                                 </>
                             )}

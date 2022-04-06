@@ -201,7 +201,7 @@ export default function ProjectsSlider () {
             spaceBetween={5}
             slidesPerView={1}
             breakpoints={{
-                767: {
+                625: {
                   slidesPerView: 2,
                   spaceBetween: 5,
                 },
