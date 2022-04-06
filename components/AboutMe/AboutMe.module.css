@@ -1,6 +1,5 @@
 .aboutme{
     width: 100%;
-    max-width: 100%;
     margin-bottom: 5rem;
 }
 
@@ -33,5 +32,11 @@
     .toolstitle{
         font-size: 1.2rem!important;
         margin-top: 1rem;
+    }
+}
+
+@media screen and (min-width: 1550px) {
+    .aboutme{
+        width: 75%;
     }
 }
