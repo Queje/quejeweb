@@ -194,7 +194,6 @@ h3 {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1300px) {
-
   #text {
     font-size: 1rem;
   }
@@ -202,5 +201,14 @@ h3 {
   #bigtext {
     font-size: 1.5rem;
   }
+}
 
+@media screen and (min-width: 2300px) {
+  #text {
+    font-size: 1.5rem;
+  }
+
+  #bigtext {
+    font-size: 2rem;
+  }
 }
