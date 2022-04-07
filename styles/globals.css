@@ -90,6 +90,11 @@ h3 {
   font-size: 1.5rem;
 }
 
+#bigtext{
+  font-family: "montserrat-light";
+  font-size: 1.5rem;
+}
+
 #textmodal {
   font-family: "montserrat-light";
   font-size: 1rem;
@@ -166,6 +171,10 @@ h3 {
     font-size: 1rem;
   }
 
+  #bigtext {
+    font-size: 1rem;
+  }
+
   #description{
     margin-bottom: 2rem;
   }
@@ -189,5 +198,9 @@ h3 {
   #text {
     font-size: 1rem;
   }
-  
+
+  #bigtext {
+    font-size: 1.5rem;
+  }
+
 }

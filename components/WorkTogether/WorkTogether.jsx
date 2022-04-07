@@ -13,14 +13,14 @@ export default function WorkTogether() {
         >
             <h3 className={styles.worktitle}>{t('worktogethertitle')}</h3>
             <Row md={12} xs={12} id="description">
-                <p id="text">
+                <p id="bigtext">
                     {t('workdescription1')}
                         <span id="neontext">{t('workdescription2')}</span>
                     {t('workdescription3')}
                         <span id="neontext">{t('workdescription4')}</span>
                     {t('workdescription5')}
                 </p>
-                <p id="text">{t('workdescription6')}</p>    
+                <p id="bigtext">{t('workdescription6')}</p>    
             </Row>
             <Row md={12} xs={12} >
                 <Col md={6} xs={12} className={styles.justifycard}>

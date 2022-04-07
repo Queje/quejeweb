@@ -37,14 +37,14 @@ export default function AboutMe() {
               <Col lg={5} xs={12} className={styles.profiletext}>
                 {
                   router.locale === 'fr' ? (
-                    <p id="text"> {t('aboutmetext1a')} <span id="neontext">{t('aboutmetext1neon')}</span> {t('aboutmetext1b')} {t('aboutmetext1c')}</p>
+                    <p id="bigtext"> {t('aboutmetext1a')} <span id="neontext">{t('aboutmetext1neon')}</span> {t('aboutmetext1b')} {t('aboutmetext1c')}</p>
                   ) : (
-                    <p id="text"> {t('aboutmetext1a')} {t('aboutmetext1b')} <span id="neontext">{t('aboutmetext1neon')}</span> {t('aboutmetext1c')}</p>
+                    <p id="bigtext"> {t('aboutmetext1a')} {t('aboutmetext1b')} <span id="neontext">{t('aboutmetext1neon')}</span> {t('aboutmetext1c')}</p>
                   )
                 }
-                <p id="text"> {t('aboutmetext2a')}<span id="neontext">{t('aboutmetext2b')}</span>{t('aboutmetext2c')}</p> 
-                <p id="text"> {t('aboutmetext3')} </p> 
-                <p id="text"> {t('aboutmetext4a')} <span id="neontext">{t('aboutmetext4b')}</span> !</p>
+                <p id="bigtext"> {t('aboutmetext2a')}<span id="neontext">{t('aboutmetext2b')}</span>{t('aboutmetext2c')}</p> 
+                <p id="bigtext"> {t('aboutmetext3')} </p> 
+                <p id="bigtext"> {t('aboutmetext4a')} <span id="neontext">{t('aboutmetext4b')}</span> !</p>
               </Col>
 
               <AboutMeRight />
