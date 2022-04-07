@@ -28,7 +28,7 @@ export default function Services () {
             {t('servicestitle')}
           </h3>
           <div id="description">
-            <p id="text" className={styles.servicetextdescription}>
+            <p id="bigtext" className={styles.servicetextdescription}>
               {t('servicesdescription')}
             </p>
           </div>

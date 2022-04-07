@@ -24,7 +24,7 @@ export default function Services () {
           <Col xs={12} md={12}>
             <h3>{t('projecttitle')}</h3>
             <div id="description">
-              <p id="text">{t('projectdescription')}</p>
+              <p id="bigtext">{t('projectdescription')}</p>
             </div>
           </Col>
           <Col xs={12} md={12}>
