@@ -62,17 +62,19 @@ export default function ProjectsModal ({project}) {
                                 </a>
                             </div>
                         </div>
-                        <div className={styles.modalwrapper}>
-                            <Image
-                                src={project.background}
-                                layout="responsive"
-                                width={400}
-                                height={300}
-                                alt="cover image"
-                                className={styles.modalimagestyle}
-                            />
-                            <div className={styles.modaloverlay}></div>
-                        </div>
+                        { project.imagelist.map((image) => (
+                            <div className={styles.modalwrapper} key={image.id}>
+                                <Image
+                                    src={image.imageitem}
+                                    layout="responsive"
+                                    width={600}
+                                    height={300}
+                                    alt={"website image " + image.id }
+                                    className={styles.modalimagestyle}
+                                />
+                                <div className={styles.modaloverlay}></div>
+                            </div>
+                        ))}
                     </div>
                 </Modal.Body>
                 <Modal.Footer

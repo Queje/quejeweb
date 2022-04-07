@@ -1,10 +1,24 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination, Virtual, Lazy } from 'swiper'
 import image1 from '../../assets/Projects/nicoangercoaching2gs.webp'
+import image1a from '../../assets/Modal/nicoangercoaching2.webp'
+import image1b from '../../assets/Modal/nicoangercoaching3.webp'
+import image1c from '../../assets/Modal/nicoangercoaching4.webp'
+import image1d from '../../assets/Modal/nicoangercoaching5.webp'
 import image2 from '../../assets/Projects/bretonbreaks2gs.webp'
+import image2a from '../../assets/Modal/bretonbreaks2.webp'
+import image2b from '../../assets/Modal/bretonbreaks3.webp'
 import image3 from '../../assets/Projects/laurencepoidatz2gs.webp'
-import image4 from '../../assets/Projects/salonartcarantec2gs.webp'
+import image3a from '../../assets/Modal/laurencepoidatz2.webp'
+import image4 from '../../assets/Modal/salonartcarantec1.webp'
+import image4a from '../../assets/Modal/salonartcarantec2.webp'
+import image4b from '../../assets/Modal/salonartcarantec3.webp'
 import image5 from '../../assets/Projects/learningstuff2gs.webp'
+import image5a from '../../assets/Modal/learningstuff2.webp'
+import image5b from '../../assets/Modal/learningstuff3.webp' 
+import image5c from '../../assets/Modal/learningstuff4.webp'
+import image5d from '../../assets/Modal/learningstuff5.webp'
+import image5e from '../../assets/Modal/learningstuff6.webp'
 import ProjectsModal from '../Projects/ProjectsModal'
 import { FaCss3Alt } from 'react-icons/fa'
 import { FaWordpressSimple } from 'react-icons/fa'
@@ -27,7 +41,27 @@ export default function ProjectsSlider () {
     const ProjectsList = [
                 {
                     id: 1,
-                    background: image1,
+                    imagelist:[
+                        {
+                            id: 1,
+                            imageitem: image1,
+                        },
+                        {
+                            id: 2,
+                            imageitem: image1a,
+                        },
+                        {
+                            id: 3,
+                            imageitem: image1b,
+                        },
+                        {
+                            id: 4,
+                            imageitem: image1c,
+                        },
+                        {
+                            id: 5,
+                            imageitem: image1d,
+                        }],
                     title: "nicoangercoaching.fr",
                     url: "https://nicoangercoaching.fr/",
                     imagesource: image1,
@@ -54,7 +88,19 @@ export default function ProjectsSlider () {
                 },
                 {
                     id: 2,
-                    background: image2,
+                    imagelist:[
+                        {
+                            id: 1,
+                            imageitem: image2,
+                        },
+                        {
+                            id: 2,
+                            imageitem: image2a,
+                        },
+                        {
+                            id: 3,
+                            imageitem: image2b,
+                        }],
                     title: "Breton Breaks",
                     url: "https://www.bretonbreaks.com",
                     imagesource: image2,
@@ -91,7 +137,15 @@ export default function ProjectsSlider () {
                 },
                 {
                     id: 3,
-                    background: image3,
+                    imagelist:[
+                        {
+                            id: 1,
+                            imageitem: image3
+                        },
+                        {
+                            id: 2,
+                            imageitem: image3a
+                        }],
                     title: "Laurence Poidatz",
                     url: "https://www.laurencepoidatz.com",
                     imagesource: image3,
@@ -108,7 +162,19 @@ export default function ProjectsSlider () {
                 },
                 {
                     id: 4,
-                    background: image4,
+                    imagelist: [
+                        {
+                            id: 1,
+                            imageitem: image4,
+                        },
+                        {
+                            id: 2,
+                            imageitem: image4a,
+                        },
+                        {
+                            id: 3,
+                            imageitem: image4b,
+                        }],
                     title: "Salon des arts de Carantec",
                     url: "https://www.salonartcarantec.com",
                     imagesource: image4,
@@ -145,7 +211,31 @@ export default function ProjectsSlider () {
                 },
                 {
                     id: 5,
-                    background: image5,
+                    imagelist:[
+                        {
+                            id: 1,
+                            imageitem: image5,
+                        },
+                        {
+                            id: 2,
+                            imageitem: image5a,
+                        },
+                        {
+                            id: 3,
+                            imageitem: image5b,
+                        },
+                        {
+                            id: 4,
+                            imageitem: image5c,
+                        },
+                        {
+                            id: 5,
+                            imageitem: image5d,
+                        },
+                        {
+                            id: 6,
+                            imageitem: image5e,
+                        }],
                     title: "Learning-stuff",
                     url: "https://learning-stuff-thp.herokuapp.com/",
                     imagesource: image5,
