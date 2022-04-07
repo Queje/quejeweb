@@ -68,3 +68,27 @@
         text-align: left;
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+    .servicedescription{
+        display: none;
+    }
+
+    .box > div {
+        z-index: 1;
+        grid-area: overlay;
+        padding-left: 1rem;
+        padding-top: 35%;
+        background: linear-gradient(to top, rgba(4, 50, 66, 0.85), rgba(4, 50, 66, 0.20));
+        text-align: left;
+    }
+
+    .box > div:hover {
+        z-index: 1;
+        grid-area: overlay;
+        padding-left: 1rem;
+        padding-top: 35%;
+        background: linear-gradient(to top, rgba(4, 50, 66, 0.85), rgba(4, 50, 66, 0.20));
+        text-align: left;
+    }
+} 
