@@ -32,21 +32,23 @@
 
 .modalbody{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .textcontainer{
-    width: 50%;
+    width: 90%;
     z-index: 2;
     margin-left: 1rem;
     margin-right: 1rem;
 }
 
 .modalwrapper{
+    margin-top: 1rem;
     display: grid;
     grid-template-areas: "overlay";
-    height: 300px;
-    width: 400px; 
+    height: auto;
+    width: 100%; 
 }
 
 .modalwrapper > span {
@@ -69,7 +71,7 @@
 
 .modaltitle{
     color: #E94E1B;
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
 }
 
@@ -100,21 +102,8 @@
     text-decoration: none;
 }
 
-@media (max-width: 800px){
-    .modalbody{
-        display: grid;
-        justify-content: center;
-        overflow: hidden;
-    }
-
-    .textcontainer{
-        max-width: 80vw!important;
-        width: 100vw!important;
-        margin-left: 3rem;
-        margin-right: 3rem;
-    }
-
-    .centerbutton{
-        margin-bottom: 1rem;
+@media screen and (max-width: 767px) {
+    .modaltitle{
+        font-size: 2rem;
     }
 }
