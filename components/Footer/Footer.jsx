@@ -31,7 +31,7 @@ export default function Footer () {
                     </a>
                 </Col>
                 <Col md={2} xs={12} className={styles.link}>
-                    <a href="https://fr-fr.facebook.com/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.facebook.com/profile.php?id=100079936701832" target="_blank" rel="noopener noreferrer">
                         <BsFacebook size={36} className={styles.icons} id="shakeanimation"/>
                         Facebook
                     </a>
