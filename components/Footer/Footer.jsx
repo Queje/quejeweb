@@ -25,7 +25,7 @@ export default function Footer () {
                     </a>
                 </Col>
                 <Col md={2} xs={12} className={styles.link}>
-                    <a href="https://github.com/Queje/Queje" target="_blank" rel="noopener noreferrer" >
+                    <a href="https://github.com/Queje" target="_blank" rel="noopener noreferrer" >
                         <BsGithub size={36} className={styles.icons} id="shakeanimation"/>
                         Github
                     </a>
