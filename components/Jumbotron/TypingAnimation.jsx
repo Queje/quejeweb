@@ -15,7 +15,7 @@ export default function TypingAnimation () {
             '...',
             10000,
             ]}
-            wrapper="p"
+            wrapper="span"
             loop={Infinity}
         />
     )
