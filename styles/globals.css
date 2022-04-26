@@ -1,6 +1,7 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import 'swiper/css';
 @import 'swiper/css/pagination';
+@import 'swiper/css/navigation';
 
 @font-face{
   font-family: "westmeath";
@@ -154,6 +155,27 @@ h3 {
   height:auto;
 }
 
+.swiper-button-prev {
+  color: #E94E1B;
+  z-index: 10; 
+}
+
+.swiper-button-next {
+  color: #E94E1B; 
+  z-index: 10;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+}
+
+.swiper-pagination-bullet-active {
+    width: 15px;
+    height: 15px;
+    --swiper-theme-color: #E94E1B!important; 
+}
+
 @media screen and (max-width: 767px) {
   h1 {
     font-size: 3rem;
@@ -191,6 +213,14 @@ h3 {
   .swiper-pagination{
     top: 12rem;
   }
+
+  .swiper-button-prev {
+    display: none
+  }
+  
+  .swiper-button-next {
+    display: none
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1300px) {
@@ -218,5 +248,10 @@ h3 {
 
   h2 {
     font-size: 3rem;
+  }
+
+  .swiper-wrapper{
+    width: 90%;
+    margin-left: 5rem;
   }
 }

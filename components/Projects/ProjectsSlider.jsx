@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
-import { Pagination, Virtual, Lazy } from 'swiper'
+import { Pagination, Navigation, A11y } from 'swiper'
 import image1 from '../../assets/Projects/nicoangercoaching2gs.webp'
 import image1a from '../../assets/Modal/nicoangercoaching2.webp'
 import image1b from '../../assets/Modal/nicoangercoaching3.webp'
@@ -300,15 +300,13 @@ export default function ProjectsSlider () {
                     spaceBetween: 5,
                 }
             }}
-            modules={[Pagination, Virtual, Lazy]}
+            modules={[Pagination, Navigation, A11y]}
             pagination={{clickable: true}}
-            virtual
-            lazy
+            navigation
         >
         { ProjectsList.map((project) => (
             <SwiperSlide
                 key={project.id}
-                virtualIndex={project.id}
             >
                 <ProjectsModal 
                     key={project.id}
