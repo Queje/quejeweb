@@ -29,7 +29,7 @@ export default function Navigation( ) {
 				</Link>
 			</Col>
 			<Col xs={4} md={3} className={navigationstyles.link}>
-				<a href="tel:+0678866781">
+				<a href="tel:0033678866781">
 					<BsFillPhoneFill size={56} id="shakeanimation"/>
 					<span className={navigationstyles.navtext}>0678866781</span>
 				</a> 
