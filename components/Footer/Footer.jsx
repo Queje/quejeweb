@@ -13,7 +13,7 @@ export default function Footer () {
         <footer className={styles.footer}>
             <Row className="d-flex justify-content-evenly ml-5">
                 <Col md={2} xs={12} className={styles.link}>
-                    <a href="callto:+0678866781">
+                    <a href="tel:0033678866781">
                         <BsFillPhoneFill size={36} className={styles.icons} id="shakeanimation"/>
                         0678866781
                     </a>
