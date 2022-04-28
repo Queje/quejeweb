@@ -5,15 +5,15 @@ export default function TypingAnimation () {
         <Typical
             steps={[
             '...',
-            10000,
+            1000,
             'Que Je Web',
-            10000,
+            1000,
             'Querné Jérémy Web',
-            10000,
+            1000,
             'Que Je Web',
-            10000,
+            1000,
             '...',
-            10000,
+            1000,
             ]}
             wrapper="span"
             loop={Infinity}
